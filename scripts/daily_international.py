@@ -65,7 +65,7 @@ class DailyInternationalCrawler:
         ]
         
         # 해외 뉴스 수집
-        results = self.crawler.run(queries=queries, max_results_per_query=10)
+        results = self.crawler.run(queries=queries)
         
         print(f"\n📊 총 수집: {len(results)}개 뉴스\n")
         

@@ -9,8 +9,99 @@ on:
   workflow_dispatch:
 
 jobs:
-  data-pipeline:
+  # ============================================================
+  # 병렬 크롤링 (5개 동시 실행)
+  # ============================================================
+  
+  crawl-naver:
     runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 🕷️ 네이버 API 크롤링
+      continue-on-error: true
+      env:
+        NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+        NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: python scripts/daily_naver.py
+  
+  crawl-google:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 🕷️ 구글 뉴스 크롤링
+      continue-on-error: true
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: python scripts/daily_google.py
+  
+  crawl-images:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 🕷️ 구글 이미지 크롤링
+      continue-on-error: true
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: python scripts/daily_google_images.py
+  
+  crawl-reddit:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 🕷️ Reddit 크롤링
+      continue-on-error: true
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: python scripts/daily_reddit.py
+  
+  crawl-international:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 🕷️ 해외 뉴스 크롤링
+      continue-on-error: true
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: python scripts/daily_international.py
+  
+  # ============================================================
+  # 데이터 처리 (크롤링 완료 후 순차 실행)
+  # ============================================================
+  
+  process-data:
+    runs-on: ubuntu-latest
+    needs: [crawl-naver, crawl-google, crawl-images, crawl-reddit, crawl-international]
     
     steps:
     - name: 📥 코드 체크아웃
@@ -26,52 +117,6 @@ jobs:
       run: |
         pip install --upgrade pip
         pip install -r requirements.txt
-    
-    # ============================================================
-    # 1단계: 크롤링 (데이터 수집)
-    # ============================================================
-    
-    - name: 🕷️ [1/7] 네이버 API 크롤링
-      continue-on-error: true
-      env:
-        NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
-        NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
-        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/daily_naver.py
-    
-    - name: 🕷️ [1/7] 구글 뉴스 크롤링
-      continue-on-error: true
-      env:
-        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/daily_google.py
-    
-    - name: 🕷️ [1/7] 구글 이미지 크롤링
-      continue-on-error: true
-      env:
-        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/daily_google_images.py
-    
-    - name: 🕷️ [1/7] Reddit 크롤링
-      continue-on-error: true
-      env:
-        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/daily_reddit.py
-    
-    - name: 🕷️ [1/7] 해외 뉴스 크롤링
-      continue-on-error: true
-      env:
-        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/daily_international.py
     
     # ============================================================
     # 2단계: 이미지 OCR
@@ -142,7 +187,7 @@ jobs:
     # 7단계: 임베딩 생성
     # ============================================================
     
-    - name: 🧠 [7/8] 벡터 임베딩 생성
+    - name: 🧠 [7/7] 벡터 임베딩 생성
       continue-on-error: true
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
@@ -155,7 +200,7 @@ jobs:
     # 8단계: 완료 알림
     # ============================================================
     
-    - name: 🎉 [8/8] 파이프라인 완료
+    - name: 🎉 파이프라인 완료
       run: |
         echo "✅ Daily data pipeline completed successfully!"
         echo "📊 Check Supabase dashboard for updated data"

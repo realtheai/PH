@@ -12,7 +12,7 @@ import re
 class RedditPhishingCrawler:
     def __init__(self):
         self.headers = {
-            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+            'User-Agent': 'PhishingApp/1.0 (by /u/phishing_researcher)'
         }
         self.session = requests.Session()
         self.session.headers.update(self.headers)
@@ -38,7 +38,13 @@ class RedditPhishingCrawler:
                 url = f"https://www.reddit.com/r/{subreddit}/hot.json"
                 params = {'limit': limit}
             
-            response = self.session.get(url, params=params)
+            response = self.session.get(url, params=params, timeout=15)
+            
+            # 403 에러 시 재시도
+            if response.status_code == 403:
+                time.sleep(5)
+                response = self.session.get(url, params=params, timeout=15)
+            
             response.raise_for_status()
             
             data = response.json()

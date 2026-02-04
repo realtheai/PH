@@ -80,7 +80,8 @@ class DailyImageCrawler:
             if idx % 20 == 0:
                 print(f"   진행: {idx}/{len(results)} (성공:{success}, 중복:{duplicate}, 실패:{error})")
             
-            image_path = item.get('image_path', '')
+            # local_path를 image_path로 사용
+            image_path = item.get('local_path', '')
             if not image_path:
                 error += 1
                 continue
@@ -94,8 +95,8 @@ class DailyImageCrawler:
             record = {
                 'source': 'google_images',
                 'image_path': image_path,
+                'image_url': item.get('image_url', ''),
                 'query': item.get('query', ''),
-                'source_url': item.get('source_url', ''),
                 'language': 'ko',  # 한국어 쿼리로 수집
                 'crawled_at': datetime.now().isoformat()
             }

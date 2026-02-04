@@ -26,7 +26,7 @@ class GeminiTranslator:
         
         print(f"✅ Gemini API 키 {len(self.api_keys)}개 로드")
         if openai_key:
-            print(f"✅ OpenAI API 키 로드 (fallback 사용)"))
+            print(f"✅ OpenAI API 키 로드 (fallback 사용)")
     
     def get_next_api_key(self) -> str:
         """라운드 로빈 방식으로 API 키 순환"""
