@@ -1,0 +1,176 @@
+name: 📊 Daily Phishing Data Pipeline
+
+on:
+  # 매일 자동 실행 (UTC 00:00 = KST 09:00)
+  schedule:
+    - cron: '0 0 * * *'
+  
+  # 수동 실행 가능
+  workflow_dispatch:
+
+jobs:
+  data-pipeline:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 코드 체크아웃
+      uses: actions/checkout@v3
+    
+    - name: 🐍 Python 3.11 설정
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    
+    - name: 📦 의존성 설치
+      run: |
+        pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    # ============================================================
+    # 1단계: 크롤링 (데이터 수집)
+    # ============================================================
+    
+    - name: 🕷️ [1/7] 네이버 API 크롤링
+      continue-on-error: true
+      env:
+        NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
+        NAVER_CLIENT_SECRET: ${{ secrets.NAVER_CLIENT_SECRET }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/daily/crawl_naver_daily.py
+    
+    - name: 🕷️ [1/7] 구글 뉴스 크롤링
+      continue-on-error: true
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/daily/crawl_google_news_daily.py
+    
+    - name: 🕷️ [1/7] 구글 이미지 크롤링
+      continue-on-error: true
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/daily/crawl_google_images_daily.py
+    
+    - name: 🕷️ [1/7] Reddit 크롤링
+      continue-on-error: true
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/daily/crawl_reddit_daily.py
+    
+    - name: 🕷️ [1/7] 해외 뉴스 크롤링
+      continue-on-error: true
+      env:
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/daily/crawl_international_news_daily.py
+    
+    # ============================================================
+    # 2단계: 이미지 OCR
+    # ============================================================
+    
+    - name: 🔍 [2/7] 이미지 OCR 처리
+      continue-on-error: true
+      env:
+        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
+        GEMINI_API_KEY_6: ${{ secrets.GEMINI_API_KEY_6 }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/ocr_images.py
+    
+    # ============================================================
+    # 3단계: 텍스트 번역
+    # ============================================================
+    
+    - name: 🌐 [3/7] 텍스트 번역 (영어 → 한국어)
+      continue-on-error: true
+      env:
+        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
+        GEMINI_API_KEY_6: ${{ secrets.GEMINI_API_KEY_6 }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/translate_content.py
+    
+    # ============================================================
+    # 4단계: 콘텐츠 분류 (REAL_CASE/NEWS/NOISE)
+    # ============================================================
+    
+    - name: 🏷️ [4/7] 콘텐츠 분류
+      continue-on-error: true
+      env:
+        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
+        GEMINI_API_KEY_6: ${{ secrets.GEMINI_API_KEY_6 }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/classify_data.py
+    
+    # ============================================================
+    # 5단계: 피싱 유형 분류 (REAL_CASE만)
+    # ============================================================
+    
+    - name: 🎯 [5/7] 피싱 유형 분류
+      continue-on-error: true
+      env:
+        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
+        GEMINI_API_KEY_6: ${{ secrets.GEMINI_API_KEY_6 }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/classify_phishing_type.py
+    
+    # ============================================================
+    # 6단계: 중복 제거
+    # ============================================================
+    
+    - name: 🧹 [6/7] 중복 제거
+      continue-on-error: true
+      env:
+        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
+        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
+        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
+        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
+        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
+        GEMINI_API_KEY_6: ${{ secrets.GEMINI_API_KEY_6 }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/deduplicate_data.py
+    
+    # ============================================================
+    # 7단계: 완료 알림
+    # ============================================================
+    
+    - name: 🎉 [7/7] 파이프라인 완료
+      run: |
+        echo "✅ Daily data pipeline completed successfully!"
+        echo "📊 Check Supabase dashboard for updated data"

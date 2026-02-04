@@ -1,0 +1,76 @@
+{
+  "rules": [
+    {
+      "keyword": "국세청",
+      "category": "기관사칭",
+      "score": 40,
+      "description": "정부 기관 사칭"
+    },
+    {
+      "keyword": "경찰청",
+      "category": "기관사칭",
+      "score": 40,
+      "description": "정부 기관 사칭"
+    },
+    {
+      "keyword": "금융감독원",
+      "category": "기관사칭",
+      "score": 40,
+      "description": "금융 기관 사칭"
+    },
+    {
+      "keyword": "즉시",
+      "category": "긴급성",
+      "score": 20,
+      "description": "긴급 조치 요구"
+    },
+    {
+      "keyword": "송금",
+      "category": "금전요구",
+      "score": 30,
+      "description": "금전 요구"
+    },
+    {
+      "keyword": "계좌이체",
+      "category": "금전요구",
+      "score": 30,
+      "description": "금전 요구"
+    },
+    {
+      "keyword": "상품권",
+      "category": "금전요구",
+      "score": 35,
+      "description": "상품권 요구 (전형적인 피싱)"
+    },
+    {
+      "keyword": "긴급",
+      "category": "긴급성",
+      "score": 20,
+      "description": "긴급 조치 요구"
+    },
+    {
+      "keyword": "정지",
+      "category": "협박",
+      "score": 25,
+      "description": "계좌/카드 정지 협박"
+    },
+    {
+      "keyword": "체포",
+      "category": "협박",
+      "score": 40,
+      "description": "법적 협박"
+    }
+  ],
+  "url_patterns": [
+    {
+      "pattern": "bit.ly",
+      "score": 20,
+      "description": "단축 URL"
+    },
+    {
+      "pattern": "tinyurl.com",
+      "score": 20,
+      "description": "단축 URL"
+    }
+  ]
+}

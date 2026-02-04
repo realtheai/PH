@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1f3a60",
+                        "danger": "#D32F2F",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#14181e",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Public Sans", sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col max-w-md mx-auto shadow-xl overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between border-b border-gray-200 dark:border-gray-800">
+<div class="text-primary dark:text-white flex size-10 shrink-0 items-center justify-center cursor-pointer">
+<span class="material-symbols-outlined">arrow_back_ios</span>
+</div>
+<h2 class="text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-10">신고하기</h2>
+</header>
+<!-- Main Content -->
+<main class="flex-1 pb-40">
+<!-- HeadlineText -->
+<div class="px-4 py-6">
+<h2 class="text-[#101418] dark:text-white tracking-light text-[28px] font-bold leading-tight text-center pb-3">🚨 피싱 신고 안내</h2>
+<p class="text-[#5c6f8a] dark:text-gray-400 text-base font-normal leading-normal text-center px-4">
+                    지금 상황은 피싱 피해로 이어질 가능성이 높습니다. 아래 방법 중 하나를 선택하세요.
+                </p>
+</div>
+<!-- Phone Reporting Section -->
+<div class="px-4 py-2">
+<h3 class="text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-xl">call</span> 전화 신고
+                </h3>
+<div class="space-y-4">
+<!-- Card: Police -->
+<div class="flex items-center justify-between gap-4 rounded-xl bg-white dark:bg-gray-800 p-4 shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 dark:border-gray-700">
+<div class="flex flex-col gap-1">
+<p class="text-[#101418] dark:text-white text-base font-bold">경찰청 112</p>
+<p class="text-[#5c6f8a] dark:text-gray-400 text-xs">긴급 범죄 신고 및 피해 상담</p>
+</div>
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-danger/10 text-danger">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+<!-- Card: FSS -->
+<div class="flex items-center justify-between gap-4 rounded-xl bg-white dark:bg-gray-800 p-4 shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 dark:border-gray-700">
+<div class="flex flex-col gap-1">
+<p class="text-[#101418] dark:text-white text-base font-bold">금융감독원 1332</p>
+<p class="text-[#5c6f8a] dark:text-gray-400 text-xs">보이스피싱 피해 상담 및 계좌 지급 정지</p>
+</div>
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-primary/10 text-primary dark:text-white">
+<span class="material-symbols-outlined">call</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Online Reporting Section -->
+<div class="px-4 py-6">
+<h3 class="text-primary dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] pb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-xl">language</span> 온라인 신고
+                </h3>
+<div class="p-4 rounded-xl bg-white dark:bg-gray-800 shadow-[0_2px_8px_rgba(0,0,0,0.05)] border border-gray-100 dark:border-gray-700">
+<div class="flex flex-col gap-3">
+<div class="flex items-center gap-3">
+<div class="w-12 h-12 rounded-lg bg-gray-100 dark:bg-gray-700 flex items-center justify-center overflow-hidden">
+<span class="material-symbols-outlined text-primary text-2xl">security</span>
+</div>
+<div class="flex-1">
+<p class="text-[#101418] dark:text-white text-base font-bold">경찰청 사이버범죄 신고</p>
+<p class="text-[#5c6f8a] dark:text-gray-400 text-xs">외부 사이트로 이동하여 접수</p>
+</div>
+</div>
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-10 bg-primary/5 text-primary dark:text-blue-300 font-medium text-sm">
+<span>신고 사이트 열기</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tips Section -->
+<div class="mx-4 mb-8 p-5 rounded-xl bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800">
+<h4 class="text-primary dark:text-blue-200 text-sm font-bold flex items-center gap-1.5 mb-3">
+<span class="material-symbols-outlined text-lg">lightbulb</span> 신고 전 체크
+                </h4>
+<ul class="space-y-2.5">
+<li class="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+<span class="material-symbols-outlined text-danger text-base mt-0.5">cancel</span>
+<span><strong>절대 송금 금지:</strong> 어떠한 경우에도 돈을 먼저 보내지 마세요.</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+<span class="material-symbols-outlined text-danger text-base mt-0.5">do_not_disturb_on</span>
+<span><strong>대화 중단:</strong> 상대방과의 모든 연락을 즉시 끊으세요.</span>
+</li>
+<li class="flex items-start gap-2 text-sm text-gray-700 dark:text-gray-300">
+<span class="material-symbols-outlined text-primary text-base mt-0.5">content_copy</span>
+<span><strong>증거 확보:</strong> 대화 내용, 문자, 번호 등을 캡처해 두세요.</span>
+</li>
+</ul>
+</div>
+</main>
+<!-- Sticky Footer Buttons -->
+<footer class="fixed bottom-0 left-0 right-0 max-w-md mx-auto bg-white/80 dark:bg-gray-900/80 backdrop-blur-md p-4 pb-8 border-t border-gray-100 dark:border-gray-800 grid grid-cols-2 gap-3">
+<button class="flex items-center justify-center gap-2 rounded-xl h-14 bg-danger text-white font-bold text-base active:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">call</span>
+<span>112 전화하기</span>
+</button>
+<button class="flex items-center justify-center gap-2 rounded-xl h-14 bg-primary text-white font-bold text-base active:opacity-90 transition-opacity">
+<span class="material-symbols-outlined">language</span>
+<span>온라인 신고하기</span>
+</button>
+</footer>
+</div>
+</body></html>
