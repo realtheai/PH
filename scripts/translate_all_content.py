@@ -226,7 +226,10 @@ class GeminiTranslator:
         print(f"{'='*70}\n")
         
         # 번역이 필요한 데이터 조회 (영어)
-        url = f"{self.supabase_url}/rest/v1/phishing_news?select=id,content,original_language&original_language=eq.en&limit=1000"
+        # 최근 2일 내 영어 콘텐츠만 조회
+        from datetime import datetime, timedelta
+        two_days_ago = (datetime.now() - timedelta(days=2)).isoformat()
+        url = f"{self.supabase_url}/rest/v1/phishing_news?select=id,content,original_language&original_language=eq.en&crawled_at=gte.{two_days_ago}&limit=1000"
         response = requests.get(url, headers=self.headers)
         
         if response.status_code != 200:

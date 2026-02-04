@@ -53,11 +53,15 @@ def create_embedding(text: str, retry=3) -> List[float]:
 
 
 def get_records_without_embedding(limit=1000) -> List[Dict]:
-    """임베딩이 없는 레코드 조회"""
+    """최근 2일 내 임베딩이 없는 레코드 조회"""
+    from datetime import datetime, timedelta
+    two_days_ago = (datetime.now() - timedelta(days=2)).isoformat()
+    
     url = f"{SUPABASE_URL}/rest/v1/phishing_news"
     params = {
         'select': 'id,title,content',
         'embedding': 'is.null',
+        'crawled_at': f'gte.{two_days_ago}',
         'order': 'id.asc',
         'limit': limit
     }

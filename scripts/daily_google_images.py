@@ -24,12 +24,19 @@ class DailyImageCrawler:
         }
     
     def check_duplicate(self, image_path: str) -> bool:
-        """이미지 경로 중복 확인"""
+        """이미지 경로 중복 확인 (최근 7일 내에서만 체크)"""
         try:
+            from datetime import datetime, timedelta
+            seven_days_ago = (datetime.now() - timedelta(days=7)).isoformat()
+            
             response = requests.get(
                 f"{self.supabase_url}/rest/v1/phishing_images",
                 headers=self.headers,
-                params={'image_path': f'eq.{image_path}', 'select': 'id'},
+                params={
+                    'image_path': f'eq.{image_path}',
+                    'crawled_at': f'gte.{seven_days_ago}',
+                    'select': 'id'
+                },
                 timeout=5
             )
             return len(response.json()) > 0

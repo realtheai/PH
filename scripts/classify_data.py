@@ -380,8 +380,10 @@ class DataClassifier:
         print(f"📰 뉴스 데이터 분류")
         print(f"{'='*70}\n")
         
-        # 분류되지 않은 데이터 조회 (category가 NULL 또는 'NEWS')
-        url = f"{self.supabase_url}/rest/v1/phishing_news?select=id,title,content&or=(category.is.null,category.eq.NEWS)&limit={limit}"
+        # 최근 2일 내 분류되지 않은 데이터 조회 (category가 NULL 또는 'NEWS')
+        from datetime import datetime, timedelta
+        two_days_ago = (datetime.now() - timedelta(days=2)).isoformat()
+        url = f"{self.supabase_url}/rest/v1/phishing_news?select=id,title,content&or=(category.is.null,category.eq.NEWS)&crawled_at=gte.{two_days_ago}&limit={limit}"
         response = requests.get(url, headers=self.headers)
         
         if response.status_code != 200:
