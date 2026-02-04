@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>온라인 신고 안내 팝업</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;family=Noto+Sans+KR:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1f3a60",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#14181e",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "Noto Sans KR", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Public Sans", "Noto Sans KR", sans-serif;
+        }
+        .backdrop-blur-md {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark min-h-screen flex items-center justify-center overflow-hidden">
+<!-- Mockup of the "High Risk Result" background (blurred) -->
+<div class="absolute inset-0 z-0 flex flex-col p-6 opacity-40 grayscale-[0.5]">
+<div class="flex items-center gap-2 mb-8">
+<span class="material-symbols-outlined text-red-600 text-3xl">gpp_maybe</span>
+<h1 class="text-2xl font-bold text-gray-900">검사 결과: 위험</h1>
+</div>
+<div class="bg-white rounded-xl p-6 shadow-sm border border-red-100 mb-4">
+<div class="flex justify-between items-start mb-4">
+<div>
+<p class="text-sm text-gray-500">탐지된 위협</p>
+<p class="text-xl font-bold text-red-600">피싱 의심 링크</p>
+</div>
+<div class="bg-red-50 p-2 rounded-lg">
+<span class="material-symbols-outlined text-red-600">link_off</span>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-4">해당 웹사이트는 가짜 로그인 페이지를 통해 개인정보를 탈취하는 것으로 확인되었습니다.</p>
+<div class="h-2 w-full bg-gray-100 rounded-full overflow-hidden">
+<div class="h-full bg-red-600 w-[95%]"></div>
+</div>
+</div>
+<div class="space-y-4">
+<div class="h-24 w-full bg-white rounded-xl shadow-sm border border-gray-100"></div>
+<div class="h-24 w-full bg-white rounded-xl shadow-sm border border-gray-100"></div>
+</div>
+</div>
+<!-- Modal Backdrop -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-[#141414]/60 backdrop-blur-md px-6">
+<!-- Bottom Sheet Wrapper for Mobile Experience -->
+<div class="relative w-full max-w-[400px] flex flex-col">
+<!-- Modal Container -->
+<div class="bg-white dark:bg-background-dark rounded-3xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-300">
+<!-- BottomSheetHandle Style Top Decor -->
+<div class="flex flex-col items-stretch">
+<button class="flex h-6 w-full items-center justify-center">
+<div class="h-1.5 w-12 rounded-full bg-[#d4dae2]"></div>
+</button>
+</div>
+<!-- HeadlineText Component -->
+<div class="px-6 pt-4 pb-2">
+<h3 class="text-[#101418] dark:text-white tracking-tight text-xl font-bold leading-tight text-center">
+                        ⚠️ 외부 사이트로 이동합니다
+                    </h3>
+</div>
+<!-- BodyText Component -->
+<div class="px-8 pt-1 pb-4">
+<p class="text-[#4b5563] dark:text-gray-400 text-[15px] font-normal leading-relaxed text-center">
+                        경찰청 공식 사이버범죄 신고 페이지로 이동합니다. 
+                        <br/>
+<span class="inline-block mt-3 px-3 py-1 bg-gray-100 dark:bg-gray-800 rounded-lg text-primary dark:text-blue-400 font-semibold underline underline-offset-4">
+                            cyber.police.go.kr
+                        </span>
+<br/>
+<span class="inline-block mt-3">이동하시겠습니까?</span>
+</p>
+</div>
+<!-- ButtonGroup Component -->
+<div class="flex flex-col sm:flex-row gap-3 px-6 py-6 border-t border-gray-100 dark:border-gray-800">
+<button class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-gray-100 dark:bg-gray-800 text-[#101418] dark:text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-gray-200 transition-colors">
+<span class="truncate">취소</span>
+</button>
+<button class="flex-1 flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-xl h-14 px-5 bg-primary text-white text-base font-bold leading-normal tracking-[0.015em] hover:bg-[#162a4a] transition-colors shadow-lg shadow-primary/20">
+<span class="truncate">이동하기</span>
+</button>
+</div>
+</div>
+<!-- Hint for safety -->
+<div class="mt-6 text-center">
+<p class="text-white/60 text-xs flex items-center justify-center gap-1">
+<span class="material-symbols-outlined text-[14px]">verified_user</span>
+                    Phishing Checker 안전 이동 서비스
+                </p>
+</div>
+</div>
+</div>
+</body></html>

@@ -1,0 +1,47 @@
+[
+  {
+    "filename": "택배_스미싱_7.jpg",
+    "success": true,
+    "image_size": "162x71",
+    "extracted_text": "2017/03/27 월\n[Web발신]\n[CJ대한통운] 등기소포\n배송불가(주소불명)주소지확\n인 https://goo.gl/gBfkXn",
+    "char_count": 73,
+    "has_korean": true,
+    "has_english": true
+  },
+  {
+    "filename": "공공기관_사칭_메시지_17.jpg",
+    "success": true,
+    "image_size": "92x140",
+    "extracted_text": "오후 1:38\n메시지 000-000-0000 전화\n문자메시지\n12월 17일 금요일 오후 1:38\nS-108서비스는 공공기관 관련\n기관에서 운영하는 모바일\n홈페이지이며 모바일\n부터 접속하실 수 있습니다.\nhttp://s-108.kr에서\n확인할 수 있습니다.\n메시지 입력 전송",
+    "char_count": 152,
+    "has_korean": true,
+    "has_english": true
+  },
+  {
+    "filename": "부고_문자_사기_5.jpg",
+    "success": true,
+    "image_size": "162x116",
+    "extracted_text": "10:08\n인스타그램\n인스타그램\n2023년 10월 23일 오후 1:16\n안녕하세요. 인스타그램입니다.\n회원님의 계정에서 의심스러운\n활동이 감지되어 계정을 일시적으로\n제한했습니다.\n계정을 복구하려면 아래 버튼을\n클릭해주세요.\n계정",
+    "char_count": 127,
+    "has_korean": true,
+    "has_english": false
+  },
+  {
+    "filename": "청첩장_스미싱_화면_21.jpg",
+    "success": true,
+    "image_size": "86x140",
+    "extracted_text": "1:00 LTE\n안녕하세요!\n궁금한 점이 있으신가요?\n네, 궁금한 점이 있어요!\nA.I. Agent\nA.I. Agent\n궁금한 점을 물어보세요!\n프로필 보기\n친구 추가\n챗봇이 제공하는 답변을 참고하여 궁금증을\n해결해보세요.",
+    "char_count": 124,
+    "has_korean": true,
+    "has_english": true
+  },
+  {
+    "filename": "납치_협박_문자_3.jpg",
+    "success": true,
+    "image_size": "140x140",
+    "extracted_text": "경찰청\n02 납치방자형 피해사례\n자녀, 지인 등을 납치했다고 협박하며\n합의금을 갈취하는 보이스피싱 사례\n\n사람 불러 모으러 가서 전화했어요.\n경찰에 신고하거나, 주위 사람들에게 알리면 죽입니다.\n\n아이를 어디에 데려갔어요?\n\n애가 어디 있는지 그냥 나한테 맡겨!\n니 애 어디 있는지도 모르냐?\n\n지금 제가 보고 있는데 이 연락이 와서...\n\n내가 원하는 건 자식이 안전하게 잘 난 돌아오는 것이고\n나머지는 뭘 얼마나 해줄 수 있냐, 하는 문제!",
+    "char_count": 248,
+    "has_korean": true,
+    "has_english": false
+  }
+]

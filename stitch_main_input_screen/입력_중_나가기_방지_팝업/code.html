@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#de3b3b",
+                        "background-light": "#f8f6f6",
+                        "background-dark": "#201212",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            font-family: "Public Sans", "Noto Sans KR", sans-serif;
+        }
+        .ios-blur {
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display overflow-hidden h-screen">
+<!-- Background Layer (The Input Screen) -->
+<div class="flex flex-col h-full w-full pointer-events-none opacity-40">
+<!-- TopAppBar -->
+<div class="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between">
+<div class="text-[#1a0f0f] dark:text-white flex size-12 shrink-0 items-center">
+<span class="material-symbols-outlined text-2xl">arrow_back_ios</span>
+</div>
+<h2 class="text-[#1a0f0f] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-12">피싱 검사</h2>
+</div>
+<!-- HeadlineText -->
+<h3 class="text-[#1a0f0f] dark:text-white tracking-light text-2xl font-bold leading-tight px-4 text-left pb-2 pt-5">메시지 입력</h3>
+<!-- BodyText -->
+<p class="text-[#1a0f0f] dark:text-gray-300 text-base font-normal leading-normal pb-3 pt-1 px-4">검사할 메시지를 입력해 주세요.</p>
+<!-- TextField -->
+<div class="flex max-w-[480px] flex-wrap items-end gap-4 px-4 py-3">
+<label class="flex flex-col min-w-40 flex-1">
+<p class="text-[#1a0f0f] dark:text-gray-300 text-base font-medium leading-normal pb-2">메시지 내용</p>
+<div class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#1a0f0f] dark:text-white border border-[#e5d1d1] bg-white dark:bg-[#2d1b1b] min-h-36 p-[15px] text-base font-normal leading-normal">
+                    택배 송장 번호가 일치하지 않습니다. 확인 부탁드립니다. http://bit.ly/check-parcel...
+                </div>
+</label>
+</div>
+<div class="mt-auto px-4 pb-10">
+<button class="w-full h-14 bg-primary text-white font-bold rounded-xl text-lg">검사하기</button>
+</div>
+</div>
+<!-- Exit Confirmation Popup Overlay -->
+<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/40 ios-blur px-6">
+<!-- Modal Container -->
+<div class="bg-white dark:bg-[#2d1b1b] w-full max-w-sm rounded-xl shadow-2xl overflow-hidden animate-in fade-in zoom-in duration-200">
+<div class="p-6">
+<!-- Title -->
+<h4 class="text-[#1a0f0f] dark:text-white text-xl font-bold text-center leading-snug">
+                    입력 중인 내용이 있습니다
+                </h4>
+<!-- Body -->
+<p class="text-[#4e3a3a] dark:text-gray-300 text-base font-normal text-center mt-3 leading-relaxed">
+                    입력한 메시지를 삭제하고 나가시겠습니까?
+                </p>
+</div>
+<!-- Buttons Grid -->
+<div class="flex border-t border-[#e5d1d1] dark:border-white/10">
+<!-- Cancel Button -->
+<button class="flex-1 h-14 text-gray-500 dark:text-gray-400 text-base font-semibold border-r border-[#e5d1d1] dark:border-white/10 hover:bg-gray-50 dark:hover:bg-white/5 active:bg-gray-100 transition-colors">
+                    취소
+                </button>
+<!-- Danger Button -->
+<button class="flex-1 h-14 text-primary text-base font-bold hover:bg-primary/5 active:bg-primary/10 transition-colors">
+                    삭제 후 나가기
+                </button>
+</div>
+</div>
+</div>
+<!-- Background Pattern Decorative Element (Hidden by overlay but part of the base layer) -->
+<div class="fixed top-0 left-0 w-full h-full -z-10 pointer-events-none opacity-10">
+<div class="absolute top-20 left-10 w-64 h-64 bg-primary rounded-full blur-[80px]"></div>
+<div class="absolute bottom-20 right-10 w-48 h-48 bg-primary rounded-full blur-[60px]"></div>
+</div>
+</body></html>

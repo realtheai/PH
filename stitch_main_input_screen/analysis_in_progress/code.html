@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="light" lang="ko"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>분석 중 - Phishing Checker</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1f3a60",
+                        "secondary": "#2f5d8a",
+                        "background-light": "#f7f9fc",
+                        "background-dark": "#14181e",
+                    },
+                    fontFamily: {
+                        "display": ["Public Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .spin-slow {
+            animation: spin 3s linear infinite;
+        }
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-gray-100 min-h-screen">
+<div class="relative flex h-auto min-h-screen w-full max-w-md mx-auto flex-col bg-background-light dark:bg-background-dark overflow-x-hidden">
+<div class="flex items-center p-4 pb-2 justify-between">
+<button aria-label="Go back" class="text-primary dark:text-blue-400 flex size-12 shrink-0 items-center justify-start focus:outline-none">
+<span class="material-symbols-outlined text-3xl">chevron_left</span>
+</button>
+<div class="flex-1 text-center pr-12">
+<span class="text-sm font-semibold tracking-wide uppercase opacity-60">보안 검사</span>
+</div>
+</div>
+<div class="flex flex-col items-center justify-center py-10 px-4">
+<div class="relative flex items-center justify-center size-32 mb-8">
+<div class="absolute inset-0 bg-primary/10 dark:bg-primary/20 rounded-full animate-ping"></div>
+<div class="absolute inset-4 bg-primary/20 dark:bg-primary/30 rounded-full"></div>
+<div class="relative size-20 bg-primary rounded-2xl flex items-center justify-center shadow-xl shadow-primary/20">
+<span class="material-symbols-outlined text-white text-5xl">shield_with_heart</span>
+</div>
+</div>
+<div class="w-full flex flex-col gap-3 px-6 mb-4">
+<div class="flex gap-6 justify-center">
+<p class="text-primary dark:text-blue-300 text-xl font-bold leading-normal">메시지 분석 중...</p>
+</div>
+<div class="rounded-full bg-gray-200 dark:bg-gray-700 h-2.5 w-full overflow-hidden">
+<div class="h-full rounded-full bg-primary" style="width: 45%;"></div>
+</div>
+</div>
+</div>
+<div class="px-4">
+<h3 class="text-primary dark:text-blue-200 text-lg font-bold leading-tight tracking-tight px-2 pb-4 pt-4">분석 진행 상황</h3>
+</div>
+<div class="flex flex-col gap-1 px-4">
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800/50 p-4 rounded-xl shadow-sm mb-2">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-green-600 dark:text-green-400 flex items-center justify-center rounded-lg bg-green-50 dark:bg-green-900/20 shrink-0 size-10">
+<span class="material-symbols-outlined text-2xl">verified_user</span>
+</div>
+<div class="flex flex-col">
+<p class="text-primary dark:text-blue-100 text-base font-semibold leading-tight">텍스트 패턴 분석</p>
+<p class="text-xs text-gray-500">검사 완료</p>
+</div>
+</div>
+<div class="shrink-0 text-green-600 dark:text-green-400">
+<span class="material-symbols-outlined text-2xl font-bold">check_circle</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-gray-800/50 p-4 rounded-xl shadow-sm border border-primary/10 mb-2">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-primary dark:text-blue-400 flex items-center justify-center rounded-lg bg-primary/10 shrink-0 size-10">
+<span class="material-symbols-outlined text-2xl">link</span>
+</div>
+<div class="flex flex-col">
+<p class="text-primary dark:text-blue-100 text-base font-semibold leading-tight">URL 안전성 검사</p>
+<p class="text-xs text-secondary animate-pulse">외부 데이터베이스 확인 중...</p>
+</div>
+</div>
+<div class="shrink-0 text-primary dark:text-blue-400">
+<span class="material-symbols-outlined text-2xl spin-slow">progress_activity</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-transparent p-4 rounded-xl opacity-60 mb-2">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-gray-400 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 shrink-0 size-10">
+<span class="material-symbols-outlined text-2xl">search_check</span>
+</div>
+<div class="flex flex-col">
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-tight">유사 피싱 사례 검색</p>
+<p class="text-xs text-gray-400">대기 중...</p>
+</div>
+</div>
+<div class="shrink-0 text-gray-300">
+<span class="material-symbols-outlined text-2xl">circle</span>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-transparent p-4 rounded-xl opacity-60 mb-2">
+<div class="flex items-center gap-4 flex-1">
+<div class="text-gray-400 flex items-center justify-center rounded-lg bg-gray-100 dark:bg-gray-800 shrink-0 size-10">
+<span class="material-symbols-outlined text-2xl">call</span>
+</div>
+<div class="flex flex-col">
+<p class="text-gray-600 dark:text-gray-400 text-base font-normal leading-tight">발신번호 조회</p>
+<p class="text-xs text-gray-400">대기 중...</p>
+</div>
+</div>
+<div class="shrink-0 text-gray-300">
+<span class="material-symbols-outlined text-2xl">circle</span>
+</div>
+</div>
+</div>
+<div class="mt-auto p-8 text-center">
+<p class="text-xs text-gray-400 leading-relaxed italic">
+                AI가 수백만 개의 피싱 시그니처와 대조하여 분석하고 있습니다. 검사가 완료될 때까지 링크를 클릭하지 마세요.
+            </p>
+</div>
+<div class="h-8"></div>
+</div>
+
+</body></html>

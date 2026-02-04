@@ -1,0 +1,22 @@
+{
+  "allowed_domains": [
+    "naver.com",
+    "kakao.com",
+    "kookmin.com",
+    "shinhan.com",
+    "wooribank.com",
+    "hanabank.com",
+    "nhbank.com",
+    "kbcard.com",
+    "samsung.com",
+    "hyundaicard.com",
+    "cjlogistics.com",
+    "epost.go.kr",
+    "lotteon.com",
+    "coupang.com",
+    "nts.go.kr",
+    "police.go.kr",
+    "spo.go.kr",
+    "fss.or.kr"
+  ]
+}
