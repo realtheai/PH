@@ -39,7 +39,7 @@ jobs:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       run: |
-        python scripts/daily/crawl_naver_daily.py
+        python scripts/daily_naver.py
     
     - name: 🕷️ [1/7] 구글 뉴스 크롤링
       continue-on-error: true
@@ -47,7 +47,7 @@ jobs:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       run: |
-        python scripts/daily/crawl_google_news_daily.py
+        python scripts/daily_google.py
     
     - name: 🕷️ [1/7] 구글 이미지 크롤링
       continue-on-error: true
@@ -55,7 +55,7 @@ jobs:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       run: |
-        python scripts/daily/crawl_google_images_daily.py
+        python scripts/daily_google_images.py
     
     - name: 🕷️ [1/7] Reddit 크롤링
       continue-on-error: true
@@ -63,7 +63,7 @@ jobs:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       run: |
-        python scripts/daily/crawl_reddit_daily.py
+        python scripts/daily_reddit.py
     
     - name: 🕷️ [1/7] 해외 뉴스 크롤링
       continue-on-error: true
@@ -71,7 +71,7 @@ jobs:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       run: |
-        python scripts/daily/crawl_international_news_daily.py
+        python scripts/daily_international.py
     
     # ============================================================
     # 2단계: 이미지 OCR
@@ -89,7 +89,7 @@ jobs:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       run: |
-        python scripts/ocr_images.py
+        python scripts/process_all_images_ocr.py
     
     # ============================================================
     # 3단계: 텍스트 번역
@@ -108,7 +108,7 @@ jobs:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       run: |
-        python scripts/translate_content.py
+        python scripts/translate_all_content.py
     
     # ============================================================
     # 4단계: 콘텐츠 분류 (REAL_CASE/NEWS/NOISE)

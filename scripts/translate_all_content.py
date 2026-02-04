@@ -10,11 +10,12 @@ from datetime import datetime
 load_dotenv()
 
 class GeminiTranslator:
-    def __init__(self, api_keys: list, supabase_url: str, supabase_key: str):
+    def __init__(self, api_keys: list, supabase_url: str, supabase_key: str, openai_key: str = None):
         self.api_keys = api_keys
         self.current_key_index = 0
         self.supabase_url = supabase_url
         self.supabase_key = supabase_key
+        self.openai_key = openai_key
         self.model = "gemini-2.5-flash"
         
         self.headers = {
@@ -23,7 +24,9 @@ class GeminiTranslator:
             "Content-Type": "application/json"
         }
         
-        print(f"✅ API 키 {len(self.api_keys)}개 로드")
+        print(f"✅ Gemini API 키 {len(self.api_keys)}개 로드")
+        if openai_key:
+            print(f"✅ OpenAI API 키 로드 (fallback 사용)"))
     
     def get_next_api_key(self) -> str:
         """라운드 로빈 방식으로 API 키 순환"""
@@ -31,11 +34,46 @@ class GeminiTranslator:
         self.current_key_index = (self.current_key_index + 1) % len(self.api_keys)
         return key
     
+    def translate_with_openai(self, text: str) -> dict:
+        """OpenAI로 번역 (fallback)"""
+        if not self.openai_key:
+            return {'success': False, 'error': 'OpenAI API 키 없음'}
+        
+        try:
+            headers = {
+                'Authorization': f'Bearer {self.openai_key}',
+                'Content-Type': 'application/json'
+            }
+            
+            payload = {
+                'model': 'gpt-4o-mini',
+                'messages': [
+                    {'role': 'system', 'content': '당신은 전문 번역가입니다. 영어를 한국어로 자연스럽게 번역하세요. 이미 한국어라면 그대로 출력하세요.'},
+                    {'role': 'user', 'content': f'다음 텍스트를 한국어로 번역하세요:\n\n{text[:2000]}'}
+                ],
+                'max_tokens': 2048,
+                'temperature': 0.3
+            }
+            
+            response = requests.post('https://api.openai.com/v1/chat/completions', 
+                                    headers=headers, json=payload, timeout=30)
+            
+            if response.status_code == 200:
+                result = response.json()
+                translated = result['choices'][0]['message']['content'].strip()
+                return {'success': True, 'translated': translated}
+            else:
+                return {'success': False, 'error': f'OpenAI API 오류: {response.status_code}'}
+        
+        except Exception as e:
+            return {'success': False, 'error': str(e)}
+    
     def translate_to_korean(self, text: str, max_retries: int = 3) -> dict:
-        """Gemini로 영어 → 한국어 번역"""
+        """Gemini로 영어 → 한국어 번역 (실패시 OpenAI fallback)"""
         if not text or len(text.strip()) < 5:
             return {'success': False, 'error': '텍스트가 너무 짧음'}
         
+        # 먼저 Gemini 시도
         for attempt in range(max_retries):
             try:
                 api_key = self.get_next_api_key()
@@ -67,13 +105,17 @@ class GeminiTranslator:
                         wait_time = (attempt + 1) * 10
                         time.sleep(wait_time)
                         continue
-                    return {'success': False, 'error': 'Rate limit'}
+                    # Gemini Rate limit → OpenAI로 전환
+                    print(f"   ⚠️ Gemini Rate limit → OpenAI 사용")
+                    return self.translate_with_openai(text)
                 
                 if response.status_code != 200:
                     if attempt < max_retries - 1:
                         time.sleep(5)
                         continue
-                    return {'success': False, 'error': f'API 오류: {response.status_code}'}
+                    # Gemini 실패 → OpenAI로 전환
+                    print(f"   ⚠️ Gemini 실패 → OpenAI 사용")
+                    return self.translate_with_openai(text)
                 
                 result = response.json()
                 
@@ -87,9 +129,13 @@ class GeminiTranslator:
                 if attempt < max_retries - 1:
                     time.sleep(5)
                     continue
-                return {'success': False, 'error': str(e)}
+                # Gemini 예외 → OpenAI로 전환
+                print(f"   ⚠️ Gemini 오류 → OpenAI 사용")
+                return self.translate_with_openai(text)
         
-        return {'success': False, 'error': '최대 재시도 초과'}
+        # 모든 Gemini 시도 실패 → OpenAI로 전환
+        print(f"   ⚠️ Gemini 최대 재시도 초과 → OpenAI 사용")
+        return self.translate_with_openai(text)
     
     def translate_images(self):
         """phishing_images 테이블의 영어 텍스트 번역"""
@@ -259,6 +305,7 @@ def main():
     
     supabase_url = os.getenv('SUPABASE_URL')
     supabase_key = os.getenv('SUPABASE_ANON_KEY')
+    openai_key = os.getenv('OPENAI_API_KEY')
     
     if not api_keys:
         print("❌ GEMINI_API_KEY가 없습니다!")
@@ -271,7 +318,8 @@ def main():
     translator = GeminiTranslator(
         api_keys=api_keys,
         supabase_url=supabase_url,
-        supabase_key=supabase_key
+        supabase_key=supabase_key,
+        openai_key=openai_key
     )
     
     # 1. 이미지 번역
