@@ -1,5 +1,5 @@
 """
-전체 이미지 OCR + 번역 + DB 업로드
+전체 이미지 OCR + 번역 + DB 업로드 (OpenAI 버전)
 """
 import os
 import base64
@@ -14,12 +14,11 @@ from datetime import datetime
 load_dotenv()
 
 class FullImageProcessor:
-    def __init__(self, api_keys: list, supabase_url: str, supabase_key: str):
-        self.gemini_api_keys = api_keys
-        self.current_key_index = 0
+    def __init__(self, openai_key: str, supabase_url: str, supabase_key: str):
+        self.openai_key = openai_key
         self.supabase_url = supabase_url
         self.supabase_key = supabase_key
-        self.model = "gemini-2.5-flash"
+        self.model = "gpt-4o-mini"
         
         self.headers = {
             "apikey": supabase_key,
@@ -28,21 +27,15 @@ class FullImageProcessor:
             "Prefer": "return=minimal"
         }
         
-        print(f"✅ API 키 {len(self.gemini_api_keys)}개 로드 (로드 밸런싱 활성화)")
-    
-    def get_next_api_key(self) -> str:
-        """라운드 로빈 방식으로 API 키 순환"""
-        key = self.gemini_api_keys[self.current_key_index]
-        self.current_key_index = (self.current_key_index + 1) % len(self.gemini_api_keys)
-        return key
+        print(f"✅ OpenAI API (gpt-4o-mini) 로드")
     
     def encode_image(self, image_path: str) -> str:
         """이미지를 base64로 인코딩"""
         with open(image_path, "rb") as image_file:
             return base64.b64encode(image_file.read()).decode('utf-8')
     
-    def extract_text_with_gemini(self, image_path: str, max_retries: int = 3) -> dict:
-        """Gemini Vision으로 텍스트 추출 (재시도 포함)"""
+    def extract_text_with_openai(self, image_path: str, max_retries: int = 3) -> dict:
+        """OpenAI Vision으로 텍스트 추출"""
         for attempt in range(max_retries):
             try:
                 # 이미지 정보
@@ -52,13 +45,23 @@ class FullImageProcessor:
                 # Base64 인코딩
                 base64_image = self.encode_image(image_path)
                 
-                # API 키 선택 (로드 밸런싱)
-                api_key = self.get_next_api_key()
+                # OpenAI API 호출
+                url = "https://api.openai.com/v1/chat/completions"
                 
-                # Gemini API 호출
-                url = f"https://generativelanguage.googleapis.com/v1/models/{self.model}:generateContent?key={api_key}"
+                headers = {
+                    "Content-Type": "application/json",
+                    "Authorization": f"Bearer {self.openai_key}"
+                }
                 
-                prompt = """이 이미지에서 보이는 모든 텍스트를 정확하게 추출해주세요.
+                payload = {
+                    "model": self.model,
+                    "messages": [
+                        {
+                            "role": "user",
+                            "content": [
+                                {
+                                    "type": "text",
+                                    "text": """이 이미지에서 보이는 모든 텍스트를 정확하게 추출해주세요.
 
 출력 형식:
 - 한글과 영어를 모두 정확히 추출
@@ -67,44 +70,38 @@ class FullImageProcessor:
 - 광고/배너 제외
 
 텍스트:"""
-                
-                payload = {
-                    "contents": [{
-                        "parts": [
-                            {"text": prompt},
-                            {
-                                "inline_data": {
-                                    "mime_type": "image/jpeg",
-                                    "data": base64_image
+                                },
+                                {
+                                    "type": "image_url",
+                                    "image_url": {
+                                        "url": f"data:image/jpeg;base64,{base64_image}"
+                                    }
                                 }
-                            }
-                        ]
-                    }],
-                    "generationConfig": {
-                        "temperature": 0.1,
-                        "maxOutputTokens": 2048
-                    }
+                            ]
+                        }
+                    ],
+                    "max_tokens": 1024,
+                    "temperature": 0.2
                 }
                 
-                response = requests.post(url, json=payload, timeout=30)
+                response = requests.post(url, headers=headers, json=payload, timeout=30)
                 
                 if response.status_code == 429:
-                    # Rate limit - 재시도
-                    wait_time = (attempt + 1) * 10
-                    print(f"   ⏳ Rate limit - {wait_time}초 대기 후 재시도 ({attempt + 1}/{max_retries})")
+                    wait_time = (attempt + 1) * 5
+                    print(f"   ⏳ Rate limit - {wait_time}초 대기 ({attempt + 1}/{max_retries})")
                     time.sleep(wait_time)
                     continue
                 
                 if response.status_code != 200:
                     if attempt < max_retries - 1:
-                        time.sleep(5)
+                        time.sleep(3)
                         continue
                     return {'success': False, 'error': f"API 오류: {response.status_code}"}
                 
                 result = response.json()
                 
-                if 'candidates' in result and len(result['candidates']) > 0:
-                    text = result['candidates'][0]['content']['parts'][0]['text'].strip()
+                if 'choices' in result and len(result['choices']) > 0:
+                    text = result['choices'][0]['message']['content'].strip()
                     
                     return {
                         'success': True,
@@ -117,14 +114,14 @@ class FullImageProcessor:
             
             except Exception as e:
                 if attempt < max_retries - 1:
-                    time.sleep(5)
+                    time.sleep(3)
                     continue
                 return {'success': False, 'error': str(e)}
         
         return {'success': False, 'error': '최대 재시도 초과'}
     
     def translate_to_korean(self, text: str) -> str:
-        """영어 텍스트를 한국어로 번역 (필요시)"""
+        """영어 텍스트를 한국어로 번역"""
         try:
             # 한글 비율 확인
             korean_chars = sum(1 for c in text if '\uac00' <= c <= '\ud7a3')
@@ -139,36 +136,30 @@ class FullImageProcessor:
             if korean_ratio > 0.5:
                 return text
             
-            # API 키 선택
-            api_key = self.get_next_api_key()
+            # OpenAI로 번역
+            url = "https://api.openai.com/v1/chat/completions"
             
-            # Gemini로 번역
-            url = f"https://generativelanguage.googleapis.com/v1/models/{self.model}:generateContent?key={api_key}"
-            
-            prompt = f"""다음 텍스트를 한국어로 자연스럽게 번역해주세요. 
-만약 이미 한국어라면 그대로 출력하세요.
-
-텍스트:
-{text}
-
-번역:"""
-            
-            payload = {
-                "contents": [{
-                    "parts": [{"text": prompt}]
-                }],
-                "generationConfig": {
-                    "temperature": 0.3,
-                    "maxOutputTokens": 2048
-                }
+            headers = {
+                "Content-Type": "application/json",
+                "Authorization": f"Bearer {self.openai_key}"
             }
             
-            response = requests.post(url, json=payload, timeout=20)
+            payload = {
+                "model": self.model,
+                "messages": [
+                    {"role": "system", "content": "당신은 전문 번역가입니다. 영어를 한국어로 자연스럽게 번역하세요."},
+                    {"role": "user", "content": f"다음 텍스트를 한국어로 번역하세요:\n\n{text}"}
+                ],
+                "max_tokens": 1024,
+                "temperature": 0.3
+            }
+            
+            response = requests.post(url, headers=headers, json=payload, timeout=20)
             
             if response.status_code == 200:
                 result = response.json()
-                if 'candidates' in result and len(result['candidates']) > 0:
-                    translated = result['candidates'][0]['content']['parts'][0]['text'].strip()
+                if 'choices' in result and len(result['choices']) > 0:
+                    translated = result['choices'][0]['message']['content'].strip()
                     return translated
             
             return text
@@ -196,29 +187,24 @@ class FullImageProcessor:
         except Exception as e:
             return False
     
-    def process_all_images(self, image_dir: str, metadata_file: str = None, skip_count: int = 0):
+    def process_all_images(self, image_dir: str = 'data/images/phishing', skip_count: int = 0):
         """전체 이미지 처리"""
-        
-        # 메타데이터 로드 (있으면)
-        metadata = {}
-        if metadata_file and os.path.exists(metadata_file):
-            with open(metadata_file, 'r', encoding='utf-8') as f:
-                meta_list = json.load(f)
-                for item in meta_list:
-                    metadata[item['filename']] = item
         
         # 이미지 파일 리스트
         image_path = Path(image_dir)
+        if not image_path.exists():
+            print(f"❌ 이미지 디렉토리가 없습니다: {image_dir}")
+            return
+        
         image_files = list(image_path.glob('*.jpg')) + list(image_path.glob('*.png'))
         
-        # skip_count부터 시작
-        if skip_count > 0:
-            image_files = image_files[skip_count:]
-            print(f"\n⏭️  처음 {skip_count}개 건너뛰기 (이미 처리됨)")
+        if len(image_files) == 0:
+            print(f"✅ 처리할 이미지가 없습니다.")
+            return
         
         print(f"\n{'='*70}")
-        print(f"🚀 전체 이미지 OCR + 번역 + DB 업로드")
-        print(f"   총 이미지: {len(image_files)}개 (전체 중 {skip_count}~{skip_count + len(image_files)})")
+        print(f"🚀 이미지 OCR + 번역 + DB 업로드 (OpenAI)")
+        print(f"   총 이미지: {len(image_files)}개")
         print(f"   모델: {self.model}")
         print(f"{'='*70}\n")
         
@@ -231,11 +217,11 @@ class FullImageProcessor:
             'upload_failed': 0
         }
         
-        for idx, image_file in enumerate(image_files, skip_count + 1):
-            print(f"[{idx}/{skip_count + len(image_files)}] 📸 {image_file.name}")
+        for idx, image_file in enumerate(image_files, 1):
+            print(f"[{idx}/{len(image_files)}] 📸 {image_file.name}")
             
             # 1. OCR
-            ocr_result = self.extract_text_with_gemini(str(image_file))
+            ocr_result = self.extract_text_with_openai(str(image_file))
             
             if not ocr_result['success']:
                 print(f"   ❌ OCR 실패: {ocr_result.get('error', 'Unknown')}")
@@ -256,14 +242,7 @@ class FullImageProcessor:
                 stats['translated'] += 1
             
             # 3. DB 업로드 준비
-            # 메타데이터에서 원본 URL 찾기
-            original_url = metadata.get(image_file.name, {}).get('image_url')
-            
-            # URL이 없으면 파일명 기반으로 생성
-            if not original_url:
-                original_url = f"https://phishing-images/{image_file.name}"
-            
-            query = metadata.get(image_file.name, {}).get('query', 'phishing')
+            original_url = f"https://phishing-images/{image_file.name}"
             
             # 언어 감지
             korean_chars = sum(1 for c in translated_text if '\uac00' <= c <= '\ud7a3')
@@ -273,9 +252,9 @@ class FullImageProcessor:
             upload_data = {
                 'image_url': original_url,
                 'local_path': str(image_file),
-                'query': query,
-                'ocr_text': extracted_text[:5000],  # 길이 제한
-                'translated_text': translated_text[:5000] if translated_text != extracted_text else None,  # 번역본만
+                'query': 'phishing',
+                'ocr_text': extracted_text[:5000],
+                'translated_text': translated_text[:5000] if translated_text != extracted_text else None,
                 'language': language,
                 'text_length': len(extracted_text),
                 'crawled_at': datetime.now().isoformat(),
@@ -291,54 +270,27 @@ class FullImageProcessor:
                 stats['upload_failed'] += 1
             
             print()
-            
-            # Rate limiting (3개 키로 분당 45회 가능)
-            # 안전하게 2초 대기 (시간당 1800개, 571개는 약 20분 소요)
-            time.sleep(2)
-            
-            # 진행 상황 출력 (매 50개마다)
-            if (idx - skip_count) % 50 == 0:
-                print(f"\n{'='*70}")
-                print(f"📊 중간 통계 ({idx}/{skip_count + len(image_files)})")
-                print(f"   OCR 성공: {stats['ocr_success']}개")
-                print(f"   번역: {stats['translated']}개")
-                print(f"   DB 업로드: {stats['uploaded']}개")
-                print(f"{'='*70}\n")
+            time.sleep(1)  # Rate limiting
         
         # 최종 결과
         print(f"\n{'='*70}")
         print(f"✅ 전체 처리 완료!")
         print(f"{'='*70}")
         print(f"   총 이미지: {stats['total']}개")
-        print(f"   OCR 성공: {stats['ocr_success']}개 ({stats['ocr_success']/stats['total']*100:.1f}%)")
-        print(f"   OCR 실패: {stats['ocr_failed']}개")
-        print(f"   번역 처리: {stats['translated']}개")
-        print(f"   DB 업로드: {stats['uploaded']}개 ({stats['uploaded']/stats['total']*100:.1f}%)")
-        print(f"   업로드 실패: {stats['upload_failed']}개")
+        print(f"   OCR 성공: {stats['ocr_success']}개")
+        print(f"   번역: {stats['translated']}개")
+        print(f"   DB 업로드: {stats['uploaded']}개")
         print(f"{'='*70}\n")
         
         return stats
 
 def main():
-    # 환경 변수 로드
-    load_dotenv()
-    
-    # 모든 Gemini API 키 수집
-    api_keys = []
-    for i in range(1, 10):  # 최대 9개까지 지원
-        if i == 1:
-            key = os.getenv('GEMINI_API_KEY')
-        else:
-            key = os.getenv(f'GEMINI_API_KEY_{i}')
-        
-        if key:
-            api_keys.append(key)
-    
+    openai_key = os.getenv('OPENAI_API_KEY')
     supabase_url = os.getenv('SUPABASE_URL')
     supabase_key = os.getenv('SUPABASE_ANON_KEY')
     
-    if not api_keys:
-        print("❌ 사용 가능한 GEMINI_API_KEY가 없습니다!")
+    if not openai_key:
+        print("❌ OPENAI_API_KEY가 없습니다!")
         return
     
     if not all([supabase_url, supabase_key]):
@@ -346,17 +298,12 @@ def main():
         return
     
     processor = FullImageProcessor(
-        api_keys=api_keys,
+        openai_key=openai_key,
         supabase_url=supabase_url,
         supabase_key=supabase_key
     )
     
-    # 이미지 처리 (542번부터 재개 - 나머지 29개)
-    processor.process_all_images(
-        image_dir='data/images/phishing',
-        metadata_file='data/raw/google_images_20260131_145232.json',
-        skip_count=542
-    )
+    processor.process_all_images()
 
 if __name__ == "__main__":
     main()
