@@ -27,6 +27,9 @@ class AnalyzeResponse(BaseModel):
     url_check_results: List[dict]        # URL 검사 결과
     recommendations: List[str]           # 권장사항
     analyzed_at: datetime                # 분석 시간
+    similar_cases_count: int = 0         # 유사 사례 건수
+    db_similarity_score: int = 0         # DB 유사도 점수
+    llm_analysis: Optional[dict] = None  # LLM 분석 결과
 
 class StatsResponse(BaseModel):
     """통계 응답"""

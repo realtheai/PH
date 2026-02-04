@@ -3,9 +3,19 @@
 """
 from fastapi import APIRouter, HTTPException
 from app.schemas.request import StatsResponse
-from app.storage.supabase import get_supabase
+import os
+import requests
 
 router = APIRouter()
+
+SUPABASE_URL = os.getenv('SUPABASE_URL')
+SUPABASE_KEY = os.getenv('SUPABASE_ANON_KEY')
+
+HEADERS = {
+    'apikey': SUPABASE_KEY,
+    'Authorization': f'Bearer {SUPABASE_KEY}',
+    'Content-Type': 'application/json'
+}
 
 @router.get("/stats", response_model=StatsResponse)
 async def get_stats():
@@ -17,41 +27,54 @@ async def get_stats():
     - 일별 통계
     """
     try:
-        supabase = get_supabase()
-        
-        # 전체 뉴스 수
-        news_count = supabase.table('phishing_news').select('id', count='exact').execute()
-        total_news = news_count.count if news_count else 0
+        # 전체 뉴스 수 (REST API)
+        news_url = f"{SUPABASE_URL}/rest/v1/phishing_news"
+        news_response = requests.get(
+            news_url,
+            headers={**HEADERS, 'Prefer': 'count=exact'},
+            params={'select': 'id', 'limit': 0},
+            timeout=10
+        )
+        total_news = int(news_response.headers.get('Content-Range', '0').split('/')[-1])
         
         # 전체 이미지 수
-        images_count = supabase.table('phishing_images').select('id', count='exact').execute()
-        total_images = images_count.count if images_count else 0
+        images_url = f"{SUPABASE_URL}/rest/v1/phishing_images"
+        images_response = requests.get(
+            images_url,
+            headers={**HEADERS, 'Prefer': 'count=exact'},
+            params={'select': 'id', 'limit': 0},
+            timeout=10
+        )
+        total_images = int(images_response.headers.get('Content-Range', '0').split('/')[-1])
         
-        # 최근 피싱 유형 분포 (카테고리별)
-        category_stats = supabase.table('phishing_news')\
-            .select('category')\
-            .limit(1000)\
-            .execute()
+        # 최근 피싱 유형 분포
+        category_response = requests.get(
+            news_url,
+            headers=HEADERS,
+            params={'select': 'category', 'limit': 1000},
+            timeout=10
+        )
+        category_data = category_response.json()
         
         category_distribution = {}
-        if category_stats.data:
-            for item in category_stats.data:
-                cat = item.get('category', 'UNKNOWN')
-                category_distribution[cat] = category_distribution.get(cat, 0) + 1
+        for item in category_data:
+            cat = item.get('category', 'UNKNOWN')
+            category_distribution[cat] = category_distribution.get(cat, 0) + 1
         
         recent_types = [
             {'type': k, 'count': v} 
             for k, v in category_distribution.items()
         ]
         
-        # 일별 통계 (최근 7일)
-        daily_stats_data = supabase.table('phishing_stats')\
-            .select('*')\
-            .order('stat_date', desc=True)\
-            .limit(7)\
-            .execute()
-        
-        daily_stats = daily_stats_data.data if daily_stats_data.data else []
+        # 일별 통계
+        stats_url = f"{SUPABASE_URL}/rest/v1/phishing_stats"
+        stats_response = requests.get(
+            stats_url,
+            headers=HEADERS,
+            params={'select': '*', 'order': 'stat_date.desc', 'limit': 7},
+            timeout=10
+        )
+        daily_stats = stats_response.json()
         
         return StatsResponse(
             total_news=total_news,

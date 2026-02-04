@@ -33,8 +33,12 @@ class DataDeduplicator:
             if key:
                 self.gemini_keys.append(key)
         
-        if not self.gemini_keys:
-            raise ValueError("❌ GEMINI_API_KEY가 .env에 없습니다.")
+        # OpenAI API 키 (fallback)
+        self.openai_key = os.getenv('OPENAI_API_KEY')
+        
+        # Gemini 또는 OpenAI 중 하나는 있어야 함
+        if not self.gemini_keys and not self.openai_key:
+            raise ValueError("❌ GEMINI_API_KEY 또는 OPENAI_API_KEY가 .env에 없습니다.")
         
         if not self.supabase_url or not self.supabase_key:
             raise ValueError("❌ SUPABASE_URL 또는 SUPABASE_ANON_KEY가 .env에 없습니다.")
@@ -46,7 +50,12 @@ class DataDeduplicator:
         }
         
         self.current_key_idx = 0
-        print(f"✅ Gemini API 키 {len(self.gemini_keys)}개 로드\n")
+        self.use_openai = len(self.gemini_keys) == 0  # Gemini 키가 없으면 OpenAI 사용
+        
+        if self.use_openai:
+            print(f"✅ OpenAI API 사용 (임베딩)\n")
+        else:
+            print(f"✅ Gemini API 키 {len(self.gemini_keys)}개 로드\n")
     
     def get_next_gemini_key(self) -> str:
         """다음 Gemini API 키 가져오기 (Round-robin)"""
@@ -55,6 +64,50 @@ class DataDeduplicator:
         return key
     
     def get_embedding(self, text: str, max_retries: int = 3) -> np.ndarray:
+        """텍스트 임베딩 생성 (Gemini 또는 OpenAI)"""
+        if self.use_openai:
+            return self.get_embedding_openai(text, max_retries)
+        else:
+            return self.get_embedding_gemini(text, max_retries)
+    
+    def get_embedding_openai(self, text: str, max_retries: int = 3) -> np.ndarray:
+        """OpenAI API로 텍스트 임베딩 생성"""
+        for attempt in range(max_retries):
+            try:
+                url = "https://api.openai.com/v1/embeddings"
+                
+                headers = {
+                    'Content-Type': 'application/json',
+                    'Authorization': f'Bearer {self.openai_key}'
+                }
+                
+                payload = {
+                    "model": "text-embedding-3-small",
+                    "input": text[:8000],  # OpenAI는 더 긴 텍스트 지원
+                    "encoding_format": "float"
+                }
+                
+                response = requests.post(url, json=payload, headers=headers, timeout=30)
+                
+                if response.status_code == 200:
+                    result = response.json()
+                    embedding = result['data'][0]['embedding']
+                    return np.array(embedding)
+                else:
+                    if attempt < max_retries - 1:
+                        time.sleep(1)
+                        continue
+                    return None
+            
+            except Exception as e:
+                if attempt < max_retries - 1:
+                    time.sleep(1)
+                    continue
+                return None
+        
+        return None
+    
+    def get_embedding_gemini(self, text: str, max_retries: int = 3) -> np.ndarray:
         """Gemini API로 텍스트 임베딩 생성"""
         for attempt in range(max_retries):
             try:

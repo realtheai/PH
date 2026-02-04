@@ -80,12 +80,7 @@ jobs:
     - name: 🔍 [2/7] 이미지 OCR 처리
       continue-on-error: true
       env:
-        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
-        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
-        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
-        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
-        GEMINI_API_KEY_6: ${{ secrets.GEMINI_API_KEY_6 }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       run: |
@@ -98,12 +93,6 @@ jobs:
     - name: 🌐 [3/7] 텍스트 번역 (영어 → 한국어)
       continue-on-error: true
       env:
-        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
-        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
-        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
-        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
-        GEMINI_API_KEY_6: ${{ secrets.GEMINI_API_KEY_6 }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
@@ -117,12 +106,6 @@ jobs:
     - name: 🏷️ [4/7] 콘텐츠 분류
       continue-on-error: true
       env:
-        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
-        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
-        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
-        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
-        GEMINI_API_KEY_6: ${{ secrets.GEMINI_API_KEY_6 }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
@@ -136,12 +119,6 @@ jobs:
     - name: 🎯 [5/7] 피싱 유형 분류
       continue-on-error: true
       env:
-        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
-        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
-        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
-        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
-        GEMINI_API_KEY_6: ${{ secrets.GEMINI_API_KEY_6 }}
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
@@ -155,22 +132,31 @@ jobs:
     - name: 🧹 [6/7] 중복 제거
       continue-on-error: true
       env:
-        GEMINI_API_KEY_1: ${{ secrets.GEMINI_API_KEY_1 }}
-        GEMINI_API_KEY_2: ${{ secrets.GEMINI_API_KEY_2 }}
-        GEMINI_API_KEY_3: ${{ secrets.GEMINI_API_KEY_3 }}
-        GEMINI_API_KEY_4: ${{ secrets.GEMINI_API_KEY_4 }}
-        GEMINI_API_KEY_5: ${{ secrets.GEMINI_API_KEY_5 }}
-        GEMINI_API_KEY_6: ${{ secrets.GEMINI_API_KEY_6 }}
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
       run: |
         python scripts/deduplicate_data.py
     
     # ============================================================
-    # 7단계: 완료 알림
+    # 7단계: 임베딩 생성
     # ============================================================
     
-    - name: 🎉 [7/7] 파이프라인 완료
+    - name: 🧠 [7/8] 벡터 임베딩 생성
+      continue-on-error: true
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: |
+        python scripts/run_full_embedding_openai.py
+    
+    # ============================================================
+    # 8단계: 완료 알림
+    # ============================================================
+    
+    - name: 🎉 [8/8] 파이프라인 완료
       run: |
         echo "✅ Daily data pipeline completed successfully!"
         echo "📊 Check Supabase dashboard for updated data"
+        echo "🧠 Vector embeddings updated for RAG system"
