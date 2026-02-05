@@ -10,10 +10,11 @@ on:
 
 jobs:
   # ============================================================
-  # 병렬 크롤링 (5개 동시 실행)
+  # 1단계: 병렬 크롤링 (5개 동시 실행)
   # ============================================================
   
   crawl-naver:
+    name: 🕷️ 네이버 API 크롤링
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -24,7 +25,7 @@ jobs:
         python-version: '3.11'
         cache: 'pip'
     - run: pip install -r requirements.txt
-    - name: 🕷️ 네이버 API 크롤링
+    - name: 크롤링 실행
       continue-on-error: true
       env:
         NAVER_CLIENT_ID: ${{ secrets.NAVER_CLIENT_ID }}
@@ -34,6 +35,7 @@ jobs:
       run: python scripts/daily_naver.py
   
   crawl-google:
+    name: 🕷️ 구글 뉴스 크롤링
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -44,7 +46,7 @@ jobs:
         python-version: '3.11'
         cache: 'pip'
     - run: pip install -r requirements.txt
-    - name: 🕷️ 구글 뉴스 크롤링
+    - name: 크롤링 실행
       continue-on-error: true
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -52,6 +54,7 @@ jobs:
       run: python scripts/daily_google.py
   
   crawl-images:
+    name: 🕷️ 구글 이미지 크롤링
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -62,7 +65,7 @@ jobs:
         python-version: '3.11'
         cache: 'pip'
     - run: pip install -r requirements.txt
-    - name: 🕷️ 구글 이미지 크롤링
+    - name: 크롤링 실행
       continue-on-error: true
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -70,6 +73,7 @@ jobs:
       run: python scripts/daily_google_images.py
   
   crawl-reddit:
+    name: 🕷️ Reddit 크롤링
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -80,7 +84,7 @@ jobs:
         python-version: '3.11'
         cache: 'pip'
     - run: pip install -r requirements.txt
-    - name: 🕷️ Reddit 크롤링
+    - name: 크롤링 실행
       continue-on-error: true
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -88,6 +92,7 @@ jobs:
       run: python scripts/daily_reddit.py
   
   crawl-international:
+    name: 🕷️ 해외 뉴스 크롤링
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -98,7 +103,7 @@ jobs:
         python-version: '3.11'
         cache: 'pip'
     - run: pip install -r requirements.txt
-    - name: 🕷️ 해외 뉴스 크롤링
+    - name: 크롤링 실행
       continue-on-error: true
       env:
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
@@ -106,113 +111,167 @@ jobs:
       run: python scripts/daily_international.py
   
   # ============================================================
-  # 데이터 처리 (크롤링 완료 후 순차 실행)
+  # 2단계: 이미지 OCR
   # ============================================================
   
-  process-data:
+  ocr:
+    name: 🔍 이미지 OCR 처리
     runs-on: ubuntu-latest
     permissions:
       contents: read
     needs: [crawl-naver, crawl-google, crawl-images, crawl-reddit, crawl-international]
-    
     steps:
-    - name: 📥 코드 체크아웃
-      uses: actions/checkout@v3
-    
-    - name: 🐍 Python 3.11 설정
-      uses: actions/setup-python@v4
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
       with:
         python-version: '3.11'
         cache: 'pip'
-    
-    - name: 📦 의존성 설치
-      run: |
-        pip install --upgrade pip
-        pip install -r requirements.txt
-    
-    # ============================================================
-    # 2단계: 이미지 OCR
-    # ============================================================
-    
-    - name: 🔍 [2/7] 이미지 OCR 처리
+    - run: pip install -r requirements.txt
+    - name: OCR 실행
       continue-on-error: true
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/process_all_images_ocr.py
-    
-    # ============================================================
-    # 3단계: 텍스트 번역
-    # ============================================================
-    
-    - name: 🌐 [3/7] 텍스트 번역 (영어 → 한국어)
+      run: python scripts/process_all_images_ocr.py
+  
+  # ============================================================
+  # 3단계: 텍스트 번역
+  # ============================================================
+  
+  translate:
+    name: 🌐 텍스트 번역 (영어→한국어)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    needs: [ocr]
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 번역 실행
       continue-on-error: true
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/translate_all_content.py
-    
-    # ============================================================
-    # 4단계: 콘텐츠 분류 (REAL_CASE/NEWS/NOISE)
-    # ============================================================
-    
-    - name: 🏷️ [4/7] 콘텐츠 분류
+      run: python scripts/translate_all_content.py
+  
+  # ============================================================
+  # 4단계: 콘텐츠 분류
+  # ============================================================
+  
+  classify:
+    name: 🏷️ 콘텐츠 분류 (REAL_CASE/NEWS/NOISE)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    needs: [translate]
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 분류 실행
       continue-on-error: true
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/classify_data.py
-    
-    # ============================================================
-    # 5단계: 피싱 유형 분류 (REAL_CASE만)
-    # ============================================================
-    
-    - name: 🎯 [5/7] 피싱 유형 분류
+      run: python scripts/classify_data.py
+  
+  # ============================================================
+  # 5단계: 피싱 유형 분류
+  # ============================================================
+  
+  classify-type:
+    name: 🎯 피싱 유형 분류
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    needs: [classify]
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 피싱 유형 분류 실행
       continue-on-error: true
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/classify_phishing_type.py
-    
-    # ============================================================
-    # 6단계: 중복 제거
-    # ============================================================
-    
-    - name: 🧹 [6/7] 중복 제거
+      run: python scripts/classify_phishing_type.py
+  
+  # ============================================================
+  # 6단계: 중복 제거
+  # ============================================================
+  
+  deduplicate:
+    name: 🧹 중복 제거
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    needs: [classify-type]
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 중복 제거 실행
       continue-on-error: true
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/deduplicate_data.py
-    
-    # ============================================================
-    # 7단계: 임베딩 생성
-    # ============================================================
-    
-    - name: 🧠 [7/7] 벡터 임베딩 생성
+      run: python scripts/deduplicate_data.py
+  
+  # ============================================================
+  # 7단계: 벡터 임베딩
+  # ============================================================
+  
+  embedding:
+    name: 🧠 벡터 임베딩 생성
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    needs: [deduplicate]
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 임베딩 생성
       continue-on-error: true
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: |
-        python scripts/run_full_embedding_openai.py
-    
-    # ============================================================
-    # 8단계: 완료 알림
-    # ============================================================
-    
-    - name: 🎉 파이프라인 완료
+      run: python scripts/run_full_embedding_openai.py
+  
+  # ============================================================
+  # 8단계: 완료 알림
+  # ============================================================
+  
+  complete:
+    name: 🎉 파이프라인 완료
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    needs: [embedding]
+    steps:
+    - name: 완료 메시지
       run: |
         echo "✅ Daily data pipeline completed successfully!"
         echo "📊 Check Supabase dashboard for updated data"
