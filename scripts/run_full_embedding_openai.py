@@ -53,7 +53,7 @@ def create_embedding(text: str, retry=3) -> List[float]:
 
 
 def get_records_without_embedding(limit=1000) -> List[Dict]:
-    """최근 2일 내 임베딩이 없는 레코드 조회"""
+    """최근 2일 내 임베딩이 없는 레코드 조회 (최신 데이터부터)"""
     from datetime import datetime, timedelta
     two_days_ago = (datetime.now() - timedelta(days=2)).isoformat()
     
@@ -62,7 +62,7 @@ def get_records_without_embedding(limit=1000) -> List[Dict]:
         'select': 'id,title,content',
         'embedding': 'is.null',
         'crawled_at': f'gte.{two_days_ago}',
-        'order': 'id.asc',
+        'order': 'id.desc',
         'limit': limit
     }
     try:

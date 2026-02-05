@@ -197,10 +197,10 @@ class PhishingTypeClassifier:
         print(f"{'='*70}\n")
         
         # phishing_type이 NULL인 REAL_CASE 조회
-        # 최근 2일 내 REAL_CASE 중 피싱 유형이 없는 데이터만 조회
+        # 최근 2일 내 REAL_CASE 중 피싱 유형이 없는 데이터만 조회 (최신 데이터부터)
         from datetime import datetime, timedelta
         two_days_ago = (datetime.now() - timedelta(days=2)).isoformat()
-        url = f"{self.supabase_url}/rest/v1/phishing_news?select=id,title,content&category=eq.REAL_CASE&phishing_type=is.null&crawled_at=gte.{two_days_ago}&limit={limit}"
+        url = f"{self.supabase_url}/rest/v1/phishing_news?select=id,title,content&category=eq.REAL_CASE&phishing_type=is.null&crawled_at=gte.{two_days_ago}&order=id.desc&limit={limit}"
         response = requests.get(url, headers=self.headers)
         
         if response.status_code != 200:
