@@ -24,17 +24,17 @@ class DailyGoogleCrawler:
         }
     
     def check_duplicate(self, url: str) -> bool:
-        """URL 중복 확인 (최근 7일 내에서만 체크)"""
+        """URL 중복 확인 (최근 30일 내에서 체크 - 개선됨)"""
         try:
             from datetime import datetime, timedelta
-            seven_days_ago = (datetime.now() - timedelta(days=7)).isoformat()
+            thirty_days_ago = (datetime.now() - timedelta(days=30)).isoformat()
             
             response = requests.get(
                 f"{self.supabase_url}/rest/v1/phishing_news",
                 headers=self.headers,
                 params={
                     'url': f'eq.{url}',
-                    'crawled_at': f'gte.{seven_days_ago}',
+                    'crawled_at': f'gte.{thirty_days_ago}',
                     'select': 'id'
                 },
                 timeout=5
@@ -58,10 +58,18 @@ class DailyGoogleCrawler:
             return False
     
     def daily_update(self):
-        """매일 구글 최신 뉴스 수집 및 Supabase 업로드"""
+        """매일 구글 최신 뉴스 수집 및 Supabase 업로드 (전날 24시간만)"""
         print(f"\n{'='*60}")
         print(f"🌐 구글 매일 업데이트 ({datetime.now().strftime('%Y-%m-%d')})")
         print(f"{'='*60}\n")
+        
+        # 날짜 범위 설정 (전날 24시간)
+        from datetime import timedelta
+        today = datetime.now()
+        yesterday = today - timedelta(days=1)
+        
+        # 구글 뉴스는 "when" 파라미터로 기간 제한 (1d = 1 day)
+        print(f"📅 수집 기간: 최근 1일 (전날 24시간)\n")
         
         keywords = [
             '피싱', '스미싱', '보이스피싱', '메신저피싱',
@@ -79,7 +87,7 @@ class DailyGoogleCrawler:
         
         for idx, keyword in enumerate(keywords, 1):
             print(f"[{idx}/{len(keywords)}] '{keyword}' 검색 중...")
-            results = self.crawler.search_news(keyword, max_results=50)
+            results = self.crawler.search_news(keyword, max_results=50, when='1d')  # 최근 1일
             all_results.extend(results)
             print(f"   수집: {len(results)}건")
         

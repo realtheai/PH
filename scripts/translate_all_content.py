@@ -206,7 +206,7 @@ class GeminiTranslator:
                     stats['failed'] += 1
             else:
                 print(f"   ❌ 번역 실패: {result.get('error')}")
-                    stats['failed'] += 1
+                stats['failed'] += 1
             
             print()
             time.sleep(2)  # Rate limiting (6개 키로 분당 90회 가능)
@@ -220,16 +220,16 @@ class GeminiTranslator:
         print(f"{'='*70}\n")
     
     def translate_news(self):
-        """phishing_news 테이블의 영어 텍스트 번역"""
+        """phishing_news 테이블의 영어 텍스트 번역 (중복 제거 후 남은 데이터만)"""
         print(f"\n{'='*70}")
-        print(f"📰 뉴스 콘텐츠 번역")
+        print(f"📰 뉴스 콘텐츠 번역 (최적화: 중복 제거 후)")
         print(f"{'='*70}\n")
         
-        # 번역이 필요한 데이터 조회 (영어)
-        # 최근 2일 내 영어 콘텐츠만 조회 (최신 데이터부터)
+        # 번역이 필요한 데이터 조회 (영어이면서 아직 번역되지 않은 것만)
+        # 최근 2일 내 영어 콘텐츠 + translated_content가 NULL인 것만
         from datetime import datetime, timedelta
         two_days_ago = (datetime.now() - timedelta(days=2)).isoformat()
-        url = f"{self.supabase_url}/rest/v1/phishing_news?select=id,content,original_language&original_language=eq.en&crawled_at=gte.{two_days_ago}&order=id.desc&limit=1000"
+        url = f"{self.supabase_url}/rest/v1/phishing_news?select=id,content,original_language&original_language=eq.en&translated_content=is.null&crawled_at=gte.{two_days_ago}&order=id.desc&limit=1000"
         response = requests.get(url, headers=self.headers)
         
         if response.status_code != 200:
@@ -264,11 +264,11 @@ class GeminiTranslator:
                 translated = result['translated']
                 print(f"   ✅ 번역 완료: {len(translated)}자")
                 
-                # DB 업데이트 (content를 번역본으로 교체)
+                # DB 업데이트 (translated_content에 저장, content는 원본 유지)
                 update_url = f"{self.supabase_url}/rest/v1/phishing_news?id=eq.{item_id}"
                 update_data = {
-                    'content': translated,
-                    'original_language': 'ko'  # 번역 후 한국어로 변경
+                    'translated_content': translated,  # 번역본은 별도 필드에 저장
+                    'original_language': 'ko'  # 번역 완료 표시
                 }
                 
                 update_response = requests.patch(update_url, headers=self.headers, json=update_data)
@@ -281,7 +281,7 @@ class GeminiTranslator:
                     stats['failed'] += 1
             else:
                 print(f"   ❌ 번역 실패: {result.get('error')}")
-                    stats['failed'] += 1
+                stats['failed'] += 1
             
             print()
             time.sleep(2)  # Rate limiting (6개 키로 분당 90회 가능)

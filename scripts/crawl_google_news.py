@@ -30,20 +30,27 @@ class GoogleNewsCrawler:
             print(f"      ⚠️ 본문 추출 실패: {e}")
             return ""
     
-    def search_news(self, keyword: str, max_results: int = 50) -> List[Dict]:
-        """구글 뉴스 검색"""
+    def search_news(self, keyword: str, max_results: int = 50, when: str = '1d') -> List[Dict]:
+        """구글 뉴스 검색 (날짜 필터 추가)
+        
+        Args:
+            keyword: 검색 키워드
+            max_results: 최대 결과 수
+            when: 기간 필터 ('1h'=1시간, '1d'=1일, '1w'=1주, '1m'=1개월, '1y'=1년)
+        """
         results = []
         
-        print(f"\n🔍 구글 뉴스 검색: '{keyword}'")
+        print(f"\n🔍 구글 뉴스 검색: '{keyword}' (최근 {when})")
         
         try:
-            # 구글 뉴스 검색 (한국어, 최근 1년)
+            # 구글 뉴스 검색 (한국어, 날짜 필터)
             params = {
                 'q': keyword,
                 'tbm': 'nws',  # 뉴스 검색
                 'hl': 'ko',     # 한국어
                 'gl': 'kr',     # 한국
-                'num': min(max_results, 100)  # 최대 100개
+                'num': min(max_results, 100),  # 최대 100개
+                'tbs': f'qdr:{when}'  # 날짜 필터 (예: qdr:d = 최근 1일)
             }
             
             response = self.session.get(self.base_url, params=params)

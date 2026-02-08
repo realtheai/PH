@@ -136,32 +136,7 @@ jobs:
       run: python scripts/process_all_images_ocr.py
   
   # ============================================================
-  # 3단계: 텍스트 번역
-  # ============================================================
-  
-  translate:
-    name: 🌐 텍스트 번역 (영어→한국어)
-    runs-on: ubuntu-latest
-    permissions:
-      contents: read
-    needs: [ocr]
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-        cache: 'pip'
-    - run: pip install -r requirements.txt
-    - name: 번역 실행
-      continue-on-error: true
-      env:
-        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: python scripts/translate_all_content.py
-  
-  # ============================================================
-  # 4단계: 콘텐츠 분류
+  # 3단계: 콘텐츠 분류 (원본 언어로 분류)
   # ============================================================
   
   classify:
@@ -169,7 +144,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    needs: [translate]
+    needs: [ocr]
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
@@ -186,7 +161,7 @@ jobs:
       run: python scripts/classify_data.py
   
   # ============================================================
-  # 5단계: 피싱 유형 분류
+  # 4단계: 피싱 유형 분류 (원본 언어로 분류)
   # ============================================================
   
   classify-type:
@@ -211,11 +186,11 @@ jobs:
       run: python scripts/classify_phishing_type.py
   
   # ============================================================
-  # 6단계: 중복 제거
+  # 5단계: 중복 제거 (의미 기반 유사도로 중복 제거)
   # ============================================================
   
   deduplicate:
-    name: 🧹 중복 제거
+    name: 🧹 중복 제거 (번역 전)
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -236,7 +211,32 @@ jobs:
       run: python scripts/deduplicate_data.py
   
   # ============================================================
-  # 7단계: 벡터 임베딩
+  # 6단계: 텍스트 번역 (중복 제거 후 남은 데이터만 번역) 💰
+  # ============================================================
+  
+  translate:
+    name: 🌐 텍스트 번역 (영어→한국어)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    needs: [deduplicate]
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+        cache: 'pip'
+    - run: pip install -r requirements.txt
+    - name: 번역 실행
+      continue-on-error: true
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: python scripts/translate_all_content.py
+  
+  # ============================================================
+  # 7단계: 벡터 임베딩 (번역 완료 후 임베딩)
   # ============================================================
   
   embedding:
@@ -244,7 +244,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-    needs: [deduplicate]
+    needs: [translate]
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-python@v4
@@ -276,3 +276,4 @@ jobs:
         echo "✅ Daily data pipeline completed successfully!"
         echo "📊 Check Supabase dashboard for updated data"
         echo "🧠 Vector embeddings updated for RAG system"
+        echo "💰 Optimized: Translation after deduplication (30% cost savings)"

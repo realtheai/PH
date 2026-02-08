@@ -1,8 +1,4 @@
-# Markdown files (README.md 제외)
-*.md
-!README.md
-
-# Environment Variables
+# 환경 변수
 .env
 .env.local
 .env.*.local
@@ -29,44 +25,77 @@ wheels/
 .installed.cfg
 *.egg
 
-# Virtual Environments
+# 가상 환경
 venv/
 ENV/
 env/
+.venv
 
-# IDEs
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
-Thumbs.db
 
-# Logs
+# 테스트
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# 로그
 *.log
 logs/
 
-# Data files (raw data는 제외, DB에만 저장)
-data/raw/*.json
-data/raw/*.csv
-data/processed/*.json
+# 데이터 파일
+*.csv
+*.sqlite
+*.db
 
-# Jupyter Notebooks
+# Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb
 
-# Kaggle
-data/raw/kaggle/
+# Docker
+docker-compose.override.yml
 
-# Temporary files
+# 임시 파일
+tmp/
+temp/
 *.tmp
-*.bak
-*.swp
 
-# Node modules (프론트엔드용)
+# 민감한 데이터
+credentials.json
+secrets/
+*.pem
+*.key
+
+# 이미지 파일 (크기 때문에)
+data/images/
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.webp
+
+# 모델 파일
+*.pt
+*.pth
+*.onnx
+*.h5
+
+# Node modules (프론트엔드)
 node_modules/
+npm-debug.log
+yarn-error.log
+
+# Next.js (프론트엔드)
 .next/
 out/
+
+# Vercel
+.vercel
+
+# 기타
+.cache/
