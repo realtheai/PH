@@ -99,3 +99,4 @@ out/
 
 # 기타
 .cache/
+data/raw/github/

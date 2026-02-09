@@ -138,11 +138,18 @@ async def analyze_message(request: AnalyzeRequest):
                 llm_score = llm_result.get('risk_score', 0)
                 llm_confidence = llm_result.get('confidence', 0)
                 
-                # LLM 점수 반영 (확신도 높으면 더 많이 반영)
-                llm_weighted_score = int(llm_score * llm_confidence)
+                # LLM이 높은 확신도로 피싱을 판단한 경우 우선순위 높임
+                if llm_confidence >= 0.8:
+                    # 확신도 80% 이상이면 LLM 점수를 80% 반영
+                    total_score = int(total_score * 0.2 + llm_score * 0.8)
+                elif llm_confidence >= 0.6:
+                    # 확신도 60-80%면 LLM 점수를 60% 반영
+                    total_score = int(total_score * 0.4 + llm_score * 0.6)
+                else:
+                    # 확신도 낮으면 기존대로 40% 반영
+                    llm_weighted_score = int(llm_score * llm_confidence)
+                    total_score = int(total_score * 0.6 + llm_weighted_score * 0.4)
                 
-                # 기존 점수와 LLM 점수를 조합 (LLM 우선순위 높음)
-                total_score = int(total_score * 0.4 + llm_weighted_score * 0.6)
                 total_score = min(total_score, 100)
                 
                 # 위험도 재계산

@@ -61,15 +61,7 @@ class FullImageProcessor:
                             "content": [
                                 {
                                     "type": "text",
-                                    "text": """이 이미지에서 보이는 모든 텍스트를 정확하게 추출해주세요.
-
-출력 형식:
-- 한글과 영어를 모두 정확히 추출
-- 줄바꿈 유지
-- 특수문자 포함
-- 광고/배너 제외
-
-텍스트:"""
+                                    "text": "Perform OCR on this image. Extract all text in original language (Korean/English). Output text only."
                                 },
                                 {
                                     "type": "image_url",
@@ -81,7 +73,7 @@ class FullImageProcessor:
                         }
                     ],
                     "max_tokens": 1024,
-                    "temperature": 0.2
+                    "temperature": 0.1
                 }
                 
                 response = requests.post(url, headers=headers, json=payload, timeout=30)

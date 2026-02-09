@@ -1,0 +1,3202 @@
+[
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR25ATF7dzLar4P909f4sFdEkyawWy-GZ441g_7ISrStoXsMHMpRSB2DSH4EBI&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_2.jpg",
+    "filename": "스미싱_문자_사례_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:50:12.519207"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGChVTIyDe4Qti04uYUmITq5kPKUfV0u0WVytPhj7giDJU-00oWeTyPszejA&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_3.jpg",
+    "filename": "스미싱_문자_사례_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:50:12.597922"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPvKuCyRMhkpe5AsehulugGmuZUQAzLMqrnaIQVPw0rMyD70PAmGUqlBRXuQ&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_4.jpg",
+    "filename": "스미싱_문자_사례_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:50:12.674699"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXYaCi1Sw7gb4nJM5cdVKrOEgIzjUQEdaI7FxXL0vofyR_vqL7j-DydssLuH0&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_5.jpg",
+    "filename": "스미싱_문자_사례_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:50:12.746868"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0PG8eBpDWcltjp1kuUcqwyJCpCQM33LPxmgB8UpOYviy5vT8WGjv7dX_1Y5M&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_6.jpg",
+    "filename": "스미싱_문자_사례_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:50:12.816249"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-VK3cYg2QrijG-Y0WJDdxygU6VG4GDdOs0Ct7pyeqr9GY7wtbc_vwF_zNX5c&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_7.jpg",
+    "filename": "스미싱_문자_사례_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:50:12.899870"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg6ZsDSl2X4V0Ne9NnWRDPx-W9UkRA5E0FyVQYnW1C_aB3gdXtQOIUP3egdz4&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_8.jpg",
+    "filename": "스미싱_문자_사례_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:50:12.971018"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRglemOVBccN0-TuO5rDV8UpWkSuJ5r6-_UrtSKilHjw06IBff8F833O6_yAA&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_9.jpg",
+    "filename": "스미싱_문자_사례_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:50:13.051006"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbsAjsn_mj6Bjtm7biqge48uFZN1MMRKwAPdd-MdjcLeSJRlXQ_6gGX0W3vw&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_10.jpg",
+    "filename": "스미싱_문자_사례_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:50:13.126401"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfdO9hkWDO-EF6Mddm-m8s2D99ReK1Qb5STKsa_uMEeZsaMZvIzhOuSvOrBtw&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_11.jpg",
+    "filename": "스미싱_문자_사례_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:50:13.204578"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRz1fr8G-cnFSDeVGMDTQTKH_kIlfxUHMuCRW0DVRvkQSxL0osQkQvOniTi_w&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_12.jpg",
+    "filename": "스미싱_문자_사례_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:50:13.278517"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6ekY2XX4rzbIACgl45HV04hG4vmMIzfRX-BjAYf5sQz11din05h0ztom7aA&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_13.jpg",
+    "filename": "스미싱_문자_사례_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:50:13.349259"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXAtXZ0KA26HGrRuO84Rg09hU6Xg-cgyddSQ3h6qdHxepzUFPo5HIvZj7jMw&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_14.jpg",
+    "filename": "스미싱_문자_사례_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:50:13.425148"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB7cHjLTAafkrX2YnDSbKFrIYzxzcAFAPkfOGoXpJDHKOBWCxbzPUo6NUr1Co&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_15.jpg",
+    "filename": "스미싱_문자_사례_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:50:13.502485"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2KQT8O_ZmJRieTBX8bc9HOcGxV7JQzIwtd3DLESxhNw7tgzDZKOEy2xp2Bg&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_16.jpg",
+    "filename": "스미싱_문자_사례_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:50:13.576647"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogK_A9ZA0-ZCvRcubDh0AAK1JY8EiSf5K3sCjEBHV8QBR7ffAFRpgticDOL0&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_17.jpg",
+    "filename": "스미싱_문자_사례_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:50:13.662977"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-jbdAI_dPz4ESmx8x0SxYRI7OmN8S7w_Bsrar00S7Vq6rdGAVkbCweYYeS-M&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_18.jpg",
+    "filename": "스미싱_문자_사례_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:50:13.743159"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCPHCQ0cvsI1LF5zIEHacO4eXrxBIfXTifzRE7wFKd4UQXaPbrCMspC7SqcQ&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_19.jpg",
+    "filename": "스미싱_문자_사례_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:50:13.849168"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyzj5UJ3cdusIQz2ubXTAJnsgX-5ov8ZKwIwfMIL1OrFisSTD3cQKHHzObtg&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_20.jpg",
+    "filename": "스미싱_문자_사례_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:50:13.934580"
+  },
+  {
+    "query": "스미싱 문자 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpym0lx7eovRJThOBwu-RbKvxe-VpcRsaRIuZeFc2anOelP0d73-3NUnTfwQ&s",
+    "local_path": "data/images/phishing/스미싱_문자_사례_21.jpg",
+    "filename": "스미싱_문자_사례_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:50:14.018166"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HJut7CbodfnAz9etglsQ-pWWl0SQxengvuFZZPj12v8xVaw4YU1IHhQazw&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_2.jpg",
+    "filename": "피싱_메시지_예시_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:50:19.494691"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTACmwEzseA2HbUPfG89Z9js3auQW27lb681JsSBVxWLi7fVR-JJ_z8oZ-64g&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_3.jpg",
+    "filename": "피싱_메시지_예시_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:50:19.565995"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR25ATF7dzLar4P909f4sFdEkyawWy-GZ441g_7ISrStoXsMHMpRSB2DSH4EBI&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_4.jpg",
+    "filename": "피싱_메시지_예시_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:50:19.598377"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrht5PbTm8kZdawTTfbVd09XJQ2HohubLj3BugKRzvnHo-zDGdJuzTJxfmlQ&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_5.jpg",
+    "filename": "피싱_메시지_예시_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:50:19.672581"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbKKLLydQzmU83sOudtmlr5u-wyA8UxE0wfxXc9GMZzLQQ5yGlS98kPCHF5g&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_6.jpg",
+    "filename": "피싱_메시지_예시_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:50:19.749752"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyuYrK8WCdTknkq-iNmJkR37suGroF813kLAyCRAKlAUFGm2Ug36ABCx7-Yg&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_7.jpg",
+    "filename": "피싱_메시지_예시_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:50:19.819193"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQBh-CmRAm3ZDafEvESR2ndoeLWS7PHHXXP3ZIzZ2_KfXRk_aLp8mn5Afog&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_8.jpg",
+    "filename": "피싱_메시지_예시_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:50:19.893448"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXBgnnw5rBJuF-K8alvnw8EQE4CJJvI2JjzgXKxvxRiVcpJWvMG6IPpsIREXs&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_9.jpg",
+    "filename": "피싱_메시지_예시_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:50:19.973179"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0QJr8ZFWwsilQ-dNyL-f-bwoM-bBMSn1z7cb46CxaEkwldhvlJxXAhoSUNQ&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_10.jpg",
+    "filename": "피싱_메시지_예시_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:50:20.049239"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN6ioB_x0FjRlt4EGqmRiBvA0qxNJdwauL8amTRV_eiW-iYT8bJxBV_cT6tkA&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_11.jpg",
+    "filename": "피싱_메시지_예시_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:50:20.121592"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTvSThoOPnWxZ4xGohwnxveE05erp29pSIrjqlOGOBaPUHDIMp32X9XUmI6i8&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_12.jpg",
+    "filename": "피싱_메시지_예시_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:50:20.198525"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsp1SN27YB9vsoEENB0xoOS4cPjLOSuyj2LNNRE1CQyMv9sBIVczfTHKGXHF8&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_13.jpg",
+    "filename": "피싱_메시지_예시_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:50:20.274218"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbP-AGSaoxNO1oHiECNlCf7LYoQBPrzG1j8WwYq6C3SBEUa3IBN5K_LMHnLw&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_14.jpg",
+    "filename": "피싱_메시지_예시_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:50:20.345962"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcQXlTUncqS7Bzw7KfSzZKbuoBlnLdjLQNDBk1yJ4l7sGU1wPU8uVKZidGIns&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_15.jpg",
+    "filename": "피싱_메시지_예시_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:50:20.417643"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTp3n3-RDGTt_s9VHM3HldxvawKTB7_F0gcMTpAGVjSocehNr7Dq0ysX1vL1s&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_16.jpg",
+    "filename": "피싱_메시지_예시_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:50:20.501800"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj-8YL5HDJwVCWKUWanlr7wW5o6B-bmZ_1rQO2j5zkvZaf6i4rksTYJ6W66w&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_17.jpg",
+    "filename": "피싱_메시지_예시_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:50:20.577913"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBwuzczVeoGdyTvW1fPB8VzpBGiq62U7y6DAqxlz9CGgDVHnI6zY_obw-9uA&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_18.jpg",
+    "filename": "피싱_메시지_예시_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:50:20.656553"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpym0lx7eovRJThOBwu-RbKvxe-VpcRsaRIuZeFc2anOelP0d73-3NUnTfwQ&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_19.jpg",
+    "filename": "피싱_메시지_예시_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:50:20.689741"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_mebmwyvp-HVAAhCiMBlfFc5xm5vU9TKJC1i2G5k_XKcnjjwNhfA-d3dC2A&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_20.jpg",
+    "filename": "피싱_메시지_예시_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:50:20.773871"
+  },
+  {
+    "query": "피싱 메시지 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6FRGiZN_FGyGKXsgrU64sr6SdGafQDQ-mbqXr3qtYPRv50h71_b8cZC6YfuQ&s",
+    "local_path": "data/images/phishing/피싱_메시지_예시_21.jpg",
+    "filename": "피싱_메시지_예시_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:50:20.862407"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlVnw1gFLdccLLwOU8Hc5EpSVcKUylkCnxO8kSOe9UFBMYM_mbPpDzODFI0OA&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_2.jpg",
+    "filename": "보이스피싱_수법_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:50:26.394016"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTTAF4fR_e0yc831YuibRF4VYujZQaR9_rV9PTqs_SRqwfaHOUVAXZwopyqvg&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_3.jpg",
+    "filename": "보이스피싱_수법_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:50:26.464370"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3gXmo6EhVSI6AStVpsZeyGiMMT9Mxi7rzH5whRcSU_3YiS1ZOygk_CTrjWQ&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_4.jpg",
+    "filename": "보이스피싱_수법_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:50:26.545656"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvVNgRwmr4uLUSQY4ZIXM4EMQQjj_U7BbV66NaKZY9bTsuW0NZzpHDWX-bUA&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_5.jpg",
+    "filename": "보이스피싱_수법_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:50:26.623834"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAqeZXISGSrAddG41go2w9DHRtiizXsSnFFhZrsSrF8B5O2GgcJMmPWH3IwMg&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_6.jpg",
+    "filename": "보이스피싱_수법_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:50:26.704716"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyrYA_lXYkph9pN6Sg_dfhKZxs3iw5WqVGlRyvdn1DHBDJnyYVRnBtkh9_hw&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_7.jpg",
+    "filename": "보이스피싱_수법_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:50:26.774742"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGQbAN9vcKg5UdfAlJiKSisKnf8r9Yts56gzb6uqnck3rhB3KSrWWD_NroyiQ&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_8.jpg",
+    "filename": "보이스피싱_수법_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:50:26.849432"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbPIeVacLiHVy_8x1XvMWqXKB1t2J9aqq8iuImhKLCzdqa9fmwkKyBtnVgzQ&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_9.jpg",
+    "filename": "보이스피싱_수법_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:50:26.944892"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAi9ecPLylaHHBx_KB_PPDAXoI2shKPNGfxnPpkZAV9BH9_mkEpMn2x5O4xg&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_10.jpg",
+    "filename": "보이스피싱_수법_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:50:27.024916"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRncVXM0rPGWA4wiMk3KY_elSfMTgqRze6HaAict9_7p9Vn3ezv4N1jHeMW-Q&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_11.jpg",
+    "filename": "보이스피싱_수법_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:50:27.097067"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcxg_qovtAJANaVB8299o84rnrFGe5O6vIgDgHq8pg7OC11HvjA9iNFt4mdjA&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_12.jpg",
+    "filename": "보이스피싱_수법_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:50:27.173469"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwFxD4KeJ08REgEqEnJYYEk8kd8dr9bR4YFHbaynQ6KY9VLPd-QhJrBFQoHqw&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_13.jpg",
+    "filename": "보이스피싱_수법_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:50:27.285926"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd97pj24GKgbsb_p0SqdVoCIOb9xOOtAbFgUx5AQO0A_xHKlZpPBxSv0GLU6s&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_14.jpg",
+    "filename": "보이스피싱_수법_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:50:27.364644"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTifCZYO-DwO-Vgqt1PCado4fGhKkhK5mj0KJ2FeWuUAtchrszR_tm54UsHHM8&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_15.jpg",
+    "filename": "보이스피싱_수법_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:50:27.588584"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuZsatCZSOAW8FVeaSGpG1BdUNtTNQOyMZ9xSWfiagJrarAjeHR9MHGe2oag&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_16.jpg",
+    "filename": "보이스피싱_수법_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:50:27.763063"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxQUH5AVtCxnJ0SjWia9oH9poz_0QMZnAOVW51gKaSxjuF3MvoqZrVB-OPJrw&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_17.jpg",
+    "filename": "보이스피싱_수법_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:50:27.839503"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOBj9yjZaJ2KwCVTVkCwZ27ibsADZwlaa4xANs5OJSU-R6CxQGVQJ0Iy4h9mA&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_18.jpg",
+    "filename": "보이스피싱_수법_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:50:27.912016"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBYTF5ytd-yf3RT3w0DKx8M7AyzfP-wEkvnhRjRDay_4ao1RVdZ8twmjfqIwE&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_19.jpg",
+    "filename": "보이스피싱_수법_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:50:28.002134"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaztzYjKzvp541Zwkl1cn53XPGpfEUhLi0HNXYJ14t5P0ftkbpRB8ELTCEmA&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_20.jpg",
+    "filename": "보이스피싱_수법_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:50:28.072626"
+  },
+  {
+    "query": "보이스피싱 수법",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKRF6_yOmvNMlQDZqYSgky64qy7kaRKABJfJuwaT_2vbFfO_dZq65GGu5OlA&s",
+    "local_path": "data/images/phishing/보이스피싱_수법_21.jpg",
+    "filename": "보이스피싱_수법_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:50:28.160230"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_sFoFpvlKD0HBXbWteMkNHx6A7XmRYHoYSEfVKHFWQ8aEMF8iSlHSW0Z_Q&s",
+    "local_path": "data/images/phishing/금융사기_문자_2.jpg",
+    "filename": "금융사기_문자_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:50:33.626203"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOA_rKk6pFw8YvvVa4nDlf72qcKNzglDxVge_evW_xUJpFZVwtzkXGndX9vA&s",
+    "local_path": "data/images/phishing/금융사기_문자_3.jpg",
+    "filename": "금융사기_문자_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:50:33.699495"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGAFfvY6hYrZvYXXAc6Dw7crC9Fl01fLjESo4AzEwNWxA9IKnD6Z_FqI0HrQ&s",
+    "local_path": "data/images/phishing/금융사기_문자_4.jpg",
+    "filename": "금융사기_문자_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:50:33.771673"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCQaXUEiAkRuMFoXUNN7177Jqu3P1OOOdky-m6djwkpiJqfFwLeHrqgl-l62E&s",
+    "local_path": "data/images/phishing/금융사기_문자_5.jpg",
+    "filename": "금융사기_문자_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:50:33.846029"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8i-YQsUuJsJoFcUXaDVhiz2jVybKyAnikThLtXoXQhz0Yd1ke19tO7DZx4Q&s",
+    "local_path": "data/images/phishing/금융사기_문자_6.jpg",
+    "filename": "금융사기_문자_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:50:33.918855"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREu7JOphzYw_Obp7bQ2FfNskR51bEQBwjzbtsOwwpz3eNEAQO7STnuwhM0EmE&s",
+    "local_path": "data/images/phishing/금융사기_문자_7.jpg",
+    "filename": "금융사기_문자_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:50:33.989074"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReXD7Fpl1HBNcQGy_2hN-aOZgvkBw54FdeWcA5prt_7-DfdvJPRDnwBayAzIw&s",
+    "local_path": "data/images/phishing/금융사기_문자_8.jpg",
+    "filename": "금융사기_문자_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:50:34.110637"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyCM0QNAA9VhEceuMHMANeEALIjcrIaOk4zMf6WQsKv99FuUqPiPxKpBgPFgQ&s",
+    "local_path": "data/images/phishing/금융사기_문자_9.jpg",
+    "filename": "금융사기_문자_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:50:34.185522"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQT4i-S_dfzaVUQWdTus_D3iQ7wjjQcfn51SBVTalqtZk09WIDzZmw0ZobXg&s",
+    "local_path": "data/images/phishing/금융사기_문자_10.jpg",
+    "filename": "금융사기_문자_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:50:34.267496"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyArbExBqX7BGP1TVMuXMQm3JhQYFY8-khnCrq_Mqxi4XsHYY1d5AEIqhf1xI&s",
+    "local_path": "data/images/phishing/금융사기_문자_11.jpg",
+    "filename": "금융사기_문자_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:50:34.340868"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYSjPAPtfop7GpFmZx2NZk_OxgDZp4xC2UW5Vk1Umxa5nxW5_w1OYJwpnQOnQ&s",
+    "local_path": "data/images/phishing/금융사기_문자_12.jpg",
+    "filename": "금융사기_문자_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:50:34.416278"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6OSBlAxzDlkOC_uZAybox8Jr7zz4vuqxzugNGrJkJb1ZUw9s1E-Q1vqa4fM&s",
+    "local_path": "data/images/phishing/금융사기_문자_13.jpg",
+    "filename": "금융사기_문자_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:50:34.548111"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQogK_A9ZA0-ZCvRcubDh0AAK1JY8EiSf5K3sCjEBHV8QBR7ffAFRpgticDOL0&s",
+    "local_path": "data/images/phishing/금융사기_문자_14.jpg",
+    "filename": "금융사기_문자_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:50:34.583632"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKi2v19X04yJv2_kZynyH9lZe8aPBbLND7qP8YbOezxowdgNmbjph_qssivRg&s",
+    "local_path": "data/images/phishing/금융사기_문자_15.jpg",
+    "filename": "금융사기_문자_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:50:34.659851"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVb9PrAfCxYJdYCd5rgdLTjPlAcsK77wFmVIlBJUo4YaRYlLRKkZA2Y7WBbw&s",
+    "local_path": "data/images/phishing/금융사기_문자_16.jpg",
+    "filename": "금융사기_문자_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:50:34.798503"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRS9gVlJ2Meabr4nWemupCdla-OZGi8VCOs5wZBxPze4ntt73dcBKLWyESHnw&s",
+    "local_path": "data/images/phishing/금융사기_문자_17.jpg",
+    "filename": "금융사기_문자_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:50:34.886050"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrdP5i1N-ehHmr62Dhy2oww5ml_LswAP0DeqO-47Z-78UnPujWiazOeyFn9CE&s",
+    "local_path": "data/images/phishing/금융사기_문자_18.jpg",
+    "filename": "금융사기_문자_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:50:35.015045"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKIhs08u0bScNFlZzEv7KxkZwmCfdsIJJ-Nxzg5VRUZ0u22NP6ld5Pm8DIEA&s",
+    "local_path": "data/images/phishing/금융사기_문자_19.jpg",
+    "filename": "금융사기_문자_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:50:35.090757"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCOdAKp-jGRqRR-Jjz5tyWyxiOODY66e6LPEmL7WqtI4xs_N79cyySk6lx9Q&s",
+    "local_path": "data/images/phishing/금융사기_문자_20.jpg",
+    "filename": "금융사기_문자_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:50:35.165381"
+  },
+  {
+    "query": "금융사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk0EuL2hHFuUNcQi3AkmLH5O_ZRuru9G05kF_XpiJRZwLN5t_RQjItb1ylnw&s",
+    "local_path": "data/images/phishing/금융사기_문자_21.jpg",
+    "filename": "금융사기_문자_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:50:35.240192"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmClvDMh7XPY0Crw41cAtVuQYIoHE1OT6NxGehAbJKuvuLWZaKBqwg9Rz_KQ&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_2.jpg",
+    "filename": "택배_스미싱_사례_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:50:40.695119"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTyQnDx9r7OZcI0oPSUpgRtak8nwlE_zUd8aoMqDeHaELJyClk3KBADELPrA&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_3.jpg",
+    "filename": "택배_스미싱_사례_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:50:40.766103"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-LUj6yT_gzwokW1gmcoTOzJ2EcPmX3OvAHEuYO_c3rf2_rRn_XjdovJHXyg&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_4.jpg",
+    "filename": "택배_스미싱_사례_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:50:40.841970"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiZYmhz04Dkq5Xj6_t0OBADzexjBsKoLa-6jvycha7cb-UxaRQEUbgXcTYEQ&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_5.jpg",
+    "filename": "택배_스미싱_사례_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:50:40.915997"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxfS3VS8C_fb4QbdpCE8TLjJ1OZt0Ht5hnqmLkdchW_cQFT-yhrq1FKKlb0Q&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_6.jpg",
+    "filename": "택배_스미싱_사례_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:50:40.986792"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUW73iXSdeDyeZdZ1k89fOe8LWooLzW66RO6hauNOtxPxkgIEAXI0snwujKg0&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_7.jpg",
+    "filename": "택배_스미싱_사례_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:50:41.064777"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ6BEf-b6lMQ1YoVfuMspZq50ysV29ffw4xaIIF9IL9VKpIicHN-akXUQ0aw&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_8.jpg",
+    "filename": "택배_스미싱_사례_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:50:41.133233"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQH69PKUHIJDXCydhELDn-ut8zh-zu3Kv-Lc9kG4Ayoq9Hv4xkhfMg0b_lOA&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_9.jpg",
+    "filename": "택배_스미싱_사례_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:50:41.210655"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTveh4H_RYfKJyzI7WHXOClNrQ3b0vMjDLGaLg5Qz7WKwlzWYFbxYKOvJn7VA&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_10.jpg",
+    "filename": "택배_스미싱_사례_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:50:41.335570"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvs9dayBD0XVV0zKphKWluj4q0s3oTELALckLYaKJv68PzZ1hDflw_9d7KZg&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_11.jpg",
+    "filename": "택배_스미싱_사례_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:50:41.411480"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToHHCl3Gcf5IUjvxK1HksiLCD2voJ90JbAfze3H5ezI3x-nngsO3BXQLKy2aQ&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_12.jpg",
+    "filename": "택배_스미싱_사례_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:50:41.492948"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtQTcgGE32ZCiyrhN7F3R7s6IAPXjp3LarEYzj9MapcICvIPRC1KVkgZpfnmU&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_13.jpg",
+    "filename": "택배_스미싱_사례_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:50:41.616681"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB7cHjLTAafkrX2YnDSbKFrIYzxzcAFAPkfOGoXpJDHKOBWCxbzPUo6NUr1Co&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_14.jpg",
+    "filename": "택배_스미싱_사례_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:50:41.667634"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpffRnpA7V7ENSB53EhWl6DlBB_2cYikSJZ8sUDcH0KCtxPHfQLNW3_SBbwg&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_15.jpg",
+    "filename": "택배_스미싱_사례_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:50:41.758235"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGChVTIyDe4Qti04uYUmITq5kPKUfV0u0WVytPhj7giDJU-00oWeTyPszejA&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_16.jpg",
+    "filename": "택배_스미싱_사례_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:50:41.795879"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-NfzwJFiD3vVH373IBxh9Csw5E_5vnG_ns2ppK4H4Fc_NyM3ALyuJ4gWYIg&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_17.jpg",
+    "filename": "택배_스미싱_사례_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:50:41.867823"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYDCGTMOClQnXwQNQ2yrUAkrJTWYSWxdn3HyBY-PxdZUtRu0Fo9_f7A6utgQ&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_18.jpg",
+    "filename": "택배_스미싱_사례_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:50:41.947259"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRji4lHunzwfFaRrMGSqp65AlGVh4EL1EliDkUoNnOswFdl579cBDKwUaTIA&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_19.jpg",
+    "filename": "택배_스미싱_사례_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:50:42.052482"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqXZZUBnTBGC1C8TtMZBipBWTJ-tDKOtBbGNOILC4ucL8KiyQtV0lYPuClhg&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_20.jpg",
+    "filename": "택배_스미싱_사례_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:50:42.181025"
+  },
+  {
+    "query": "택배 스미싱 사례",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD_UONefZ1WE92Hq8_UalSa0OFKNTObs53LnvpOtFAfxVbfL4e8sp9zZ07Hw&s",
+    "local_path": "data/images/phishing/택배_스미싱_사례_21.jpg",
+    "filename": "택배_스미싱_사례_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:50:42.257453"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOhYDJMhjPbXcbsEH0oD9ZPBercmP_FcucP1yC8pUozC8eXussZrUhe9dmSw&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_2.jpg",
+    "filename": "카톡_피싱_캡처_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:50:47.666747"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-nMzskSnyFjN-mFnFLyzBdddbp1-40ZqcqSYxhPyAzGKWSjg_TvLwwUnTXQ&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_3.jpg",
+    "filename": "카톡_피싱_캡처_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:50:47.735313"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKrJl__SlEuVwqf__Mac3urrOb-krWRBy30R8CvCOiA3x1m8C6Q-rlDfqy14I&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_4.jpg",
+    "filename": "카톡_피싱_캡처_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:50:47.813573"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUbJwifEhF2uhanzy2mvS2TnOQkvWABERHPZsXcvEd31gSkgSfI8bPqPro0xI&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_5.jpg",
+    "filename": "카톡_피싱_캡처_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:50:47.896133"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYocx-_p6xGsAe4X2M1sBGKdJI-hSc4KUO1BSI5J9T3T2i9GxohImNnjETYJU&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_6.jpg",
+    "filename": "카톡_피싱_캡처_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:50:47.980570"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5KSrrg6l-WW75hr1hIfktcwPlmoKSvp2DTq2od8dmaZgQmWnLhupM8DNHoSk&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_7.jpg",
+    "filename": "카톡_피싱_캡처_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:50:48.054171"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAgiCY_6B7K-o-FE9NdNifOs7G6szCGSKbIeNimGmLPAf-H75IL8hQHSsZSYE&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_8.jpg",
+    "filename": "카톡_피싱_캡처_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:50:48.130211"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfqSM5HxgFS5BLjJr_7FUa0cgr9FvVajavIvNfax03Z8SIZz3dUzS2u_tFvJk&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_9.jpg",
+    "filename": "카톡_피싱_캡처_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:50:48.226160"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6DnBfaINJJVaD0tG80-z89RWjiI5BgN3OR0i_oIHbLsnVnrXeaXIG3Lme1Zg&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_10.jpg",
+    "filename": "카톡_피싱_캡처_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:50:48.346563"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7ZbRY_k7fkQlO6AoItZ_dzlYt6d7Ug2n5ZeOjYiqsCkjpombdfEu0a_lBJlk&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_11.jpg",
+    "filename": "카톡_피싱_캡처_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:50:48.460928"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2GGB6-kZi62t4gKCKW9sbk2B7CyPdKiMlc9GuvKaf5PfngQ-ToENgENyOCTo&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_12.jpg",
+    "filename": "카톡_피싱_캡처_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:50:48.530966"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0yyXI3HniSa4LwJy4k_DYYVggMVDNQRyaOZCnfz-kxmhDcN_VmODxVeRxxjc&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_13.jpg",
+    "filename": "카톡_피싱_캡처_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:50:48.612304"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnDC4AQvHj1vrLU2T8f4bgdQJuZXoCg6nf3vL5jNnrYNeTJjkPd1Mx6Cp5ePc&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_14.jpg",
+    "filename": "카톡_피싱_캡처_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:50:48.746772"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVbs9OOe51h13fDAtPeOXxO3uk1v81Q3oa0ujx5_pmlXERiF_HxR3LOl1lig&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_15.jpg",
+    "filename": "카톡_피싱_캡처_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:50:48.861668"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4sOrN4yPzulyEA-iIXnjdhzrDTbkcRDYB4wrSBkQps05jXI1mxlXBxfdxSA&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_16.jpg",
+    "filename": "카톡_피싱_캡처_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:50:48.935359"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpDYRtvDnunyMoCFRQ8aP-SoEe_x6ogFHdv0umOMoPbGDCCB2UkBTVvUrG9g&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_17.jpg",
+    "filename": "카톡_피싱_캡처_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:50:49.018041"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuiwp3YyR2J7ZHRgGNEVbMPN3RBj3PZHfTomaS4_9EYjymgWPshq1jRqB0vpI&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_18.jpg",
+    "filename": "카톡_피싱_캡처_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:50:49.132644"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ycCU8yM8dHnxjw4ixcGfoeU1L3n1rpmDgGOyXUCifay14-oAHl_RExtiL_A&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_19.jpg",
+    "filename": "카톡_피싱_캡처_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:50:49.211933"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHf1oAlM94-nUahJmDQwCxYksjvZ9vj0pWz2fnookxAahUI7eP8_p6IdAUmQ&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_20.jpg",
+    "filename": "카톡_피싱_캡처_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:50:49.299275"
+  },
+  {
+    "query": "카톡 피싱 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyZ0Ta8y2ZmKmHrhOAc5OMxKrK-sONdWOsGGw_z9xXUS1hquQC7w1dWT0_pw&s",
+    "local_path": "data/images/phishing/카톡_피싱_캡처_21.jpg",
+    "filename": "카톡_피싱_캡처_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:50:49.432411"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQu2nzkXYg6HPT_h-YEJlZxXKrRquTjeminyjcQE4Xrb_tj1KLbvKXTlzra5g&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_2.jpg",
+    "filename": "메신저_피싱_대화_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:50:54.909193"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ChKWLQUu0vJQQLx9QbFx8f-vyJIa6m11Gq9C_n1u54NtgQV8UUK1fcA_aQM&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_3.jpg",
+    "filename": "메신저_피싱_대화_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:50:54.991013"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAxOiP2cDb_teK28lb7VqaIJ1ou42aucNQ3s75D3161zQ-15kkqxUMYdgjMWg&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_4.jpg",
+    "filename": "메신저_피싱_대화_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:50:55.065272"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgNoWJFD9cxF0u5xkKgWSkIHMmh4yKIrMUlVms7JnU8bCKeB8JiUH8Nm8nQA&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_5.jpg",
+    "filename": "메신저_피싱_대화_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:50:55.159809"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_mebmwyvp-HVAAhCiMBlfFc5xm5vU9TKJC1i2G5k_XKcnjjwNhfA-d3dC2A&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_6.jpg",
+    "filename": "메신저_피싱_대화_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:50:55.197785"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4YUeYk0rqB5Sk5H9szU2xsm-AyMs1z59eTBi5678FS2YJCt1Em-OXrFQsGQ4&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_7.jpg",
+    "filename": "메신저_피싱_대화_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:50:55.274052"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQehrpCzQ0DWTSYvR2Ilp6nU8-_14QnqT5fevHarwM3WcIE8k8Mc26WGs6He2A&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_8.jpg",
+    "filename": "메신저_피싱_대화_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:50:55.375396"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNMprOO7Y54FqtH7lbfMo9CAjLpHT-ktj8EJ4PsPuAYDVJy__JVm4sgEhPvfg&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_9.jpg",
+    "filename": "메신저_피싱_대화_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:50:55.462334"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcK3j8Y0EoTVrQX6sP2SBLi2SwLG0qPtjUmIn6x1aaNfK7LE4QQgoagdx9Jw&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_10.jpg",
+    "filename": "메신저_피싱_대화_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:50:55.536609"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4cFEZK8NtFJjOh0xYSTvYVd6ANbADVRNhHT-jFLSflnyElk6TWnOiNHzfDoY&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_11.jpg",
+    "filename": "메신저_피싱_대화_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:50:55.660146"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKkfFd6IaH7phdIv8qhyfaM_nVEaKK9ss_K5GaccboHbAzakePg9s-KeX8_gE&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_12.jpg",
+    "filename": "메신저_피싱_대화_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:50:55.761549"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeA7l-KxSL_610WmSN9LcX1MYA6GJt0xbzKPbYB_5IcLpsB-XYAwncVtkOww&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_13.jpg",
+    "filename": "메신저_피싱_대화_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:50:55.838525"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9cuwXCV_guwH8aq9t5sMwf-xuQRhtFAku9W3ypNLqjsrimcserFCDHkfjcnk&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_14.jpg",
+    "filename": "메신저_피싱_대화_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:50:55.911265"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUKiaA-CoKw573Mu36_ySBWyrpo6_BfxlUSWMv7kPS65bJVlzhvB298sTcUw&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_15.jpg",
+    "filename": "메신저_피싱_대화_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:50:55.988023"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFRZ9WS2_RCvAgKgR10sXUqQ_FpICQiToLiRtIs3LF9U2Lvi9n2AFWpEcU9xA&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_16.jpg",
+    "filename": "메신저_피싱_대화_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:50:56.064416"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQi-XNC4LccvC26HwCRq1HLf2RMdLDkFobEzCjnXVdj8n7V-9yvwtdphgsefQg&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_17.jpg",
+    "filename": "메신저_피싱_대화_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:50:56.191028"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3Mivw2VJH4U4Pj4Vtg_-u2SgBZu15TXjLzHvxTP67snIXV2BSdmbZqJ40Zyk&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_18.jpg",
+    "filename": "메신저_피싱_대화_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:50:56.284988"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoS9P8JgR9mElQgw2ZKxnq7TfuaCw3YlXKOsga3-_zJY7agvqsw8PoMGP2CrY&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_19.jpg",
+    "filename": "메신저_피싱_대화_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:50:56.386926"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvx_a33aNEHl480Ok30ZKzeAMw4CYyfhnnWVG8AFQDsfzsPlofOGk8ri_Ftg&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_20.jpg",
+    "filename": "메신저_피싱_대화_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:50:56.477332"
+  },
+  {
+    "query": "메신저 피싱 대화",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HJut7CbodfnAz9etglsQ-pWWl0SQxengvuFZZPj12v8xVaw4YU1IHhQazw&s",
+    "local_path": "data/images/phishing/메신저_피싱_대화_21.jpg",
+    "filename": "메신저_피싱_대화_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:50:56.514190"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZRLOh4kCJM3i7m-d8P-hr2qbTM6zHx4a5e6noNiqPKSwKf6Ia9-dM9HN6ClA&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_2.jpg",
+    "filename": "금융감독원_사칭_문자_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:51:01.946538"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrakGt-BM0TUPdP5fbEgsO_ufgEnRfriFuAG14ChW14AcT8hXY8-_riXRAlw&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_3.jpg",
+    "filename": "금융감독원_사칭_문자_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:51:02.020131"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3CnU8aNoSZzsesZ-0cc24K5FFm33sI_npoBz0XXyeId3ww6NwdO1UDVpGxZo&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_4.jpg",
+    "filename": "금융감독원_사칭_문자_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:51:02.093845"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3W5cc6Fbvu0goInsQ1M1nrFmbzLGmm7WyoZKuHVucD-mrg4rihw7vGV2Ngw&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_5.jpg",
+    "filename": "금융감독원_사칭_문자_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:51:02.303120"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEZsWNsAeaXWI64nzXgo30tnoBQLa948X-ts1KslPrz7dr0huIZEMSVobLKA&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_6.jpg",
+    "filename": "금융감독원_사칭_문자_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:51:02.374297"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQokgwY0Zks9WHJWMk-luaDXGhHzqDWrTPPFeWJejypEhM1vyYyl76JjnSO-Q&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_7.jpg",
+    "filename": "금융감독원_사칭_문자_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:51:02.546996"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRN9oRsUTqOTUU7jh76xRpyfIsKMXAVwSZQJkyIwBuXtcqou6mQOGYJnjp6wQ&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_8.jpg",
+    "filename": "금융감독원_사칭_문자_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:51:02.682108"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGZCxkdBzzg76sIkbQBE9-XNoVcC5QW1zBKHWl-hjjZAtQNXtpvt5cMiB4bb0&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_9.jpg",
+    "filename": "금융감독원_사칭_문자_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:51:02.757536"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyArbExBqX7BGP1TVMuXMQm3JhQYFY8-khnCrq_Mqxi4XsHYY1d5AEIqhf1xI&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_10.jpg",
+    "filename": "금융감독원_사칭_문자_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:51:02.794738"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9a1Ws1uz8Lf5HI5iwh0_EOtaGhXHoBayPqV4xB0ycrmzGfRMYp2xf1WLgeA&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_11.jpg",
+    "filename": "금융감독원_사칭_문자_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:51:02.928050"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeeWKhOrRLdBC_ht0HC2HFjCLji12xmJ6dZ5zt1srRU7vj1rHhvtRbluwoVw&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_12.jpg",
+    "filename": "금융감독원_사칭_문자_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:51:02.999465"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLccdFlxveXFljlx5iidD6BzkCC86Spf2KHo3X3_HQ97WgWQ7HF_Gzu8PNAIo&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_13.jpg",
+    "filename": "금융감독원_사칭_문자_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:51:03.068158"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT6OSBlAxzDlkOC_uZAybox8Jr7zz4vuqxzugNGrJkJb1ZUw9s1E-Q1vqa4fM&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_14.jpg",
+    "filename": "금융감독원_사칭_문자_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:51:03.110398"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4AT1WYXITZwfvb5-e1AAdYlVJp6syzwht5WIMTQbfjAn6iiC_TyY9cneHGw&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_15.jpg",
+    "filename": "금융감독원_사칭_문자_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:51:03.192623"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeiwNxbp6R1cytLrXkC2k7KtoNuXIC1sk0-A5lYoLihQBT9XHtBmjwkhK1jA&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_16.jpg",
+    "filename": "금융감독원_사칭_문자_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:51:03.267169"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlDBKtTMB54vU2YtatwbyavltCAtK8xX_5jexTR54yPP8rRIGqsb0uJwuBPw&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_17.jpg",
+    "filename": "금융감독원_사칭_문자_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:51:03.337850"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9765nwMxnEbBiFfNsj30o7J45DeYQy-VtGnO05ZTc9J6DgOuiT7McaGJBIA&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_18.jpg",
+    "filename": "금융감독원_사칭_문자_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:51:03.416356"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBlT1NvHjpUwr_MOxsC9Gj9Syue5N9BvHLDXqXn72_9s0OtEG2M0ah9gZiUg&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_19.jpg",
+    "filename": "금융감독원_사칭_문자_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:51:03.543705"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcydR4uSIRbmiR_8vU0hMI2E9pxvt52Z_c4MokUNkQfl-LBYFI4XweZcnM3w&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_20.jpg",
+    "filename": "금융감독원_사칭_문자_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:51:03.615589"
+  },
+  {
+    "query": "금융감독원 사칭 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSAMNpPwlVBgGmST4-ebNczR4lZILviOPv_Zz5fxeSpVplZmTSjJyosjA_4QRU&s",
+    "local_path": "data/images/phishing/금융감독원_사칭_문자_21.jpg",
+    "filename": "금융감독원_사칭_문자_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:51:03.713777"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIwhB5lE1WUxwDCbVZFncl5vcgywzPbs4DRAaRdSAiHByPtFXGDSOoctLn7yc&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_2.jpg",
+    "filename": "공공기관_사칭_메시지_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:51:09.244465"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkwJFx31dvBtO2G33glPHqTVwZOjC9lOkkIYMsTYz-D8f4nzhoA0u1LmvqYAE&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_3.jpg",
+    "filename": "공공기관_사칭_메시지_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:51:09.318653"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwa_2k0JUdprjVFWNJrpbehjBslm1-SCjElq2mMlF1iAQLV_8FBWWRKADGeA&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_4.jpg",
+    "filename": "공공기관_사칭_메시지_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:51:09.392238"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRd31gr3CfS1QimhBoC7Fmg2osSO_sHtO0KhwQQfzOeT0ghtG6GjkPUler3g&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_5.jpg",
+    "filename": "공공기관_사칭_메시지_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:51:09.511824"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoMVEnLbhXL-S-7hAGoNFRA0EI8UgXYDln5Qt56RfCJJwVwkSkaR8SflpiJQ&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_6.jpg",
+    "filename": "공공기관_사칭_메시지_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:51:09.579818"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRU1mH-eFXF_xELoVuxXktHXugvA7baEjn6C_bgBPSzaL5GjubM0HTvCWr7TYo&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_7.jpg",
+    "filename": "공공기관_사칭_메시지_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:51:09.653661"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXk0BbmF0MF2JIetOiXh_FoEfNSgm7od_t19FPNEuwF-yuBXCHQlWJDfFB1A&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_8.jpg",
+    "filename": "공공기관_사칭_메시지_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:51:09.729164"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQs0wfLmfUKFfUU3WOo0YswGHBjhcVMDJgT3Zq-STdA4_-Jsew2hVy3qE74iA&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_9.jpg",
+    "filename": "공공기관_사칭_메시지_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:51:09.843544"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwYI3ZIMhF6Rnm615-H5z1YYus2YZI991lM1jbCRvdrpgF8Do29u59ZmCP_M4&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_10.jpg",
+    "filename": "공공기관_사칭_메시지_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:51:09.914476"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyuH2w6N6kYHhjWmBnZA44IOYc5Q5PqI_0TcoVYMbLzo0uwPJYx0eWURgyTAE&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_11.jpg",
+    "filename": "공공기관_사칭_메시지_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:51:10.044735"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR95m8Kz5Hkp4GlPjS3b7wx5Fbv5V4WbyZgWkv-vri2QkMSGhKhlv0CDm_NLQ&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_12.jpg",
+    "filename": "공공기관_사칭_메시지_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:51:10.123678"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoMx2r-2nMu8QsL3GRN3R9nZeBvGv1rlHLBu9KUvU2gcpvh945lgo7McHiJ6M&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_13.jpg",
+    "filename": "공공기관_사칭_메시지_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:51:10.198069"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfWfGSjkf8S0iXLsz_yb8_XyLKW3gtKKt0t-H0ChYbLIkRkLorBpzzM5Hn3A&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_14.jpg",
+    "filename": "공공기관_사칭_메시지_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:51:10.269434"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQozRssrRp8LpIg3qw9zvi3A01jNztnjikx2xpvgzim7Ji0r74FScLL0qnzpw&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_15.jpg",
+    "filename": "공공기관_사칭_메시지_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:51:10.346903"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2alb3WkbIJ4QxxFn-Upj-JRIdEL9gVthZmkd28YJrxooEKr77f5kX7p8zFg&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_16.jpg",
+    "filename": "공공기관_사칭_메시지_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:51:10.459339"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgRHcZ4TR-k4_MIWU94P7QZzvotZNXXoU9rPO5e_BtwL3OFgRAqdtJHJonTA&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_17.jpg",
+    "filename": "공공기관_사칭_메시지_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:51:10.596339"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUwAzfZrEGAw88vSk9Z8Ae6MLzFRTVuJSHOJ-zs6OASKgAJSr4uV9iOSsnR9Y&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_18.jpg",
+    "filename": "공공기관_사칭_메시지_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:51:10.819789"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4tm56PP_-eEYfAkM4qvDKwlcjbt7GMxMBx25FaL5TQUKtkvuLjOnY1C6Cuw&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_19.jpg",
+    "filename": "공공기관_사칭_메시지_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:51:10.966375"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY2-W32OC90qO7Y1P9guhMIXwcaj-dLZUTB_ohp9bG8YbNvD9mZpP-CUMWIw&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_20.jpg",
+    "filename": "공공기관_사칭_메시지_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:51:11.038821"
+  },
+  {
+    "query": "공공기관 사칭 메시지",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbcUFbZoXoOSZEkHKn9OjkUz2MLkjxvglCUrr_0PrnF1jTejxVJ8waFiVcycI&s",
+    "local_path": "data/images/phishing/공공기관_사칭_메시지_21.jpg",
+    "filename": "공공기관_사칭_메시지_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:51:11.137520"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBY-GyPqGwf7yq5hwhjyHnzL0ZqAqCgeO1MjdCAPafz8b3qR2OaQnDvJonOA&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_2.jpg",
+    "filename": "인터넷_사기_문자_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:51:16.737034"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAV7TAU4SiRrjG53RtKD3V3x-Ijxsoy_pGZ8Ge6kW-0HwRHdN5A9kH3yuclg&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_3.jpg",
+    "filename": "인터넷_사기_문자_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:51:16.807484"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ90-z6wBhhC2sPbIEWrZftNbWIE7hF4fGpEgym_k6XoWTCdM9LYn0Igj2BlAE&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_4.jpg",
+    "filename": "인터넷_사기_문자_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:51:16.878243"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3_sFoFpvlKD0HBXbWteMkNHx6A7XmRYHoYSEfVKHFWQ8aEMF8iSlHSW0Z_Q&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_5.jpg",
+    "filename": "인터넷_사기_문자_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:51:16.915328"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYGWJ9YMEFPCdY6s9KK7zHuA90QLJAKgX3-98YABcOwpK4izQJZyfHiDPRgw&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_6.jpg",
+    "filename": "인터넷_사기_문자_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:51:16.986855"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyJsAa4eRGLK0Yv3W5WRiNnlM50kFqR3HKVcxnrPNYpWkYIbU3oGi4HZ9AIe0&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_7.jpg",
+    "filename": "인터넷_사기_문자_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:51:17.079128"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwDW6CuSaigkYqLIm6_dRYAU0_LmDNYTKbPBw1X9JY4nernbJKSo5abGgn0g&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_8.jpg",
+    "filename": "인터넷_사기_문자_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:51:17.146701"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-jbdAI_dPz4ESmx8x0SxYRI7OmN8S7w_Bsrar00S7Vq6rdGAVkbCweYYeS-M&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_9.jpg",
+    "filename": "인터넷_사기_문자_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:51:17.181857"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTZhjg2bjasl8XOujaPBSwBPBGHRElaGzGkgWHuJZZ4j2VXzcGl1g31umjR40&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_10.jpg",
+    "filename": "인터넷_사기_문자_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:51:17.268816"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEcRa4sVm1N0K6Ht5o8Rnk7rp8ac2ne84Q68c95-HVA7ObYKYvQ1ER3k994g&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_11.jpg",
+    "filename": "인터넷_사기_문자_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:51:17.344011"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiRpp-w6LtCGjo07FgBeUxjex_dZKocnNxmi5K27TEX1FR9IwiiGWwIlnylw&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_12.jpg",
+    "filename": "인터넷_사기_문자_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:51:17.419645"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjKQwwO1_-RgrV8Q4vukq33UIUgHpmG4v7bteskRk4Kt7Iy5m18nH5j7jg3g&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_13.jpg",
+    "filename": "인터넷_사기_문자_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:51:17.538240"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDk64b9gUYi88dXAC9b-iPvtxvsCMYJikrcvPxYQyMy0fNA7WHoL0oQ3LsneE&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_14.jpg",
+    "filename": "인터넷_사기_문자_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:51:17.609311"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzhMiloE5lQFA1AKrTSr4s8cja131yb-guQ_cXwV0zyGK3jsgRAXwsypL79A&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_15.jpg",
+    "filename": "인터넷_사기_문자_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:51:17.680404"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWAre7O8CZkU4VF4Hwm7a2UugfjqoPje44sFZVhsUgFNkxj-97GmQZ-2RwLQ&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_16.jpg",
+    "filename": "인터넷_사기_문자_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:51:17.752250"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkwJFx31dvBtO2G33glPHqTVwZOjC9lOkkIYMsTYz-D8f4nzhoA0u1LmvqYAE&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_17.jpg",
+    "filename": "인터넷_사기_문자_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:51:17.786654"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5mD6FUXRTDLiBngXxa88JnA78cgB356Ft5zCdW2seU8FmISNnkJ-vCE0fAg&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_18.jpg",
+    "filename": "인터넷_사기_문자_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:51:17.859035"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZbR7KgZXCdO1_LTJq-ko2cWlhjmFJBob1LFJblTp3eJzwyoPy8okZOh47wQ&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_19.jpg",
+    "filename": "인터넷_사기_문자_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:51:17.936429"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRakELnqPxYK4Bof5U6AqHi-l-Sa57MW2CIjudfJMoM_v-dCMIWbg3w9hMU9L8&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_20.jpg",
+    "filename": "인터넷_사기_문자_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:51:18.042320"
+  },
+  {
+    "query": "인터넷 사기 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIA6yXd1_B20yAKsA7_pOZSx0MPGpvVJTeJoNiNc1ISxLiv8ToAlnE0P7kE4Y&s",
+    "local_path": "data/images/phishing/인터넷_사기_문자_21.jpg",
+    "filename": "인터넷_사기_문자_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:51:18.117484"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7qiBzJEhGwhU1S1F8ljRH41UHhuEpYWKgaji9EB4HNzrid32MsCYFAKLu7k4&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_2.jpg",
+    "filename": "부고_문자_캡처_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:51:23.537896"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgHEG3JLAA-25W8tkDJ_JGb8BuisMCw1H0yInd0I0b66AtDhvEzs2uM1J9840&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_3.jpg",
+    "filename": "부고_문자_캡처_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:51:23.609280"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSudQ8wDxhFMlO5T3yY5pjA4XL1Tm9CPEWuo-afuyRDvIzx_052_JYwe3fIGSU&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_4.jpg",
+    "filename": "부고_문자_캡처_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:51:23.721483"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg4hZg1LcXYDYNL-sKvxUf9CBAj7s_UdofmZpWEuoXPDtosFSi2DfpZF0Zdqw&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_5.jpg",
+    "filename": "부고_문자_캡처_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:51:23.790142"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSELkJjzI1QpxFl7VNTjp9w69cvF2I_xwF63-HKiLgYWDePHbAkrSOgLYSlhVU&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_6.jpg",
+    "filename": "부고_문자_캡처_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:51:23.861439"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdCs9JWrguSIgCymyFLEtG75V4pux1t_JfhmGoVzE0-XxqqKn8hO-gRfJ5CQk&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_7.jpg",
+    "filename": "부고_문자_캡처_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:51:23.943577"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvtFfxI5lu7ll6sqYN61yaFSdkAbKYWHr2OferLgfIJpaSh4jyKdw2SrNGTg&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_8.jpg",
+    "filename": "부고_문자_캡처_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:51:24.019964"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1jH-yCng8tJisqYUA2tEp7Cni9MjXHjudUYo98HEiQOqzmLMkwZQa8xa55w&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_9.jpg",
+    "filename": "부고_문자_캡처_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:51:24.137037"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHoDbi1hYSB7cr-eJ3cgNTa3aidyIUmj79QClcLSCofgKKuXTpmkWubGbkOg&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_10.jpg",
+    "filename": "부고_문자_캡처_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:51:24.269670"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbMRe_i_usqHj4KI9lz9X-HTy2e73vmaS4MXXjhRCSHDPW27BMXH5tKs5Te2U&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_11.jpg",
+    "filename": "부고_문자_캡처_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:51:24.342901"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYGcZ5ldmUXx4k2wRLIGLiL88Vo6aS5mi9k7DQjlfefoiC8TkyVLLhVvrd3mU&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_12.jpg",
+    "filename": "부고_문자_캡처_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:51:24.436178"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcToJjq7-C-xdGGqfFgcTI4IKG4sHpSG4ZFiXxDS4ofhlXwqnl9SlFaRY0Chpw&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_13.jpg",
+    "filename": "부고_문자_캡처_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:51:24.529656"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQfyzHNk0Cp4Bhl7e_xf3H2Pg4ySmf4O8Iz6JsLdFPGlypVz5ohgkZbvny0w&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_14.jpg",
+    "filename": "부고_문자_캡처_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:51:24.597337"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBUvxqGG5J64ZAKDGW1hYRaaVLqpavMcXPWYY9qiM2Emz8zSTg8fcucNfL4lY&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_15.jpg",
+    "filename": "부고_문자_캡처_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:51:24.679540"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDGMOvym4a6qocH6X_tRp53LW9-0q8r1nOh6U67RaqBlJ5gl_SHqBSGy2PLY4&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_16.jpg",
+    "filename": "부고_문자_캡처_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:51:24.753684"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvWtiB7kJv5J00jt8pE5NQt99KM6GHcl7roX45wm_RkpTZYS-N3VZLfW7Bkg&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_17.jpg",
+    "filename": "부고_문자_캡처_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:51:24.822680"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm505Nsj3JH1laeP6ggbmNPUjg5IDtV5xQksl0EDe6aviiGQhG_5JygspvjA&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_18.jpg",
+    "filename": "부고_문자_캡처_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:51:24.895834"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIBjGhXEXEx_doirHOhux3GwSpnu0PsWRVOfaK72b9bimVt_eUrxCKrT9JPQ&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_19.jpg",
+    "filename": "부고_문자_캡처_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:51:24.979125"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_BleySeW-vYaMTIXgJ5lmX1iRCk2v8uvbZ9ZD7aY3adrJUwrescMjjIxJAA&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_20.jpg",
+    "filename": "부고_문자_캡처_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:51:25.090346"
+  },
+  {
+    "query": "부고 문자 캡처",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBdbefoK5Oey5qXqMcIL7jd94QlFWK__rEqldQW7NIJzKln-TNRW_yLw9RoR4&s",
+    "local_path": "data/images/phishing/부고_문자_캡처_21.jpg",
+    "filename": "부고_문자_캡처_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:51:25.158915"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsZcS4l1F51O3d7mHROtS9KhTjBtEHgZ-snvziZy3G2Io1JXm_rRgRIpDPTA&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_2.jpg",
+    "filename": "청첩장_스미싱_화면_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:51:30.632789"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvZNPFPBARk-ulI2wjQAt3HDtan4yWMpfvsOFQUTTm56zAduRUv8g7j_QHmkM&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_3.jpg",
+    "filename": "청첩장_스미싱_화면_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:51:30.756096"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnFY6OUyZnmcyb2Qnj2lkvIC5MeyJFqtozYQ2DeeXOXtBPzJMjd7tTOkjsmJE&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_4.jpg",
+    "filename": "청첩장_스미싱_화면_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:51:30.959968"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA-trdoe4buQ4JiLwi8H1oTrk62MJPPLTZjLj4t7Gk8ZlEQ9Z16ZzhnR6vVw&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_5.jpg",
+    "filename": "청첩장_스미싱_화면_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:51:31.036872"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAXI34tfBY--GLjkSSsHRibs08hd3URUyqb5oxojniTlfec5SZ50W99iK1G2o&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_6.jpg",
+    "filename": "청첩장_스미싱_화면_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:51:31.120774"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_HE2LrEQ5LNCatKygHi3Q9hV2PXhyAu-4wTIcPAYaVxdLfX-JNU1QGiDWIg&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_7.jpg",
+    "filename": "청첩장_스미싱_화면_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:51:31.204438"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVd2XszDJMwpzaij5ynsVuGuT1iRXV9p-qBfSJM1ZKODxBrP6Eq1NIKyefWZQ&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_8.jpg",
+    "filename": "청첩장_스미싱_화면_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:51:31.289888"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPqdJk14PZxKN_jJzEanN9Frn_SmIGmqEva-B4W-_ZlfZnrngPK2xE86jHBLc&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_9.jpg",
+    "filename": "청첩장_스미싱_화면_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:51:31.394620"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqvfcQc7PDEa406jycqyxWKQn1dxyJymcG0_J4SnDo3ypvCX3pBTpxU3kniA&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_10.jpg",
+    "filename": "청첩장_스미싱_화면_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:51:31.470068"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSU20CCW2NWycZsrCAaDMR-aD4xpde-O3CvjnJ2yQVOtqHsS8dI_Y3_5yr2-Bg&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_11.jpg",
+    "filename": "청첩장_스미싱_화면_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:51:31.568301"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSH8owofwbf5cbPGaQZ64PZPKJLmPG85kh6_rblLsPMGFkxEZStDrzWWTbios&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_12.jpg",
+    "filename": "청첩장_스미싱_화면_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:51:31.649244"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF-akRl89EKYdnFlSxB6y5itrublAhR-as0LadD_Rtw4EvUSh9Dt53XNEdBkE&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_13.jpg",
+    "filename": "청첩장_스미싱_화면_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:51:31.715647"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSu579ZXh4eNklqxXzV-0nDbQpKy2DBWuDXbdb1qUYADTSJS1icU0PTABx1qg&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_14.jpg",
+    "filename": "청첩장_스미싱_화면_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:51:31.790752"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWDdaJuTNdlqbusI-L5hfto88ihAArI-GuIfGw3luFGkt-RmqyCYJZLw_hFwo&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_15.jpg",
+    "filename": "청첩장_스미싱_화면_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:51:31.882747"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWyEk2f8cKRkMR9toxEKDfNDPDE6oOGRHH7blHuCAk0aoln-2rJgsX6xa-pTA&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_16.jpg",
+    "filename": "청첩장_스미싱_화면_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:51:32.048088"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1MPYjN2L5MgIT48ydXMDUcf09whVdgFU5rf4PnaCUKAC9o_LX6cd4hKgRiek&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_17.jpg",
+    "filename": "청첩장_스미싱_화면_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:51:32.140320"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCGOktKjsA4agYkrXPWYkLtFS9IxRfs6-W5bxM7iAyvVKMD7BY63t96Aco5Vw&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_18.jpg",
+    "filename": "청첩장_스미싱_화면_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:51:32.235504"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1xNoZx4XSGHj-sQCZ24Uu-jJ3ZwCsbEM6PmYzPBWKfScP4Y7HT_FDcN5wSQ&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_19.jpg",
+    "filename": "청첩장_스미싱_화면_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:51:32.362870"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJdUqbW1UM45hbAqBvpwcBiuihsNnWXWJcLjjVscbiNdSKA3oCkIn5eh0mqCk&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_20.jpg",
+    "filename": "청첩장_스미싱_화면_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:51:32.437964"
+  },
+  {
+    "query": "청첩장 스미싱 화면",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTF8I9jsoGpbW5tG9hCWMRfCLMBNnnczZEaFcs55hBg3SOsdkH6c9UPXvsu6A&s",
+    "local_path": "data/images/phishing/청첩장_스미싱_화면_21.jpg",
+    "filename": "청첩장_스미싱_화면_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:51:32.555452"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ44cmNkD7MhpcIJgjwsI56rZ6_3hO3b9-s8D9g5qX-A7kInINkFcElH-qt7A&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_2.jpg",
+    "filename": "가족_사칭_카톡_예시_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:51:38.044324"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdFxNPIxud_jdk7hV3smKV0QYAtQicsz9gY8UYhYhXypv46K8LsiHXqHLcn4w&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_3.jpg",
+    "filename": "가족_사칭_카톡_예시_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:51:38.161212"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSaLmLdq3sxw5WaxwFvGyGC7cnYM5loK9xlOKNEtpaXsdgm_jDygKvvc7XE4g&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_4.jpg",
+    "filename": "가족_사칭_카톡_예시_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:51:38.234535"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0RjNMb51y4YduYXIotquBkfzjHWp_7tZEBpvL2jUvU2BeOpTx8eN1CsJJBA&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_5.jpg",
+    "filename": "가족_사칭_카톡_예시_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:51:38.317855"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnNowHaxEDLD8khB4EGDyyqIC7yYvMenIHqrNQpVVboX8oeo6Q0HQP22rtzgo&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_6.jpg",
+    "filename": "가족_사칭_카톡_예시_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:51:38.399303"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTo-dd5iIRVpcI1W3wTzNK8O-z4-P0d2VxkAaR345Eton3KIcqVVhqqeOWCsww&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_7.jpg",
+    "filename": "가족_사칭_카톡_예시_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:51:38.468601"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgNoWJFD9cxF0u5xkKgWSkIHMmh4yKIrMUlVms7JnU8bCKeB8JiUH8Nm8nQA&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_8.jpg",
+    "filename": "가족_사칭_카톡_예시_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:51:38.500736"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbVVPU67F-_4AYqQSHM8-WCBkm2RrgG5pS0T9DUuj6FJGlog4nCHjKIxnzDA&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_9.jpg",
+    "filename": "가족_사칭_카톡_예시_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:51:38.574267"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHH3XgAz-jCnQozCJoKn2ZxrdX7LVSL9x1YJfQ5qqfdYxGVugI17DDJtHqwQ&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_10.jpg",
+    "filename": "가족_사칭_카톡_예시_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:51:38.661938"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8plS6sUwZV_d6_8KndibY-EzmpIQw_RIt11eiRdLLImATrLdnWVQ0xe07EQ&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_11.jpg",
+    "filename": "가족_사칭_카톡_예시_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:51:38.741215"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSagXblz3AuuM6hPtSlbD6XC8ozY2inU2kcrBuZyKWAqPrLfWWCwVk_vix6TQ&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_12.jpg",
+    "filename": "가족_사칭_카톡_예시_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:51:38.816677"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtOUEX5--s3VF1l10EpZ5q4QDv_vPaIyky9dreioEDb7AwBD-4QBXBhT9_6Q&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_13.jpg",
+    "filename": "가족_사칭_카톡_예시_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:51:38.890682"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUAai3zVZIsv3bE-e7WAfIETgjpm5P-6ItUhuUDNbYynQwIINmV02IcwqO8gw&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_14.jpg",
+    "filename": "가족_사칭_카톡_예시_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:51:38.959411"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDEQ-LU1yfDsUKszKe2y_1za4_Z-CWFMRaNSqkC9rzDEc9MI6nxFd0okfGcLQ&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_15.jpg",
+    "filename": "가족_사칭_카톡_예시_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:51:39.035685"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxpkoRUs1StIyV8HXahotrPwG4GqD4eFDYvbIL5Emd6MdVGS0hvpgNIbEaNb8&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_16.jpg",
+    "filename": "가족_사칭_카톡_예시_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:51:39.110767"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfdhczeMwjaTQa35o4RJtPl0SQ4PHIMZ9iOSy3hA9bChudNHjuwgbTTcmgTVc&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_17.jpg",
+    "filename": "가족_사칭_카톡_예시_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:51:39.185939"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1HJut7CbodfnAz9etglsQ-pWWl0SQxengvuFZZPj12v8xVaw4YU1IHhQazw&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_18.jpg",
+    "filename": "가족_사칭_카톡_예시_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:51:39.219698"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMQRNESfskPURUgR_PSxW77mFwyeZKXpGAb-Yrk60ECmNXKGyYYbV9Bjj6eQ&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_19.jpg",
+    "filename": "가족_사칭_카톡_예시_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:51:39.288351"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT6VPjxRp_GWygGuCukB5Yhp7zVXoRr34_5zkYSu6hMYPnoW0Th9i2SiSn2xVU&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_20.jpg",
+    "filename": "가족_사칭_카톡_예시_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:51:39.359184"
+  },
+  {
+    "query": "가족 사칭 카톡 예시",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdxgkWnNya7uozRni0Z1XMKUyk9X1-RCqFFdAueepQtouSWw1x5-2MI0wNMg&s",
+    "local_path": "data/images/phishing/가족_사칭_카톡_예시_21.jpg",
+    "filename": "가족_사칭_카톡_예시_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:51:39.440688"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLqgkQTYx6Yma-BP_iC8EoKaXyYvfszlI8PiiG97h3wdpw0PM--jEvaTqlcA&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_2.jpg",
+    "filename": "결제_알림_피싱_문자_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:51:44.905838"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5aIIPYg8dt_8vaLDqP2vyzO5DiOpPbijTPJkohJv51kmyBhwnPoH6b6wzJw&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_3.jpg",
+    "filename": "결제_알림_피싱_문자_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:51:44.978725"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhKQt2zCVJ0zPsazgYMATrWz2EWs0VDvgIcX36f84eZ-Jg-RewzSyHUJ0rOg&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_4.jpg",
+    "filename": "결제_알림_피싱_문자_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:51:45.075860"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTdG2XhNVj7XVS7oXhsAVbn5ObB8i2iw-Pjp1CYQCIc3oAY6Xr_l0n1TkFqWQ&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_5.jpg",
+    "filename": "결제_알림_피싱_문자_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:51:45.150695"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQToy1Gb8EE-eN0wyzCD-eolHb5LrNqAim3FVaQ1Gyrpz6IxDHthC3EuALgRA&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_6.jpg",
+    "filename": "결제_알림_피싱_문자_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:51:45.220586"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq4Gw65m7ogKjtPlHj4RXprEZM5MAMRofQOWpxhYnc1EwAIpgGxV0CGeb3Tg&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_7.jpg",
+    "filename": "결제_알림_피싱_문자_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:51:45.287953"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Mh9PwXPbNb3D-QU9dWaHEoKpCAS7qv6t-HzcEIAEOSOzDMyLwOEUTO7Suic&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_8.jpg",
+    "filename": "결제_알림_피싱_문자_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:51:45.369888"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhpYjjwhaSIBcCyb2bhc7VB752NmwY8ga_nMPB-q71CqeG79wXHWs-nzWheA&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_9.jpg",
+    "filename": "결제_알림_피싱_문자_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:51:45.447595"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMoNgcP6WM4CSuxAP-Rpg1g-9mz2TiGhHb-Fxc-IBrvq6dM1x8sK6G-v6aHw&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_10.jpg",
+    "filename": "결제_알림_피싱_문자_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:51:45.515190"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbOdi0cevrQl69Zh6Fw4kpMbHKAU5Cp54Z6ga_77Rd7anIHDUOUeUcJqX-yw&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_11.jpg",
+    "filename": "결제_알림_피싱_문자_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:51:45.584172"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEnCAAjfjWWwyplkUcFA8_0OM6mQkJBDPYypbULbyb5qsBM_4v5qHDdFI790c&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_12.jpg",
+    "filename": "결제_알림_피싱_문자_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:51:45.659686"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTk40-nu_fEPGAo4eMI8ND9HrR73mThzkWLHdHcLnmL7sZ_E_LvefeuJlN2&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_13.jpg",
+    "filename": "결제_알림_피싱_문자_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:51:45.736923"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiNBnJtM0g9Q4Dq8KkYMcx6XtMVe358GtuYPW06ydbtMHDhfvpRq4JiMrhUYM&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_14.jpg",
+    "filename": "결제_알림_피싱_문자_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:51:45.805630"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE9M1akHMSlbpPl3G_yCxnjgnLSRRvESpcIYyT4TbR3AbEQtKmI9L4N8JzAc0&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_15.jpg",
+    "filename": "결제_알림_피싱_문자_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:51:45.891908"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTR68SZRAYVUUav1KlQ86K5EiO15JSIVvX1KJ30m3UOPgz1EFC8RbOBEVbcL9c&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_16.jpg",
+    "filename": "결제_알림_피싱_문자_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:51:45.972745"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0JlyX8gQIxUz6f_Z4t4HBNJ25CscfYwyy0jZquFwh9BWAijwgMLuEbpfHvg&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_17.jpg",
+    "filename": "결제_알림_피싱_문자_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:51:46.044193"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFQOCDfkUViVjIc4OZP1tz7b23WNynQN4Do6sobAUokIvLuagPeZeBSpFzA7o&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_18.jpg",
+    "filename": "결제_알림_피싱_문자_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:51:46.119549"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHjqcrA8aYFA6L_3brAxGSoxav6huu48st-OYmPfjjLMEKEJ2phS10T0d_pw&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_19.jpg",
+    "filename": "결제_알림_피싱_문자_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:51:46.205985"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKP2kSayNd3RfINTt7KEVu0vB9VBPdqz-DZ4Pa4MGLvPy0wEKOJwE_36i8dA&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_20.jpg",
+    "filename": "결제_알림_피싱_문자_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:51:46.283117"
+  },
+  {
+    "query": "결제 알림 피싱 문자",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9OzjEeuyhTejJZ0akRK4lKmthQcqk-kpoIL7pLx8T9t_RMNCFB6cR_4_DYYc&s",
+    "local_path": "data/images/phishing/결제_알림_피싱_문자_21.jpg",
+    "filename": "결제_알림_피싱_문자_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:51:46.358979"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGubBiWA8lyRIA6rDFqjE8CpQIB6_w1uwCZMkqGsn0nzTstxdrO53AH0PMwQ&s",
+    "local_path": "data/images/phishing/phishing_message_example_2.jpg",
+    "filename": "phishing_message_example_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:51:51.885999"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHVuM5ojTt2zb0oUtGeX2JMHLC4przXjHaQKwyVd1a-ntHGEdzuWdR_O9FKQ&s",
+    "local_path": "data/images/phishing/phishing_message_example_3.jpg",
+    "filename": "phishing_message_example_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:51:51.976345"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuysHj4EYLQAaacmIyaiv9J2y1axgLvVrnGL6CD00bpZby32A-0V5Y_EGQ3GY&s",
+    "local_path": "data/images/phishing/phishing_message_example_4.jpg",
+    "filename": "phishing_message_example_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:51:52.053491"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_J2OoD4E7RyrtC8pdlQMfbOSyGCFyccipZ4DQxo5BNAnjPmwGKwaqnTfmXg&s",
+    "local_path": "data/images/phishing/phishing_message_example_5.jpg",
+    "filename": "phishing_message_example_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:51:52.126871"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlsxAP-hkIjMtBf24rj5bhLvCPS2ha9QqXO5dn_45aFUJrMkOIepMBKN08nzs&s",
+    "local_path": "data/images/phishing/phishing_message_example_6.jpg",
+    "filename": "phishing_message_example_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:51:52.202975"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYLDbULa9TBSNd2LzxxwAIpN-UbjTiSMaoMmamXvL1Xs8TF89SKg9z-8OobHM&s",
+    "local_path": "data/images/phishing/phishing_message_example_7.jpg",
+    "filename": "phishing_message_example_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:51:52.281909"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHWQeOgKukEpsiWzcKl_3h-d3_u7sQTqZs_EkOj29ASfNb1c_sBDoNxwTi-wY&s",
+    "local_path": "data/images/phishing/phishing_message_example_8.jpg",
+    "filename": "phishing_message_example_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:51:52.352430"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHoUcEP7JZQh5zL1gGFyOXhqttbl8JZpdulpY5DjXfiwG9YMxBWLeOH8eTM04&s",
+    "local_path": "data/images/phishing/phishing_message_example_9.jpg",
+    "filename": "phishing_message_example_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:51:52.420436"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuFdffH96cMVCRg2FwCWK_B0zkJlYHZAzTRLA98IV8u-20KCLTYfDkKpbkYQ&s",
+    "local_path": "data/images/phishing/phishing_message_example_10.jpg",
+    "filename": "phishing_message_example_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:51:52.495547"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOm-tpHB9LMGmaVbw3SHLjG5W-SpXq3-PRMwpcn8IdmIYFK2HnCnGHyATWqw&s",
+    "local_path": "data/images/phishing/phishing_message_example_11.jpg",
+    "filename": "phishing_message_example_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:51:52.574968"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREMsgjFXdLD6rgDCUkaXE-3k_BiJne7Yo6G4LwpaCGNoy0Z7PczBhCsn5Imw&s",
+    "local_path": "data/images/phishing/phishing_message_example_12.jpg",
+    "filename": "phishing_message_example_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:51:52.647221"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT40-Q-ZkGQcy2C3GEEE_6V6gZD2gkpo8NKI861X2PYc0RLg5tf3k_4UdErkw&s",
+    "local_path": "data/images/phishing/phishing_message_example_13.jpg",
+    "filename": "phishing_message_example_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:51:52.719155"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREmO_HQFe0bnAniiTDMdc8yBAdK71P6xqRRO4HQemhm_ZVwSjLuotax1Dabw&s",
+    "local_path": "data/images/phishing/phishing_message_example_14.jpg",
+    "filename": "phishing_message_example_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:51:52.794395"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSTymFoTT8HxsCVwnxdW655GrmPtGu63KImOqpTUCk7y7_2XgkheP9err94A&s",
+    "local_path": "data/images/phishing/phishing_message_example_15.jpg",
+    "filename": "phishing_message_example_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:51:52.863492"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReqvXc2yc4t-Rf6jzk_CqteMG3gydDqYy4awJQqac3jYhX8ISb9K_WaobCdtQ&s",
+    "local_path": "data/images/phishing/phishing_message_example_16.jpg",
+    "filename": "phishing_message_example_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:51:52.935788"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQUmRy8L8Zhg0rrPtoMFc3CvV66eZVmLmxE0phrE1kbzcfa7PmIm1qy6koFsn4&s",
+    "local_path": "data/images/phishing/phishing_message_example_17.jpg",
+    "filename": "phishing_message_example_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:51:53.009963"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNnWGvNL9tNHe_wbxxXT3LASVisegtUV9-02L0SaVFeVwhPDcaGEgmUHFK2qM&s",
+    "local_path": "data/images/phishing/phishing_message_example_18.jpg",
+    "filename": "phishing_message_example_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:51:53.080977"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTK3xP7jwTWTbUQ5e6LAvE7-k7SMlJKjy2ZBGpkbqixgIqR8qT6jAqHWa40Oq8&s",
+    "local_path": "data/images/phishing/phishing_message_example_19.jpg",
+    "filename": "phishing_message_example_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:51:53.157246"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTODWuCjcR0WxgoWCVpWalBqhKBuZQ34AXNCzGSfEbnmc8B8v4yc5IW_A0wmQ&s",
+    "local_path": "data/images/phishing/phishing_message_example_20.jpg",
+    "filename": "phishing_message_example_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:51:53.235936"
+  },
+  {
+    "query": "phishing message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg8Ns-hhwmbyv4KmURtzEZhT1YB_pIv4RBDESclMxU8hUiXRGBdW0sZBYSNzY&s",
+    "local_path": "data/images/phishing/phishing_message_example_21.jpg",
+    "filename": "phishing_message_example_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:51:53.314108"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcXfXl9O2Q0fVNv9iW-rKYzZl6q6Du3PhOFpZmNkgvQAXaQ9ufy-YfSY5k2Q&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_2.jpg",
+    "filename": "smishing_text_screenshot_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:51:58.778462"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnYMx2KyEqgWhTvc9oRLi6dW-mt-JbQa0TBAyTib-c_l6mq82hvwZ0h-EPcfE&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_3.jpg",
+    "filename": "smishing_text_screenshot_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:51:58.850905"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl2kQzGUnXLTVRj8H5_mWupfQCR-FetmjoLswSXy0j7KBYDEOp9I4Dfd7SD5U&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_4.jpg",
+    "filename": "smishing_text_screenshot_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:51:58.918440"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqZl57AzSAgbrj6eGggVXPq2M_j7Fa_Grh1g70h38-byV3N6leBdFG4REAJEw&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_5.jpg",
+    "filename": "smishing_text_screenshot_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:51:58.989458"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8V8EIAoHgh0_q0H3eAsS7LpSDtqua9afRU7Xn6Li5xWEhllIM_gQ8FN24ZA&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_6.jpg",
+    "filename": "smishing_text_screenshot_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:51:59.064084"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvkMSaxnwMDh0hMWm3uBZ1zlQyy_jryicmHHfouvySa2Q10fO4tysSOwrCI2o&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_7.jpg",
+    "filename": "smishing_text_screenshot_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:51:59.138459"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXq4D2-swsoDDotFGpN-3pi6ERRMFVB66qxUK1pg0qtnjr9EZy_9mpnM-Xwg&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_8.jpg",
+    "filename": "smishing_text_screenshot_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:51:59.214191"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkrMi6RyAlqLOKENBb90pxbyOYeq1hxQiPTDhTWOwPnRYFEqE3ZPg3hT_eGw&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_9.jpg",
+    "filename": "smishing_text_screenshot_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:51:59.282845"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTP2PUy6GqCEdgGPg1NsYyAM_7_r-dInbiHgHy8q2Rgn-tMf-BhsSu_Tcg-Pg&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_10.jpg",
+    "filename": "smishing_text_screenshot_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:51:59.354456"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5ElNm8bN4dqGfV6UltzvYdgK2K33iDdpKB8T01Yl6tzWEA-KxozECqcclPPs&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_11.jpg",
+    "filename": "smishing_text_screenshot_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:51:59.428334"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSPOqwRLDXR0HH6-Q0MrbVl9OVR0boLVsLosz_oFCJKw-mXw4Lt6gJ95svOQ&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_12.jpg",
+    "filename": "smishing_text_screenshot_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:51:59.505731"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQU-ph5fgi-R7wvaJJab8Q9OA_Va5WKWkiI9kcaJ1CWF8aXPazBjdo4SEEscTk&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_13.jpg",
+    "filename": "smishing_text_screenshot_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:51:59.583892"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfSbRdP7KNap4ZT_lwo3YIvRZeLNsHD-TsaE0DbxLYmpZWIll7UQy2Hy_Ecw&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_14.jpg",
+    "filename": "smishing_text_screenshot_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:51:59.659463"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuGEczK7jdn3uKdc3I51So34umM9XNN2qfL8Us7VF12OqNZUY5KXuqC1oZ2j0&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_15.jpg",
+    "filename": "smishing_text_screenshot_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:51:59.733402"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV5dWO0UYUsSQAEv7gevsQKw1rLdMkBzQonlZNjiF3KqEvTmAR5Bc4hEZmYw&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_16.jpg",
+    "filename": "smishing_text_screenshot_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:51:59.810358"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1ZQkvD2nZB82HSbi2PMkfBGmE6_A89aPWGMN8jR6qKKpBb_LibIwIO0z9LA&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_17.jpg",
+    "filename": "smishing_text_screenshot_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:51:59.882582"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGpNlbwsiVlsHxLhJoTnE7atGC1aA15fTPPIoxowhsH-ap4wYPhJihQNaeVlw&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_18.jpg",
+    "filename": "smishing_text_screenshot_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:51:59.951430"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSvKny1BmfFzqB1JdWyXJ__Gh8wE_L6nbnDKnQf4iy4aFzTRlhjYVeSbfW5y-Y&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_19.jpg",
+    "filename": "smishing_text_screenshot_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:52:00.027782"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlbvZAC-dfAqOem5W0UtWaBufdkIMX1Kn0ALGV1gDABQvMzbwIWEh0A0LIhw&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_20.jpg",
+    "filename": "smishing_text_screenshot_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:52:00.100777"
+  },
+  {
+    "query": "smishing text screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR40Htv1MvZ_WX_tUUZgDAh-4VIWecJIJWgZr_xDUggbimCgVH7htX6gIYza58&s",
+    "local_path": "data/images/phishing/smishing_text_screenshot_21.jpg",
+    "filename": "smishing_text_screenshot_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:52:00.240095"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTpFM8PDjOkJj4Er79T7QYAju2Mg2ANcQz21n7nc9wbIAuEdiXyE_uLlVjtmkg&s",
+    "local_path": "data/images/phishing/scam_message_example_2.jpg",
+    "filename": "scam_message_example_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:52:05.689564"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7xp-zSKJrcmsOf-hSEYeSwvwwJ1S3tMivbASPtiO9GRJFai7jvNAnFNEP1w&s",
+    "local_path": "data/images/phishing/scam_message_example_3.jpg",
+    "filename": "scam_message_example_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:52:05.769993"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLYoLV-i0-qXGYfFkQXfd3x6rVbPVI4qKvSK4XKzDNFgZT7Jn6d8P--_mYYQ&s",
+    "local_path": "data/images/phishing/scam_message_example_4.jpg",
+    "filename": "scam_message_example_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:52:05.845090"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQYhpe56he8Z05Zi7-OopsTKP4galxYO50WkbsuifUdJl3yjOOComoEjtHAyzs&s",
+    "local_path": "data/images/phishing/scam_message_example_5.jpg",
+    "filename": "scam_message_example_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:52:05.919407"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3vEnjtedvCxqDO2Sd20N16BpP6bYQI60tvHy_kZriEWYpGa5z_xIfuTtroA&s",
+    "local_path": "data/images/phishing/scam_message_example_6.jpg",
+    "filename": "scam_message_example_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:52:05.993973"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGezIbSnmZceKOn3if1OLqI344bU90-h1Q4RaWNbEFhHUvwPaVpd8O_zgWAsQ&s",
+    "local_path": "data/images/phishing/scam_message_example_7.jpg",
+    "filename": "scam_message_example_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:52:06.079447"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1J4aBAO_Xh-pmrBGAv6t-WZ7dI8sy09ipA0cFuFqx4M36hCF7TLCBEvR09Vk&s",
+    "local_path": "data/images/phishing/scam_message_example_8.jpg",
+    "filename": "scam_message_example_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:52:06.147441"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVAXSCb50uTOfzKRCr4G0UOO5RU7rJ9VSxJIp0wUiTaVugGWfT15muJeSMTOk&s",
+    "local_path": "data/images/phishing/scam_message_example_9.jpg",
+    "filename": "scam_message_example_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:52:06.220284"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQysG-A5-uQkdmF-mPRQoeuZ22B4QUuR78MWvoIYmX7_GFLtS6HagZEevwN85c&s",
+    "local_path": "data/images/phishing/scam_message_example_10.jpg",
+    "filename": "scam_message_example_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:52:06.287466"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMxZ6gtm_rhLQJE5DRLYy3y7YdLAt56wEOn-29z-b8iDEyuF3qnAWWCABI68Y&s",
+    "local_path": "data/images/phishing/scam_message_example_11.jpg",
+    "filename": "scam_message_example_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:52:06.358603"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi0KfZJQoarndcT9j7V5s0ViOLzn0zSELh2-mtNA0NMObD0YtF0wsxOiFs2g&s",
+    "local_path": "data/images/phishing/scam_message_example_12.jpg",
+    "filename": "scam_message_example_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:52:06.427757"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBuq5a2AprS3axWPqVXg0Ctm6YLbOTzvxGnai99cPKUfjrpeqInJTMuYmhjI0&s",
+    "local_path": "data/images/phishing/scam_message_example_13.jpg",
+    "filename": "scam_message_example_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:52:06.503623"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNfre7Aw_hpqu3rD2f_X34wtKKJladITRRRxoV4hb1FOk5bNZN6Jh85ikg2U0&s",
+    "local_path": "data/images/phishing/scam_message_example_14.jpg",
+    "filename": "scam_message_example_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:52:06.574930"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiRNNFoyq4a8A3DzN-0vTTVkyfsd9tH8YUmyIdPz1eKlahp-Iq7Dy5uca-gEI&s",
+    "local_path": "data/images/phishing/scam_message_example_15.jpg",
+    "filename": "scam_message_example_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:52:06.652822"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQzYLivFnPa0ZFO_FzMvfldN24JLJ6yaawJCnE94ISEMDEKDScV2pef2EKyg&s",
+    "local_path": "data/images/phishing/scam_message_example_16.jpg",
+    "filename": "scam_message_example_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:52:06.720078"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9Ucba0Co_rhUt8FOg5_mab-PlBVjs0tW_Pww1xdjJArimqCIl5fGY04m008A&s",
+    "local_path": "data/images/phishing/scam_message_example_17.jpg",
+    "filename": "scam_message_example_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:52:06.793696"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTA9KsCw1ypFijRHb2pADfQ71t8bfbkfCTuojt5ICM5g-CvVUgkGfMUxenpsHI&s",
+    "local_path": "data/images/phishing/scam_message_example_18.jpg",
+    "filename": "scam_message_example_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:52:06.864145"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9BsJdcUf7DJHFzjHPoimjZSAT6tKRyys0TRleSi66audIl3gPp5wTz9IZLA&s",
+    "local_path": "data/images/phishing/scam_message_example_19.jpg",
+    "filename": "scam_message_example_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:52:06.938628"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTslv1Vql9fYoe0rGlCab6W7Db9isJd3X4EqGZfExfPR4bw92h7zEEON2p_RFQ&s",
+    "local_path": "data/images/phishing/scam_message_example_20.jpg",
+    "filename": "scam_message_example_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:52:07.023454"
+  },
+  {
+    "query": "scam message example",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLR3oUHnHhysuZ9uoqDZE_Mi_QHzLVCJjgba-JspxykFR8CBFkrnBYL31EWQ&s",
+    "local_path": "data/images/phishing/scam_message_example_21.jpg",
+    "filename": "scam_message_example_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:52:07.097044"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLYoLV-i0-qXGYfFkQXfd3x6rVbPVI4qKvSK4XKzDNFgZT7Jn6d8P--_mYYQ&s",
+    "local_path": "data/images/phishing/fraud_text_message_2.jpg",
+    "filename": "fraud_text_message_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:52:12.587037"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTb-3_BdmNwnDT4Y0wJFoGFV6_EsxjUCZKbEsGaoH_YTdQ4FtvznmvkiI1m2w&s",
+    "local_path": "data/images/phishing/fraud_text_message_3.jpg",
+    "filename": "fraud_text_message_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:52:12.661162"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-3vEnjtedvCxqDO2Sd20N16BpP6bYQI60tvHy_kZriEWYpGa5z_xIfuTtroA&s",
+    "local_path": "data/images/phishing/fraud_text_message_4.jpg",
+    "filename": "fraud_text_message_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:52:12.695296"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7GnLUhbL44xX_RV3yLLaF7GB6vUX3rJz16VdNnbcWjr_vnWQMtsV_vkpzSg&s",
+    "local_path": "data/images/phishing/fraud_text_message_5.jpg",
+    "filename": "fraud_text_message_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:52:12.769862"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnCSymYne9pF4QUs0DLFHAjZvI0a33byrGoTBC8Wl3eeFZ952SQozkSo_msA&s",
+    "local_path": "data/images/phishing/fraud_text_message_6.jpg",
+    "filename": "fraud_text_message_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:52:12.842616"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGoGarJjynOCCkeL7sCSAPM7WKpmwEp0gh29B2OgdfUa7SVepuQxfnwqxVrIQ&s",
+    "local_path": "data/images/phishing/fraud_text_message_7.jpg",
+    "filename": "fraud_text_message_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:52:12.916361"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeitIxXCdh-er8h6jk3xpOD4Mdy-uN2rhnFzGxJUel9KVWUrU2Mgke_8QRcw&s",
+    "local_path": "data/images/phishing/fraud_text_message_8.jpg",
+    "filename": "fraud_text_message_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:52:12.992329"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3nThdhj2_hqgo-yME7OgrjVoliE6iqr-3NT-C-9Hs_d9JuTCQRMnkunUN_Q&s",
+    "local_path": "data/images/phishing/fraud_text_message_9.jpg",
+    "filename": "fraud_text_message_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:52:13.060101"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_kA6hCqvuKk04ocO-HX7nO5JSYLxq5UEefJqFXHpzoidHuDECF67zp6VhPg&s",
+    "local_path": "data/images/phishing/fraud_text_message_10.jpg",
+    "filename": "fraud_text_message_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:52:13.133012"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRimpFBpiFa0HZvWIIfrAZ-AwaJbEfOWT-DNf8qRYwTQSxMrOI0Fe5xpy6MK6Q&s",
+    "local_path": "data/images/phishing/fraud_text_message_11.jpg",
+    "filename": "fraud_text_message_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:52:13.201255"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR15pcpyI-DlElZ6WMUwHyB-E731g6HC9ZZsR6HWbJR7QWBnTJ4_W5FdYPESg&s",
+    "local_path": "data/images/phishing/fraud_text_message_12.jpg",
+    "filename": "fraud_text_message_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:52:13.270084"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRh9x3FHB9jLCTrcT9Nhueiwhf9uCrNo9dobgJW82BZrmqJKoK1ZpKbM3xii2A&s",
+    "local_path": "data/images/phishing/fraud_text_message_13.jpg",
+    "filename": "fraud_text_message_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:52:13.385847"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqJjg5JMufTo8lRNsZRXoQAQE8ye0MUBQCoL0ZXvlr04lGR6GciBtM466xHw&s",
+    "local_path": "data/images/phishing/fraud_text_message_14.jpg",
+    "filename": "fraud_text_message_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:52:13.463775"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_6KDuTLk2BoMJs4nal86Moeac5z1x-K0DuIPJzZvg2idIejVM5PcV4jJypQ&s",
+    "local_path": "data/images/phishing/fraud_text_message_15.jpg",
+    "filename": "fraud_text_message_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:52:13.539031"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5MQ4XNVjTyio8DSOutpui_rrPfJZw7k_0qHClANRbobUJ7GjSQ5WCrNaUKxo&s",
+    "local_path": "data/images/phishing/fraud_text_message_16.jpg",
+    "filename": "fraud_text_message_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:52:13.612701"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCna9JFMc-W1jrx_Q2y8iyJuN2PZ6LkYsERPsg1evG384n_7gREXrBGE6-LKI&s",
+    "local_path": "data/images/phishing/fraud_text_message_17.jpg",
+    "filename": "fraud_text_message_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:52:13.685116"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNt0Wf1l6ygztYLTEWCmU9M6V1JY5S92Zm-wyDp_rYCo9O-D2JXdN8mKPXM0w&s",
+    "local_path": "data/images/phishing/fraud_text_message_18.jpg",
+    "filename": "fraud_text_message_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:52:13.763279"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBnoeFfSFGKxNL0da1ZyvfZBjDAB-s5KjO-YNd0kk9rn2tqldUPWcvoXUGFg&s",
+    "local_path": "data/images/phishing/fraud_text_message_19.jpg",
+    "filename": "fraud_text_message_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:52:13.843620"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPd-yBWOHrttAuejt5YEpKcXceX_1o8GFaDy2Y-nuZBwEcpfUj5Ex0ulE6Tw&s",
+    "local_path": "data/images/phishing/fraud_text_message_20.jpg",
+    "filename": "fraud_text_message_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:52:13.915122"
+  },
+  {
+    "query": "fraud text message",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtFKe_srIWenMTiTSuXDnR8juB22e9YVglgxW2daDSET7lklEsXOs5aG8xYw&s",
+    "local_path": "data/images/phishing/fraud_text_message_21.jpg",
+    "filename": "fraud_text_message_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:52:13.983459"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR32tu8QewxnTySxTQ9oYSH2pgVaRLgBgiizLamOLBaWUewON5ma1aQ2fkyFQ&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_2.jpg",
+    "filename": "WhatsApp_scam_screenshot_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:52:19.541048"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSCXO4u1PF90a31CUUTuMOqgosR2s3X0Tw5aQ-vQL3R_CgHXVFa0zGKeGVYA&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_3.jpg",
+    "filename": "WhatsApp_scam_screenshot_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:52:19.611347"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO6I2Z5vVRsNkS3o_vep1c1K-FSZemdMvwtYiRuBgXo3FIsqMpy2frs7K0P00&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_4.jpg",
+    "filename": "WhatsApp_scam_screenshot_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:52:19.687454"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQAiKIg5rqWtyJ6C43Bucw8sHGo7SOIs7ap9wuqyrSt6znTZ5m4zRtRBJm1CQ&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_5.jpg",
+    "filename": "WhatsApp_scam_screenshot_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:52:19.762828"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOeFQ31Ji033uzsf7N0Qh0Bv20gqAsHt1yRQ6WmQ3nEacGo9BU14sFu9R35Q&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_6.jpg",
+    "filename": "WhatsApp_scam_screenshot_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:52:19.829054"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNR2nggH0B_TmCMT38tMGsmye7HWvSbrJlitZ_PxDTbT2_LZyEDxgm2O_PgaA&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_7.jpg",
+    "filename": "WhatsApp_scam_screenshot_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:52:19.901328"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOBPRoZA5-WuE1TYJFxsTMFra_Bku8-lnd1XQAZPigweT06NDzaBVzIA4bG3E&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_8.jpg",
+    "filename": "WhatsApp_scam_screenshot_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:52:19.979535"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXkSlgPuejOYnIOj4C_QMYILra6njj1nzJn-WrORzDCQq9_FgJe7ERl6CFKQ&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_9.jpg",
+    "filename": "WhatsApp_scam_screenshot_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:52:20.045563"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3M3-QPKXjtw9L901UN0VzG2LqejlupzAxUM_1HRL-a765qQIZbtjJp9kvJw&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_10.jpg",
+    "filename": "WhatsApp_scam_screenshot_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:52:20.130162"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSanJN_4l_GtroaXJLHdcBgAyZgCygcb-UCb1fj5TZTiI60WiV88ZsPSNaMpNY&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_11.jpg",
+    "filename": "WhatsApp_scam_screenshot_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:52:20.201376"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQde7niUr5SGrFLWF2Vn7PRkTwF8IyZ-5b424XPf-LER7apiHgobwtJOVndyHw&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_12.jpg",
+    "filename": "WhatsApp_scam_screenshot_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:52:20.278244"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkr65TYdps1e1Xm3jJcjpcG5_iki0VCu3_SbUW5ypNC6yXnggkvkL5XmIaZg&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_13.jpg",
+    "filename": "WhatsApp_scam_screenshot_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:52:20.361634"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNzCQj1DJJvvjAP1lt77r1Yv-U_cM-h4ESlcS-tr8Jt3A14hgTxmcgb8ZalZI&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_14.jpg",
+    "filename": "WhatsApp_scam_screenshot_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:52:20.439452"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8bkiZeTsrVPPZVPJt4-aFsuLQaBxjiaFmAFKX2xgh0L0Us0FHNwutZHrxnA&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_15.jpg",
+    "filename": "WhatsApp_scam_screenshot_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:52:20.510726"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIjvuz-VFrThYXH_bQQ9yIJQtfbvgzsLTB3635fdTfDZ-gjDEWe-UqjLVWKg&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_16.jpg",
+    "filename": "WhatsApp_scam_screenshot_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:52:20.596136"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrVG9Oy6SqjzMOIiybW_qbMk3hnEaj8y4LY_X0rLwSKD168i0Sj5Cm-_RroWs&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_17.jpg",
+    "filename": "WhatsApp_scam_screenshot_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:52:20.697877"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHYYzH9d-Me1SwOfVSecB37Rt_awGUPp557lRcqmX5rZhiCKbYDckz53FKr7g&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_18.jpg",
+    "filename": "WhatsApp_scam_screenshot_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:52:20.773387"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROr7-XgBabcWWPmyEYVgxvT4R4N1jsS_F6aOl0DlQIPo6cH5bR-cEHTGlwaw&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_19.jpg",
+    "filename": "WhatsApp_scam_screenshot_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:52:20.849052"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsgVmBnCZYaPAfycqvhZtJkgP4aUuVH5VCa3bF64zyUXidyES8IJoGHKAa9Q&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_20.jpg",
+    "filename": "WhatsApp_scam_screenshot_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:52:20.919345"
+  },
+  {
+    "query": "WhatsApp scam screenshot",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQA3syOe_5VjwRGeIPkxqKsWNgoZu-nmmXzLDDTC0fC9F3mZHpHppAa2abWQ&s",
+    "local_path": "data/images/phishing/WhatsApp_scam_screenshot_21.jpg",
+    "filename": "WhatsApp_scam_screenshot_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:52:20.994513"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIhZ3Y2gGAgh6XDfDJgfPKXDSysLn5GznADTclOGIoOwxQK43wxdxy4tk9dw&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_2.jpg",
+    "filename": "Telegram_phishing_capture_2.jpg",
+    "index": 2,
+    "crawled_at": "2026-01-31T14:52:26.446409"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuqhMzmwGiCphg2xATV0LkYSfT1O1rDtZdWSBiUYWfoeXGZOUI2WZ2D2nYMg&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_3.jpg",
+    "filename": "Telegram_phishing_capture_3.jpg",
+    "index": 3,
+    "crawled_at": "2026-01-31T14:52:26.526546"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSciO1T1HEBOUJDEuszE3vUA13i8K3XjeGSrqR7XUTlIfmT2RLDgt_B9m-HAA&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_4.jpg",
+    "filename": "Telegram_phishing_capture_4.jpg",
+    "index": 4,
+    "crawled_at": "2026-01-31T14:52:26.612233"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSedZLfCFF2_Al7xWaij358yp6kLPf4DtvJE_Cyco9u-XpSjm7cJzG439V0ZEo&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_5.jpg",
+    "filename": "Telegram_phishing_capture_5.jpg",
+    "index": 5,
+    "crawled_at": "2026-01-31T14:52:26.685249"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpsiQQH9UgRj8bVhtVCxP9cNWhbS40rE8kgrosfuFF3J9e6F8BNaa3ti3GuQ&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_6.jpg",
+    "filename": "Telegram_phishing_capture_6.jpg",
+    "index": 6,
+    "crawled_at": "2026-01-31T14:52:26.759553"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQli1sRHEUfmuEPxdIiUKlmfLACcAorPPtmoVf5GV5eaRXkRFM42SHRvG1r_jE&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_7.jpg",
+    "filename": "Telegram_phishing_capture_7.jpg",
+    "index": 7,
+    "crawled_at": "2026-01-31T14:52:26.837787"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUybCoeQhBCk4R2lcTVTCtYa3Mb39noYP69ZqDG5PtozDNT7xqOIEm8oLEtA&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_8.jpg",
+    "filename": "Telegram_phishing_capture_8.jpg",
+    "index": 8,
+    "crawled_at": "2026-01-31T14:52:26.909513"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSizTV1YWx3nzBfdtt7drbthdgkEfNrhoLQurlJDj0seJNb3nWeUevby79hRw&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_9.jpg",
+    "filename": "Telegram_phishing_capture_9.jpg",
+    "index": 9,
+    "crawled_at": "2026-01-31T14:52:26.981693"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQowdh6kNFCXxC6vAW_huMwjUfc1nhiTpKrkDOyqugYW5LjlOZZzp-lwfZMrw&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_10.jpg",
+    "filename": "Telegram_phishing_capture_10.jpg",
+    "index": 10,
+    "crawled_at": "2026-01-31T14:52:27.048965"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBKYOb7Smuf4BDloQFtO2IcRHicBm-VdbtsViX9CYnSsoiCPv2o5Yan_ZhVg&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_11.jpg",
+    "filename": "Telegram_phishing_capture_11.jpg",
+    "index": 11,
+    "crawled_at": "2026-01-31T14:52:27.119963"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvD4IsTqMEdrVXjfUnwF6TT8O4FQp5D1qe0LM_qBdsFskhfX33FCS-8TiKJqU&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_12.jpg",
+    "filename": "Telegram_phishing_capture_12.jpg",
+    "index": 12,
+    "crawled_at": "2026-01-31T14:52:27.194448"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwlR3p0fNhXQNK77yyd5OhmND7GWUgYdylYKsUJSEfn5-p0VC6kJ7PjWl_Fw&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_13.jpg",
+    "filename": "Telegram_phishing_capture_13.jpg",
+    "index": 13,
+    "crawled_at": "2026-01-31T14:52:27.275895"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQddiuKkuza5HV5STBCawmBK_gOPEBzTgW4ol7O92kyJf96InTtEy9Ve6MI9G8&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_14.jpg",
+    "filename": "Telegram_phishing_capture_14.jpg",
+    "index": 14,
+    "crawled_at": "2026-01-31T14:52:27.350355"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxnOYlGNDtG8uYiqqjdYVlUdMI3eBWpONFxEtVZ4ThqEgb3Cv1FSqrlA0wJg&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_15.jpg",
+    "filename": "Telegram_phishing_capture_15.jpg",
+    "index": 15,
+    "crawled_at": "2026-01-31T14:52:27.426103"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBQQ4pfwv-Lqo3J3J-SRVcwfHaSI5Jr2q-l9vHWkxso0KkCra3F3slZgYiIA&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_16.jpg",
+    "filename": "Telegram_phishing_capture_16.jpg",
+    "index": 16,
+    "crawled_at": "2026-01-31T14:52:27.509701"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJiMjsAptzjldIITqpoblpd7FN7TcfP5J8LluVCGVVB_ocApKU3NcNGMzGFw&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_17.jpg",
+    "filename": "Telegram_phishing_capture_17.jpg",
+    "index": 17,
+    "crawled_at": "2026-01-31T14:52:27.581804"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5KQy91ZUkSFt35dafZ0r2ERChYCzWN6HAv9-p-BnU3BhZY0kxc5nitEqbZ3I&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_18.jpg",
+    "filename": "Telegram_phishing_capture_18.jpg",
+    "index": 18,
+    "crawled_at": "2026-01-31T14:52:27.665383"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQqIZOOuPBd6EfiZ7qj9z005D-BbM9_7r7VEWOduOA_Mv-n10cWWrNWy4vYA&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_19.jpg",
+    "filename": "Telegram_phishing_capture_19.jpg",
+    "index": 19,
+    "crawled_at": "2026-01-31T14:52:27.737785"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBImLS3c0ZGn-S12Ga03oZ91NT4WP-cWDnlyI2rR5ivJtcatqu76YbMGC-hIw&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_20.jpg",
+    "filename": "Telegram_phishing_capture_20.jpg",
+    "index": 20,
+    "crawled_at": "2026-01-31T14:52:27.814135"
+  },
+  {
+    "query": "Telegram phishing capture",
+    "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDZXlgDIgPKYgdQpDswFdfishVb7iy6BONYZmVyIUcO924sISb9RSfYJqEvw&s",
+    "local_path": "data/images/phishing/Telegram_phishing_capture_21.jpg",
+    "filename": "Telegram_phishing_capture_21.jpg",
+    "index": 21,
+    "crawled_at": "2026-01-31T14:52:27.883397"
+  }
+]

@@ -1,0 +1,267 @@
+{
+  "search_date": "2026-01-30T14:06:42.815216",
+  "total_results": 29,
+  "datasets": [
+    {
+      "rank": 1,
+      "keyword": "phishing",
+      "ref": "taruntiwarihp/phishing-site-urls",
+      "title": "Phishing Site URLs",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/taruntiwarihp/phishing-site-urls"
+    },
+    {
+      "rank": 2,
+      "keyword": "phishing",
+      "ref": "naserabdullahalam/phishing-email-dataset",
+      "title": "Phishing Email Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset"
+    },
+    {
+      "rank": 3,
+      "keyword": "phishing",
+      "ref": "subhajournal/phishingemails",
+      "title": "Phishing Email Detection",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/subhajournal/phishingemails"
+    },
+    {
+      "rank": 4,
+      "keyword": "phishing",
+      "ref": "eswarchandt/phishing-website-detector",
+      "title": "Phishing website Detector",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/eswarchandt/phishing-website-detector"
+    },
+    {
+      "rank": 5,
+      "keyword": "phishing",
+      "ref": "ethancratchley/email-phishing-dataset",
+      "title": "Email Phishing Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/ethancratchley/email-phishing-dataset"
+    },
+    {
+      "rank": 1,
+      "keyword": "smishing",
+      "ref": "galactus007/sms-smishing-collection-data-set",
+      "title": "SMS Smishing Collection Data Set",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/galactus007/sms-smishing-collection-data-set"
+    },
+    {
+      "rank": 2,
+      "keyword": "smishing",
+      "ref": "rekarius/smishing-eng",
+      "title": "smishing eng",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/rekarius/smishing-eng"
+    },
+    {
+      "rank": 3,
+      "keyword": "smishing",
+      "ref": "gokhansoyturk/smishing-sms-dataset",
+      "title": "Smishing SMS Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/gokhansoyturk/smishing-sms-dataset"
+    },
+    {
+      "rank": 4,
+      "keyword": "smishing",
+      "ref": "verugopaliyyer/phishing-detection-dataset",
+      "title": "Phishing Detection Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/verugopaliyyer/phishing-detection-dataset"
+    },
+    {
+      "rank": 1,
+      "keyword": "spam sms",
+      "ref": "uciml/sms-spam-collection-dataset",
+      "title": "SMS Spam Collection Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/uciml/sms-spam-collection-dataset"
+    },
+    {
+      "rank": 2,
+      "keyword": "spam sms",
+      "ref": "abhishek14398/sms-spam-collection",
+      "title": "SMS Spam Collection",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/abhishek14398/sms-spam-collection"
+    },
+    {
+      "rank": 3,
+      "keyword": "spam sms",
+      "ref": "mariumfaheem666/spam-sms-classification-using-nlp",
+      "title": "Spam SMS Classification Using NLP",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/mariumfaheem666/spam-sms-classification-using-nlp"
+    },
+    {
+      "rank": 4,
+      "keyword": "spam sms",
+      "ref": "marslinoedward/sms-spam-dataset",
+      "title": "SMS Spam Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/marslinoedward/sms-spam-dataset"
+    },
+    {
+      "rank": 5,
+      "keyword": "spam sms",
+      "ref": "thedevastator/sms-spam-collection-a-more-diverse-dataset",
+      "title": "SMS Spam Collection (Text Classification)",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/thedevastator/sms-spam-collection-a-more-diverse-dataset"
+    },
+    {
+      "rank": 1,
+      "keyword": "fraud text",
+      "ref": "rtatman/fraudulent-email-corpus",
+      "title": "Fraudulent E-mail Corpus",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/rtatman/fraudulent-email-corpus"
+    },
+    {
+      "rank": 2,
+      "keyword": "fraud text",
+      "ref": "naserabdullahalam/phishing-email-dataset",
+      "title": "Phishing Email Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset"
+    },
+    {
+      "rank": 3,
+      "keyword": "fraud text",
+      "ref": "tapakah68/email-spam-classification",
+      "title": "Email Spam Text Classification Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/tapakah68/email-spam-classification"
+    },
+    {
+      "rank": 4,
+      "keyword": "fraud text",
+      "ref": "advaithsrao/enron-fraud-email-dataset",
+      "title": "Enron Fraud Email Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/advaithsrao/enron-fraud-email-dataset"
+    },
+    {
+      "rank": 5,
+      "keyword": "fraud text",
+      "ref": "oscarm524/fraud-detection-in-grocery-shopping-transactions",
+      "title": "Fraud Detection at self-checkout in retail",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/oscarm524/fraud-detection-in-grocery-shopping-transactions"
+    },
+    {
+      "rank": 1,
+      "keyword": "phishing email",
+      "ref": "naserabdullahalam/phishing-email-dataset",
+      "title": "Phishing Email Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/naserabdullahalam/phishing-email-dataset"
+    },
+    {
+      "rank": 2,
+      "keyword": "phishing email",
+      "ref": "subhajournal/phishingemails",
+      "title": "Phishing Email Detection",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/subhajournal/phishingemails"
+    },
+    {
+      "rank": 3,
+      "keyword": "phishing email",
+      "ref": "ethancratchley/email-phishing-dataset",
+      "title": "Email Phishing Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/ethancratchley/email-phishing-dataset"
+    },
+    {
+      "rank": 4,
+      "keyword": "phishing email",
+      "ref": "shashwatwork/phishing-dataset-for-machine-learning",
+      "title": "Phishing Dataset for Machine Learning",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/shashwatwork/phishing-dataset-for-machine-learning"
+    },
+    {
+      "rank": 5,
+      "keyword": "phishing email",
+      "ref": "akashsurya156/phishing-paper1",
+      "title": "Phishing Email Collection",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/akashsurya156/phishing-paper1"
+    },
+    {
+      "rank": 1,
+      "keyword": "malicious text",
+      "ref": "tapakah68/email-spam-classification",
+      "title": "Email Spam Text Classification Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/tapakah68/email-spam-classification"
+    },
+    {
+      "rank": 2,
+      "keyword": "malicious text",
+      "ref": "abdallahwagih/spam-emails",
+      "title": "Spam Emails",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/abdallahwagih/spam-emails"
+    },
+    {
+      "rank": 3,
+      "keyword": "malicious text",
+      "ref": "daniaherzalla/tii-ssrc-23",
+      "title": "TII-SSRC-23 Dataset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/daniaherzalla/tii-ssrc-23"
+    },
+    {
+      "rank": 4,
+      "keyword": "malicious text",
+      "ref": "cnrieiit/mqttset",
+      "title": "MQTTset",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/cnrieiit/mqttset"
+    },
+    {
+      "rank": 5,
+      "keyword": "malicious text",
+      "ref": "manishkc06/web-page-phishing-detection",
+      "title": "Web Page Phishing Detection",
+      "downloads": 0,
+      "votes": 0,
+      "url": "https://www.kaggle.com/datasets/manishkc06/web-page-phishing-detection"
+    }
+  ]
+}

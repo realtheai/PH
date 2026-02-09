@@ -30,7 +30,15 @@ class NaverAPINewsCrawler:
         self.base_url = "https://openapi.naver.com/v1/search/news.json"
     
     def fetch_full_content(self, url: str) -> str:
-        """URL에서 전체 기사 본문 추출 (newspaper3k 사용)"""
+        """URL에서 전체 기사 본문 추출 (newspaper3k 사용)
+        
+        ⚠️ GitHub Actions 시간 절약을 위해 비활성화됨
+        네이버 API description으로 충분함
+        """
+        # GitHub Actions 최적화: 본문 크롤링 비활성화
+        # return ""  # 빠른 실행을 위해 스킵
+        
+        # 로컬에서만 전체 본문 크롤링 (선택적)
         try:
             article = Article(url, language='ko')
             article.download()
@@ -86,16 +94,13 @@ class NaverAPINewsCrawler:
                     except:
                         pass
                 
-                # 전체 본문 추출
-                print(f"      [{idx}/{len(items)}] 본문 추출 중...", end=' ')
-                full_content = self.fetch_full_content(url)
+                # 전체 본문 추출 (GitHub Actions 최적화: API description 사용)
+                # print(f"      [{idx}/{len(items)}] 본문 추출 중...", end=' ')
+                # full_content = self.fetch_full_content(url)
                 
-                if full_content:
-                    print(f"✅ ({len(full_content)}자)")
-                    content = full_content
-                else:
-                    print(f"⚠️ API description 사용 ({len(description)}자)")
-                    content = description
+                # GitHub Actions 시간 절약: API description 직접 사용
+                content = description  # 네이버 API 요약문 사용 (충분함)
+                print(f"      [{idx}/{len(items)}] ✅ ({len(content)}자)")
                 
                 # 피싱 관련 키워드 추출
                 keywords = self._extract_keywords(title + ' ' + content)
