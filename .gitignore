@@ -100,3 +100,6 @@ out/
 # 기타
 .cache/
 data/raw/github/
+
+# act 로컬 테스트용 secrets
+.secrets

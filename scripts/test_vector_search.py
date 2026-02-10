@@ -1,29 +1,30 @@
 """
-Vector Search 직접 테스트
+Vector Search 직접 테스트 (OpenAI 임베딩 사용)
 """
 import os
 import requests
 from dotenv import load_dotenv
-import google.generativeai as genai
+from openai import OpenAI
 
 load_dotenv()
 
 SUPABASE_URL = os.getenv('SUPABASE_URL')
 SUPABASE_KEY = os.getenv('SUPABASE_ANON_KEY')
-GEMINI_API_KEY = os.getenv('GEMINI_API_KEY')
+OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 
 def create_embedding(text):
-    """임베딩 생성"""
-    genai.configure(api_key=GEMINI_API_KEY)
-    result = genai.embed_content(
-        model="models/text-embedding-004",
-        content=text,
-        task_type="retrieval_query"
-    )
-    embedding = result['embedding']
-    if len(embedding) < 1536:
-        embedding = embedding + [0.0] * (1536 - len(embedding))
-    return embedding
+    """OpenAI 임베딩 생성 (1536차원)"""
+    try:
+        client = OpenAI(api_key=OPENAI_API_KEY)
+        response = client.embeddings.create(
+            model="text-embedding-3-small",
+            input=text,
+            encoding_format="float"
+        )
+        return response.data[0].embedding
+    except Exception as e:
+        print(f"❌ 임베딩 생성 오류: {e}")
+        return None
 
 def test_vector_search():
     """Vector Search 테스트"""
@@ -39,6 +40,11 @@ def test_vector_search():
     # 2. 임베딩 생성
     print("\n임베딩 생성 중...")
     embedding = create_embedding(test_message)
+    
+    if not embedding:
+        print("❌ 임베딩 생성 실패")
+        return
+    
     print(f"✅ 임베딩 생성 완료 (차원: {len(embedding)})")
     
     # 3. RPC 호출
@@ -52,12 +58,12 @@ def test_vector_search():
     rpc_url = f"{SUPABASE_URL}/rest/v1/rpc/find_similar_phishing"
     payload = {
         'query_embedding': embedding,
-        'match_threshold': 0.5,  # 낮춰서 테스트
-        'match_count': 5
+        'match_threshold': 0.3,  # 30%로 낮춰서 더 많은 결과 검색
+        'match_count': 10  # 10개로 증가
     }
     
     try:
-        response = requests.post(rpc_url, headers=headers, json=payload, timeout=15)
+        response = requests.post(rpc_url, headers=headers, json=payload, timeout=120)  # 2분으로 증가
         print(f"응답 코드: {response.status_code}")
         
         if response.status_code == 200:
@@ -66,10 +72,20 @@ def test_vector_search():
             print(f"유사 사례 수: {len(result) if result else 0}건")
             
             if result:
-                print("\n🔍 상위 3개 결과:")
-                for i, case in enumerate(result[:3], 1):
-                    print(f"\n[{i}] 유사도: {case.get('similarity', 0):.3f}")
-                    print(f"    제목: {case.get('title', '')[:50]}...")
+                print("\n🔍 상위 결과:")
+                for i, case in enumerate(result[:5], 1):
+                    similarity = case.get('similarity', 0)
+                    source_type = case.get('source_type', 'unknown')
+                    title = case.get('title') or 'N/A'
+                    content = case.get('content') or 'N/A'
+                    phishing_type = case.get('phishing_type') or 'N/A'
+                    source = case.get('source') or 'N/A'
+                    
+                    print(f"\n[{i}] 유사도: {similarity:.3f} | 타입: {source_type} | 출처: {source}")
+                    if title != 'N/A':
+                        print(f"    제목: {title[:80]}")
+                    print(f"    내용: {content[:100]}...")
+                    print(f"    피싱유형: {phishing_type}")
             else:
                 print("\n⚠️  유사 사례를 찾지 못했습니다")
         else:

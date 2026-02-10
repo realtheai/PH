@@ -133,7 +133,7 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: python scripts/process_all_images_ocr.py
+      run: python scripts/process_recent_images_ocr.py
   
   # ============================================================
   # 3단계: 콘텐츠 분류 (원본 언어로 분류)
@@ -152,13 +152,20 @@ jobs:
         python-version: '3.11'
         cache: 'pip'
     - run: pip install -r requirements.txt
-    - name: 분류 실행
+    - name: 뉴스 분류 실행
       continue-on-error: true
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: python scripts/classify_data.py
+      run: python scripts/classify_news_openai.py
+    - name: 이미지 분류 실행
+      continue-on-error: true
+      env:
+        OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+        SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+        SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
+      run: python scripts/classify_images_openai.py
   
   # ============================================================
   # 4단계: 피싱 유형 분류 (원본 언어로 분류)
@@ -183,7 +190,7 @@ jobs:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: python scripts/classify_phishing_type.py
+      run: python scripts/classify_type_openai.py
   
   # ============================================================
   # 5단계: 중복 제거 (의미 기반 유사도로 중복 제거)
@@ -240,7 +247,7 @@ jobs:
   # ============================================================
   
   embedding:
-    name: 🧠 벡터 임베딩 생성
+    name: 🧠 벡터 임베딩 생성 (뉴스+이미지)
     runs-on: ubuntu-latest
     permissions:
       contents: read
@@ -252,13 +259,13 @@ jobs:
         python-version: '3.11'
         cache: 'pip'
     - run: pip install -r requirements.txt
-    - name: 임베딩 생성
+    - name: 임베딩 생성 (최근 2일)
       continue-on-error: true
       env:
         OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
         SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
         SUPABASE_ANON_KEY: ${{ secrets.SUPABASE_ANON_KEY }}
-      run: python scripts/run_full_embedding_openai.py
+      run: python scripts/embed_with_openai.py
   
   # ============================================================
   # 8단계: 완료 알림

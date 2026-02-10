@@ -91,15 +91,19 @@ def classify_with_openai(text):
         return 'NOISE'
 
 def classify_images():
-    """OCR 완료 + 분류 안 된 이미지 분류"""
+    """OCR 완료 + 분류 안 된 이미지 분류 (최근 2일)"""
+    from datetime import datetime, timedelta
     
     print("\n" + "="*100)
     print("🚀 이미지 분류 시작 (OpenAI - 빠른 처리)")
     print("="*100 + "\n")
     
-    # OCR 완료 + 분류 안 된 이미지 조회
+    # 최근 2일
+    two_days_ago = (datetime.now() - timedelta(days=2)).isoformat()
+    
+    # OCR 완료 + 분류 안 된 이미지 조회 (최근 2일만)
     response = requests.get(
-        f"{SUPABASE_URL}/rest/v1/phishing_images?select=id,ocr_text,translated_text&ocr_text=not.is.null&classification=is.null&limit=1000",
+        f"{SUPABASE_URL}/rest/v1/phishing_images?select=id,ocr_text,translated_text&ocr_text=not.is.null&classification=is.null&crawled_at=gte.{two_days_ago}&limit=1000",
         headers=headers,
         timeout=30
     )

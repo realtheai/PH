@@ -180,8 +180,13 @@ class DataDeduplicator:
         return np.array(embeddings)
     
     def fetch_all_news(self, category: str = None) -> List[Dict]:
-        """Supabase에서 뉴스 데이터 가져오기 (페이지네이션)"""
-        print(f"📥 뉴스 데이터 가져오는 중...")
+        """Supabase에서 뉴스 데이터 가져오기 (최근 2일, 페이지네이션)"""
+        from datetime import timedelta
+        
+        print(f"📥 뉴스 데이터 가져오는 중 (최근 2일)...")
+        
+        # 최근 2일
+        two_days_ago = (datetime.now() - timedelta(days=2)).isoformat()
         
         all_data = []
         offset = 0
@@ -189,9 +194,9 @@ class DataDeduplicator:
         
         while True:
             if category:
-                url = f"{self.supabase_url}/rest/v1/phishing_news?select=*&category=eq.{category}&order=created_at.desc&offset={offset}&limit={limit}"
+                url = f"{self.supabase_url}/rest/v1/phishing_news?select=*&category=eq.{category}&crawled_at=gte.{two_days_ago}&order=created_at.desc&offset={offset}&limit={limit}"
             else:
-                url = f"{self.supabase_url}/rest/v1/phishing_news?select=*&order=created_at.desc&offset={offset}&limit={limit}"
+                url = f"{self.supabase_url}/rest/v1/phishing_news?select=*&crawled_at=gte.{two_days_ago}&order=created_at.desc&offset={offset}&limit={limit}"
             
             response = requests.get(url, headers=self.headers)
             

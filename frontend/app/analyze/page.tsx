@@ -32,6 +32,10 @@ export default function AnalyzePage() {
           matchedRules: apiResult.matched_rules,
           recommendations: apiResult.recommendations,
           urlCheckResults: apiResult.url_check_results,
+          // 벡터 검색 결과
+          similarCasesCount: apiResult.similar_cases_count || 0,
+          dbSimilarityScore: apiResult.db_similarity_score || 0,
+          llmAnalysis: apiResult.llm_analysis || null,
         };
         
         localStorage.setItem("lastResult", JSON.stringify(result));
@@ -131,15 +135,13 @@ export default function AnalyzePage() {
             </div>
           </div>
 
-          <div className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700 opacity-50">
-            <div className="flex-shrink-0 w-8 h-8 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center">
-              <span className="material-symbols-outlined text-gray-400 text-lg">
-                schedule
-              </span>
+          <div className="flex items-center gap-3 p-4 bg-white dark:bg-gray-800 rounded-xl border border-gray-200 dark:border-gray-700">
+            <div className="flex-shrink-0 w-8 h-8">
+              <div className="animate-spin rounded-full h-8 w-8 border-2 border-primary/20 border-t-primary"></div>
             </div>
             <div className="flex-1">
-              <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                데이터베이스 대조 대기 중
+              <p className="text-sm font-medium text-gray-900 dark:text-gray-100">
+                벡터 검색 중 (유사 사례 찾는 중...)
               </p>
             </div>
           </div>

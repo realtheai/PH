@@ -12,8 +12,8 @@ from app.core.url_checker import URLChecker
 from app.core.scorer import Scorer
 from app.core.embedder import Embedder
 from app.core.llm_analyzer import LLMAnalyzer
+from app.core.vector_searcher import VectorSearcher
 import os
-import requests
 
 router = APIRouter()
 
@@ -23,6 +23,7 @@ url_checker = URLChecker()
 scorer = Scorer()
 embedder = Embedder()
 llm_analyzer = LLMAnalyzer()
+vector_searcher = VectorSearcher()
 
 def extract_urls(text: str) -> List[str]:
     """텍스트에서 URL 추출"""
@@ -82,46 +83,30 @@ async def analyze_message(request: AnalyzeRequest):
             if not query_embedding:
                 raise Exception("임베딩 생성 실패")
             
-            # Supabase에서 유사도 검색 (REST API 직접 호출)
-            supabase_url = os.getenv('SUPABASE_URL')
-            supabase_key = os.getenv('SUPABASE_ANON_KEY')
+            # 새로운 벡터 검색 방식 (클라이언트 측 계산, RPC timeout 없음)
+            similar_cases = vector_searcher.search_similar_cases(
+                query_embedding=query_embedding,
+                threshold=0.3,  # 유사도 임계값 30%
+                limit=3,  # 상위 3개만
+                max_fetch=300  # DB에서 최대 300개 가져오기 (뉴스+이미지 각각)
+            )
             
-            headers = {
-                'apikey': supabase_key,
-                'Authorization': f'Bearer {supabase_key}',
-                'Content-Type': 'application/json'
-            }
+            print(f"📊 결과: {len(similar_cases)}건 발견")
             
-            rpc_url = f"{supabase_url}/rest/v1/rpc/find_similar_phishing"
-            payload = {
-                'query_embedding': query_embedding,
-                'match_threshold': 0.5,  # 0.7 -> 0.5로 낮춤
-                'match_count': 3
-            }
-            
-            print(f"🌐 RPC 호출: {rpc_url}")
-            response = requests.post(rpc_url, headers=headers, json=payload, timeout=10)
-            print(f"📡 응답 코드: {response.status_code}")
-            response.raise_for_status()
-            
-            result_data = response.json()
-            print(f"📊 결과: {len(result_data) if result_data else 0}건")
-            
-            if result_data:
-                similar_cases = result_data
+            if similar_cases:
                 # 가장 유사한 사례의 유사도를 점수에 반영
-                if similar_cases:
-                    max_similarity = similar_cases[0].get('similarity', 0)
-                    db_similarity_score = int(max_similarity * 50)  # 최대 50점 추가
-                    
-                    # 유사 사례가 있으면 총 점수에 반영
-                    total_score = min(total_score + db_similarity_score, 100)
-                    
-                    # 위험도 재계산
-                    risk_level = scorer.calculate_risk_level(total_score)
-                    is_phishing = total_score > 50
-                    
-                    print(f"✅ 유사 사례 {len(similar_cases)}건 발견 (최대 유사도: {max_similarity:.2f})")
+                max_similarity = similar_cases[0].get('similarity', 0)
+                db_similarity_score = int(max_similarity * 50)  # 최대 50점 추가
+                
+                # 유사 사례가 있으면 총 점수에 반영
+                total_score = min(total_score + db_similarity_score, 100)
+                
+                # 위험도 재계산
+                risk_level = scorer.calculate_risk_level(total_score)
+                is_phishing = total_score > 50
+                
+                print(f"✅ 유사 사례 {len(similar_cases)}건 발견 (최대 유사도: {max_similarity:.2f})")
+                
         except Exception as e:
             print(f"⚠️  Vector Search 실패: {e}")
             import traceback

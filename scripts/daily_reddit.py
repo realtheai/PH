@@ -43,8 +43,12 @@ class DailyRedditCrawler:
         except:
             return False
     
-    def insert_record(self, data: dict) -> bool:
-        """단일 레코드 삽입"""
+    def insert_record(self, data: dict) -> tuple:
+        """단일 레코드 삽입
+        
+        Returns:
+            (success: bool, is_duplicate: bool)
+        """
         try:
             response = requests.post(
                 f"{self.supabase_url}/rest/v1/phishing_news",
@@ -52,10 +56,19 @@ class DailyRedditCrawler:
                 json=data,
                 timeout=10
             )
-            return response.status_code in [200, 201]
+            
+            if response.status_code in [200, 201]:
+                return (True, False)  # 성공
+            elif response.status_code == 409:
+                # HTTP 409 = 중복 (unique constraint 위반)
+                return (False, True)  # 중복
+            else:
+                print(f"   ⚠️  삽입 실패 (HTTP {response.status_code}): {response.text[:200]}")
+                return (False, False)  # 실패
+                
         except Exception as e:
-            print(f"   삽입 오류: {e}")
-            return False
+            print(f"   ❌ 삽입 오류: {e}")
+            return (False, False)  # 실패
     
     def daily_update(self):
         """매일 Reddit 수집 및 Supabase 업로드"""
@@ -75,13 +88,13 @@ class DailyRedditCrawler:
         print(f"\n📊 총 수집: {len(results)}개 포스트\n")
         
         # Supabase 업로드
-        success = 0
+        success_count = 0
         duplicate = 0
         error = 0
         
         for idx, item in enumerate(results, 1):
             if idx % 20 == 0:
-                print(f"   진행: {idx}/{len(results)} (성공:{success}, 중복:{duplicate}, 실패:{error})")
+                print(f"   진행: {idx}/{len(results)} (성공:{success_count}, 중복:{duplicate}, 실패:{error})")
             
             url = item.get('url', '')
             if not url:
@@ -94,6 +107,15 @@ class DailyRedditCrawler:
                 continue
             
             # 데이터 준비
+            # Unix timestamp → ISO 8601 변환
+            created_utc = item.get('created_utc')
+            published_at = None
+            if created_utc:
+                try:
+                    published_at = datetime.fromtimestamp(float(created_utc)).isoformat()
+                except:
+                    published_at = None
+            
             record = {
                 'source': 'reddit',
                 'title': item.get('title', ''),
@@ -101,25 +123,28 @@ class DailyRedditCrawler:
                 'url': url,
                 'original_language': 'en',  # Reddit은 대부분 영어
                 'content_length': len(item.get('selftext', '')),
-                'published_at': item.get('created_utc'),
+                'published_at': published_at,
                 'crawled_at': datetime.now().isoformat()
             }
             
             # 삽입
-            if self.insert_record(record):
-                success += 1
+            success, is_duplicate = self.insert_record(record)
+            if success:
+                success_count += 1
+            elif is_duplicate:
+                duplicate += 1
             else:
                 error += 1
         
         print(f"\n{'='*60}")
         print(f"✅ Reddit 매일 업데이트 완료")
         print(f"{'='*60}")
-        print(f"   성공: {success}건")
-        print(f"   중복: {duplicate}건")
-        print(f"   실패: {error}건")
+        print(f"   ✅ 성공: {success_count}건 (새로 추가)")
+        print(f"   ℹ️  중복: {duplicate}건 (이미 존재)")
+        print(f"   ❌ 실패: {error}건")
         print(f"{'='*60}\n")
         
-        return {'success': success, 'duplicate': duplicate, 'error': error}
+        return {'success': success_count, 'duplicate': duplicate, 'error': error}
 
 def main():
     crawler = DailyRedditCrawler()
