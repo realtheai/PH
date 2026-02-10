@@ -9,6 +9,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 # 앱 코드 복사
 COPY ./app ./app
 
+# 룰 데이터 파일 복사
+COPY ../data/rules /app/data/rules
+
 # Entrypoint 스크립트 복사 및 실행 권한 부여
 COPY entrypoint.sh .
 RUN chmod +x entrypoint.sh
