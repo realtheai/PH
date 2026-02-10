@@ -2,7 +2,7 @@
 메시지 분석 API 엔드포인트
 """
 from fastapi import APIRouter, HTTPException
-from datetime import datetime
+from datetime import datetime, timezone, timedelta
 import re
 from typing import List
 
@@ -173,6 +173,9 @@ async def analyze_message(request: AnalyzeRequest):
             recommendations.insert(0, f"🤖 AI 분석: {llm_result['reasoning']}")
         
         # 12. 응답 생성
+        # KST (UTC+9) 시간대 설정
+        KST = timezone(timedelta(hours=9))
+        
         return AnalyzeResponse(
             risk_score=total_score,
             risk_level=risk_level,
@@ -181,7 +184,7 @@ async def analyze_message(request: AnalyzeRequest):
             matched_rules=[RiskDetail(**rule) for rule in matched_rules],
             url_check_results=url_check_results,
             recommendations=recommendations,
-            analyzed_at=datetime.now(),
+            analyzed_at=datetime.now(KST),
             similar_cases_count=len(similar_cases) if similar_cases else 0,
             db_similarity_score=db_similarity_score,
             llm_analysis=llm_result
