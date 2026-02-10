@@ -10,6 +10,7 @@ export default function SettingsPage() {
   const [darkMode, setDarkMode] = useState(false);
   const [notifications, setNotifications] = useState(true);
   const [autoScan, setAutoScan] = useState(false);
+  const [showPrivacyModal, setShowPrivacyModal] = useState(false);
 
   useEffect(() => {
     // Load settings from localStorage
@@ -54,6 +55,7 @@ export default function SettingsPage() {
   };
 
   const handleClearHistory = () => {
+    console.log("🗑️ handleClearHistory called"); // 디버그 로그
     if (confirm("모든 검사 내역을 삭제하시겠습니까?")) {
       localStorage.removeItem("scanHistory");
       alert("검사 내역이 삭제되었습니다.");
@@ -102,7 +104,7 @@ export default function SettingsPage() {
                 </span>
                 <div>
                   <p className="text-gray-900 dark:text-white font-medium">
-                    알림
+                    알림 (MVP 이후)
                   </p>
                   <p className="text-gray-500 dark:text-gray-400 text-xs">
                     위험 감지 시 알림 받기
@@ -127,7 +129,7 @@ export default function SettingsPage() {
                 </span>
                 <div>
                   <p className="text-gray-900 dark:text-white font-medium">
-                    자동 검사 (Phase 2)
+                    자동 검사 (MVP 이후)
                   </p>
                   <p className="text-gray-500 dark:text-gray-400 text-xs">
                     수신 메시지 자동 분석
@@ -193,41 +195,16 @@ export default function SettingsPage() {
               <p className="text-gray-500 dark:text-gray-400 text-sm">1.0.0</p>
             </div>
 
-            <button className="flex items-center justify-between p-4 w-full text-left active:bg-gray-50 dark:active:bg-gray-700 transition-colors">
+            <button 
+              onClick={() => setShowPrivacyModal(true)}
+              className="flex items-center justify-between p-4 w-full text-left active:bg-gray-50 dark:active:bg-gray-700 transition-colors"
+            >
               <div className="flex items-center gap-3">
                 <span className="material-symbols-outlined text-gray-600 dark:text-gray-400">
                   description
                 </span>
                 <p className="text-gray-900 dark:text-white font-medium">
                   개인정보 처리방침
-                </p>
-              </div>
-              <span className="material-symbols-outlined text-gray-400">
-                chevron_right
-              </span>
-            </button>
-
-            <button className="flex items-center justify-between p-4 w-full text-left active:bg-gray-50 dark:active:bg-gray-700 transition-colors">
-              <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-gray-600 dark:text-gray-400">
-                  gavel
-                </span>
-                <p className="text-gray-900 dark:text-white font-medium">
-                  이용약관
-                </p>
-              </div>
-              <span className="material-symbols-outlined text-gray-400">
-                chevron_right
-              </span>
-            </button>
-
-            <button className="flex items-center justify-between p-4 w-full text-left active:bg-gray-50 dark:active:bg-gray-700 transition-colors">
-              <div className="flex items-center gap-3">
-                <span className="material-symbols-outlined text-gray-600 dark:text-gray-400">
-                  help
-                </span>
-                <p className="text-gray-900 dark:text-white font-medium">
-                  도움말
                 </p>
               </div>
               <span className="material-symbols-outlined text-gray-400">
@@ -244,11 +221,11 @@ export default function SettingsPage() {
             </span>
             <div>
               <h4 className="text-primary dark:text-blue-300 font-bold mb-1">
-                피싱체커 Phase 1
+                피싱체커 MVP
               </h4>
               <p className="text-gray-600 dark:text-gray-400 text-xs leading-relaxed">
                 현재 수동 검사 모드로 운영 중입니다.
-                Phase 2 업데이트에서 자동 피싱 감지 기능이 추가될 예정입니다.
+                MVP 이후 업데이트에서 자동 피싱 감지 기능이 추가될 예정입니다.
               </p>
             </div>
           </div>
@@ -256,6 +233,41 @@ export default function SettingsPage() {
       </main>
 
       <BottomNav />
+
+      {/* 개인정보 처리방침 모달 */}
+      {showPrivacyModal && (
+        <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
+          <div className="bg-white dark:bg-gray-800 rounded-2xl max-w-md w-full p-6 shadow-xl">
+            <div className="flex items-center justify-between mb-4">
+              <h3 className="text-lg font-bold text-gray-900 dark:text-white">
+                개인정보 처리방침
+              </h3>
+              <button
+                onClick={() => setShowPrivacyModal(false)}
+                className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+              >
+                <span className="material-symbols-outlined">close</span>
+              </button>
+            </div>
+            
+            <div className="space-y-4 text-sm text-gray-600 dark:text-gray-300 leading-relaxed">
+              <p>
+                본 앱은 사용자가 분석을 요청한 메시지 텍스트만 일시적으로 처리하며, 서버에 저장하지 않습니다.
+              </p>
+              <p>
+                분석 결과 제공 후 원문 텍스트는 즉시 폐기됩니다.
+              </p>
+            </div>
+
+            <button
+              onClick={() => setShowPrivacyModal(false)}
+              className="w-full mt-6 bg-primary text-white py-3 rounded-xl font-medium hover:bg-primary/90 transition-colors"
+            >
+              확인
+            </button>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

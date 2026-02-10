@@ -24,6 +24,28 @@ export default function SafeResultPage() {
     }
   }, [router]);
 
+  const handleShare = async () => {
+    if (!result) return;
+
+    const shareText = `피싱체커 분석 결과\n\n위험도: ${result.riskLevel}\n점수: ${result.score}점\n\n✅ 이 메시지는 안전합니다.\n\n분석 시간: ${new Date(result.timestamp).toLocaleString('ko-KR')}`;
+
+    try {
+      // Web Share API 지원 확인
+      if (navigator.share) {
+        await navigator.share({
+          title: '피싱체커 분석 결과',
+          text: shareText,
+        });
+      } else {
+        // 클립보드 복사 (Web Share API 미지원 시)
+        await navigator.clipboard.writeText(shareText);
+        alert('분석 결과가 클립보드에 복사되었습니다!');
+      }
+    } catch (error) {
+      console.error('공유 실패:', error);
+    }
+  };
+
   if (!result) return null;
 
   return (
@@ -34,7 +56,10 @@ export default function SafeResultPage() {
           showBack={true}
           showMenu={false}
           rightAction={
-            <button className="flex cursor-pointer items-center justify-center rounded-lg h-12 bg-transparent text-primary dark:text-gray-100 p-0">
+            <button 
+              onClick={handleShare}
+              className="flex cursor-pointer items-center justify-center rounded-lg h-12 bg-transparent text-primary dark:text-gray-100 p-0"
+            >
               <span className="material-symbols-outlined">share</span>
             </button>
           }

@@ -28,7 +28,7 @@ export default function Header({
             <span className="material-symbols-outlined">arrow_back_ios</span>
           </button>
         ) : showMenu ? (
-          <span className="material-symbols-outlined cursor-pointer">menu</span>
+          <span className="material-symbols-outlined text-primary dark:text-blue-400">shield_locked</span>
         ) : (
           <div className="w-6" />
         )}
