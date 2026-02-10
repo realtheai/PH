@@ -92,7 +92,7 @@ jobs:
     name: Deploy to Render.com
     runs-on: ubuntu-latest
     needs: test
-    if: github.event_name == 'push'
+    if: false  # Render.com 사용 안 함
     
     steps:
       - name: Trigger Render Deploy
@@ -117,7 +117,7 @@ jobs:
     name: Deploy to Railway
     runs-on: ubuntu-latest
     needs: test
-    if: false  # 사용 시 true로 변경
+    if: github.event_name == 'push'  # Railway 사용
     
     steps:
       - name: Checkout code
@@ -136,7 +136,7 @@ jobs:
   notify:
     name: Send Notification
     runs-on: ubuntu-latest
-    needs: [build-and-push-docker, deploy-render]
+    needs: [build-and-push-docker, deploy-railway]
     if: always()
     
     steps:
@@ -146,13 +146,13 @@ jobs:
         with:
           payload: |
             {
-              "text": "🚀 Backend Deployment ${{ needs.deploy-render.result }}",
+              "text": "🚀 Backend Deployment ${{ needs.deploy-railway.result }}",
               "blocks": [
                 {
                   "type": "section",
                   "text": {
                     "type": "mrkdwn",
-                    "text": "*Backend Deployment Status*\n• Commit: ${{ github.sha }}\n• Status: ${{ needs.deploy-render.result }}\n• Branch: ${{ github.ref_name }}"
+                    "text": "*Backend Deployment Status*\n• Commit: ${{ github.sha }}\n• Status: ${{ needs.deploy-railway.result }}\n• Branch: ${{ github.ref_name }}"
                   }
                 }
               ]
@@ -163,7 +163,7 @@ jobs:
       - name: Send Discord notification
         if: secrets.DISCORD_WEBHOOK_URL != ''
         run: |
-          STATUS="${{ needs.deploy-render.result }}"
+          STATUS="${{ needs.deploy-railway.result }}"
           if [ "$STATUS" = "success" ]; then
             COLOR="3066993"
             EMOJI="✅"
