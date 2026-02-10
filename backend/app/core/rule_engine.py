@@ -7,9 +7,10 @@ from typing import List, Dict, Tuple
 
 class RuleEngine:
     def __init__(self):
-        # 룰 파일 로드
-        rules_path = os.path.join(os.path.dirname(__file__), '../../../data/rules/rules.json')
-        entities_path = os.path.join(os.path.dirname(__file__), '../../../data/rules/entities_ko.json')
+        # 룰 파일 로드 (Docker 환경 고려)
+        # /app/app/core/ 에서 ../../ = /app/ 로 가서 data/rules/ 접근
+        rules_path = os.path.join(os.path.dirname(__file__), '../../data/rules/rules.json')
+        entities_path = os.path.join(os.path.dirname(__file__), '../../data/rules/entities_ko.json')
         
         with open(rules_path, 'r', encoding='utf-8') as f:
             rules_data = json.load(f)
