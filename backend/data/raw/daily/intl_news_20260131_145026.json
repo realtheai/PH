@@ -1,0 +1,402 @@
+[
+  {
+    "source": "bing_news",
+    "query": "phishing attack",
+    "title": "1Password is introducing a new phishing prevention feature",
+    "url": "https://www.theverge.com/tech/864980/1password-security-phishing-attack-prevention-password-browser-extension-scammers",
+    "content": "A successful phishing attack can cost a business an average of $4.8 million, according to research from IBM. To help reduce ...",
+    "press": "8일",
+    "extracted_keywords": [
+      "phishing",
+      "password"
+    ],
+    "crawled_at": "2026-01-31T14:50:10.737841"
+  },
+  {
+    "source": "bing_news",
+    "query": "phishing attack",
+    "title": "Sneaky 2FA Attack Reveals Fake Windows Stealing Passwords From Users",
+    "url": "https://www.ibtimes.co.uk/sneaky-2fa-attack-reveals-fake-windows-stealing-passwords-users-1774788",
+    "content": "A deceptive phishing threat coined 'Sneaky 2FA' steals login credentials and bypasses two-factor authentication using fake ...",
+    "press": "1일",
+    "extracted_keywords": [
+      "credential",
+      "phishing",
+      "password"
+    ],
+    "crawled_at": "2026-01-31T14:50:10.738175"
+  },
+  {
+    "source": "bing_news",
+    "query": "phishing attack",
+    "title": "Phishing Attack Uses Stolen Credentials to Install LogMeIn RMM for Persistent Access",
+    "url": "/news/search?q=site%3athehackernews.com&FORM=NWBCLM",
+    "content": "Researchers uncovered a two-stage phishing attack stealing email logins to install LogMeIn Resolve RMM for persistent, hidden Windows access.",
+    "press": "The Hacker News7일",
+    "extracted_keywords": [
+      "credential",
+      "phishing",
+      "email"
+    ],
+    "crawled_at": "2026-01-31T14:50:10.738422"
+  },
+  {
+    "source": "bing_news",
+    "query": "phishing attack",
+    "title": "ConsentFix debrief: Insights from the new OAuth phishing attack",
+    "url": "https://www.bleepingcomputer.com/news/security/consentfix-debrief-insights-from-the-new-oauth-phishing-attack/",
+    "content": "ConsentFix is an OAuth phishing technique abusing browser-based authorization flows to hijack Microsoft accounts. Push ...",
+    "press": "16일",
+    "extracted_keywords": [
+      "account",
+      "phishing"
+    ],
+    "crawled_at": "2026-01-31T14:50:10.738721"
+  },
+  {
+    "source": "bing_news",
+    "query": "phishing attack",
+    "title": "AI-powered polymorphic attack lures victims to phishing webpages",
+    "url": "https://www.csoonline.com/article/4123217/ai-powered-polymorphic-attacks-lures-victims-to-phishing-webpages.html",
+    "content": "A new breed of malware uses various dynamic techniques to avoid detection and create customized phishing webpages.",
+    "press": "CSO Online4일",
+    "extracted_keywords": [
+      "malware",
+      "phishing"
+    ],
+    "crawled_at": "2026-01-31T14:50:10.739012"
+  },
+  {
+    "source": "bing_news",
+    "query": "phishing attack",
+    "title": "Microsoft Flags Multi-Stage AitM Phishing and BEC Attacks Targeting Energy Firms",
+    "url": "https://thehackernews.com/2026/01/microsoft-flags-multi-stage-aitm.html",
+    "content": "Microsoft reports a multi-stage AitM phishing and BEC campaign abusing SharePoint, inbox rules, and stolen session cookies to ...",
+    "press": "The Hacker News7일",
+    "extracted_keywords": [
+      "phishing"
+    ],
+    "crawled_at": "2026-01-31T14:50:10.739324"
+  },
+  {
+    "source": "bing_news",
+    "query": "phishing attack",
+    "title": "Resurgence of a multi‑stage AiTM phishing and BEC campaign abusing SharePoint",
+    "url": "https://www.microsoft.com/en-us/security/blog/2026/01/21/multistage-aitm-phishing-bec-campaign-abusing-sharepoint/",
+    "content": "Microsoft Defender Researchers uncovered a multi‑stage AiTM phishing and business email compromise (BEC) campaign targeting ...",
+    "press": "Microsoft8일",
+    "extracted_keywords": [
+      "phishing",
+      "email"
+    ],
+    "crawled_at": "2026-01-31T14:50:10.739655"
+  },
+  {
+    "source": "bing_news",
+    "query": "phishing attack",
+    "title": "South Korea probes loss of seized bitcoin in phishing attack",
+    "url": "https://www.coindesk.com/markets/2026/01/23/south-korea-probes-significant-bitcoin-loss-in-a-phishing-attack",
+    "content": "Internal audit showed the coins were likely lost via a phishing attack during official storage, according to local media ...",
+    "press": "CoinDesk8일",
+    "extracted_keywords": [
+      "phishing"
+    ],
+    "crawled_at": "2026-01-31T14:50:10.740000"
+  },
+  {
+    "source": "bing_news",
+    "query": "phishing attack",
+    "title": "Nearly 9 in 10 phishing scams steal login details: What to do immediately if you fall victim to a phishing attack",
+    "url": "https://www.msn.com/en-in/technology/cybersecurity/nearly-9-in-10-phishing-scams-steal-login-details-what-to-do-immediately-if-you-fall-victim-to-a-phishing-attack/ar-AA1UoA7L?ocid=BingNewsVerp",
+    "content": "Cybercriminals are increasingly targeting online account credentials, with 88.5% of phishing scams focused on stealing login ...",
+    "press": "13일on MSN",
+    "extracted_keywords": [
+      "credential",
+      "cyber",
+      "phishing",
+      "scam",
+      "account"
+    ],
+    "crawled_at": "2026-01-31T14:50:10.740298"
+  },
+  {
+    "source": "bing_news",
+    "query": "phishing attack",
+    "title": "750K investors’ income exposed after phishing attack hit CIRO",
+    "url": "https://cybernews.com/security/ciro-phishing-attack-exposes-investors-data/",
+    "content": "CIRO's phishing attack exposed 750,000 Canadian investors' personal data including income, social insurance numbers, and ...",
+    "press": "Cybernews10일",
+    "extracted_keywords": [
+      "phishing"
+    ],
+    "crawled_at": "2026-01-31T14:50:10.740730"
+  },
+  {
+    "source": "bing_news",
+    "query": "email scam 2026",
+    "title": "There’s a rash of scam spam coming from a real Microsoft address",
+    "url": "https://arstechnica.com/information-technology/2026/01/theres-a-rash-of-scam-spam-coming-from-a-real-microsoft-address/",
+    "content": "There are reports that a legitimate Microsoft email address—which Microsoft explicitly says customers should add to their ...",
+    "press": "3일",
+    "extracted_keywords": [
+      "spam",
+      "scam",
+      "email"
+    ],
+    "crawled_at": "2026-01-31T14:50:14.099706"
+  },
+  {
+    "source": "bing_news",
+    "query": "email scam 2026",
+    "title": "RCMP Warn of Email Scam",
+    "url": "https://vocm.com/2026/01/28/rcmp-warn-of-email-scam/",
+    "content": "RCMP are warning of an email scam making the rounds. This time the scammer represents themselves as part of the RCMP, ...",
+    "press": "VOCM2일",
+    "extracted_keywords": [
+      "scam",
+      "email"
+    ],
+    "crawled_at": "2026-01-31T14:50:14.099984"
+  },
+  {
+    "source": "bing_news",
+    "query": "email scam 2026",
+    "title": "Phishing threat accelerates in PH as risky URLs surge nearly fourfold in 2025 — Whoscall PH Scam Report",
+    "url": "/news/search?q=site%3awww.bworldonline.com&FORM=NWBCLM",
+    "content": "Phishing has overtaken traditional scam channels as the fastest-growing digital threat in the Philippines, with risky URLs climbing sharply throughout 2025 and driving renewed urgency in consumer ...",
+    "press": "BusinessWorld3일",
+    "extracted_keywords": [
+      "scam",
+      "phishing"
+    ],
+    "crawled_at": "2026-01-31T14:50:14.100253"
+  },
+  {
+    "source": "bing_news",
+    "query": "email scam 2026",
+    "title": "Email scam targets residents in East Aurora",
+    "url": "/news/search?q=site%3awww.newportdispatch.com&FORM=NWBCLM",
+    "content": "EAST AURORA, NY — Police are warning residents about an email scam claiming to be from the Village of East Aurora Planning Division. Authorities were made aware of the scam today. The email attempted ...",
+    "press": "Newport Dispatch4일",
+    "extracted_keywords": [
+      "scam",
+      "email"
+    ],
+    "crawled_at": "2026-01-31T14:50:14.100508"
+  },
+  {
+    "source": "bing_news",
+    "query": "email scam 2026",
+    "title": "St. Albert Farmers’ Market warns of scam",
+    "url": "https://www.lakelandtoday.ca/beyond-local/st-albert-farmers-market-warns-of-scam-11758590",
+    "content": "St. Albert’s chamber of commerce has raised the alarm about an email scam that’s looking to steal from vendors at the 2026 ...",
+    "press": "LakelandToday.ca11일",
+    "extracted_keywords": [
+      "scam",
+      "email"
+    ],
+    "crawled_at": "2026-01-31T14:50:14.100833"
+  },
+  {
+    "source": "bing_news",
+    "query": "email scam 2026",
+    "title": "Scam emails falsely claims people ‘must act’ to claim a $2,000 ‘tariff dividend’",
+    "url": "/news/search?q=site%3awww.politifact.com&FORM=NWBCLM",
+    "content": "An email advertisement claims people can secure President Donald Trump’s $2,000 \"tariff payout,\" claiming interested parties \"must act\" to secure the money.",
+    "press": "PolitiFact7일",
+    "extracted_keywords": [
+      "scam",
+      "email"
+    ],
+    "crawled_at": "2026-01-31T14:50:14.101082"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "Fraud demographics: Why people in 20s now lead crimes once ruled by 40s",
+    "url": "https://www.koreaherald.com/article/10664728",
+    "content": "Young South Koreans in their 20s are emerging as a driving force behind the country’s surge in fraud crimes, a trend fueled ...",
+    "press": "2일",
+    "extracted_keywords": [
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.310512"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "How Online Business Owners Can Protect Themselves From Fraud in 2026",
+    "url": "https://www.msn.com/en-us/money/other/how-online-business-owners-can-protect-themselves-from-fraud-in-2026/ar-AA1UCexX?ocid=BingNewsVerp",
+    "content": "From fraud to phishing attacks to online fraud, tricksters are targeting entrepreneurs harder than ever. Here are the common ...",
+    "press": "10일on MSN",
+    "extracted_keywords": [
+      "fraud",
+      "phishing"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.310850"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "China executes 11 ‘key members’ linked to scams in multibillion-dollar global fraud empire",
+    "url": "https://nypost.com/2026/01/29/world-news/11-scam-bosses-executed-in-china-over-links-to-myanmar-fraud-empire/",
+    "content": "Chinese State media said the executions targeted “key members” of telecom and online scam operations, including figures from ...",
+    "press": "1일",
+    "extracted_keywords": [
+      "scam",
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.311126"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "Europe okays new rules for online fraud protection and data hacking: What the ‘Payment services deal’ says",
+    "url": "/news/search?q=site%3atimesofindia.indiatimes.com&FORM=NWBCLM",
+    "content": "New EU consumer protection measures will hold banks and payment providers more accountable for fraud and data breaches. Consumers will no longer bear the brunt when security fails, with providers ...",
+    "press": "Indiatimes2개월",
+    "extracted_keywords": [
+      "fraud",
+      "breach",
+      "bank",
+      "account",
+      "hack"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.311368"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "Debit card fraud can happen even if you’re careful — here’s what happened to me",
+    "url": "/news/search?q=site%3agulfnews.com&FORM=NWBCLM",
+    "content": "Here are the changes I made to how I shop online to better protect my money How small, easy-to-miss charges led to a fraud alert and what it taught me about card security Pexels Dubai: I thought I was ...",
+    "press": "Gulf News1개월",
+    "extracted_keywords": [
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.311626"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "Hyderabad cops arrest one for massive online betting fraud; city resident among victims who lost Rs 55 lakh",
+    "url": "https://newsmeter.in/crime/hyderabad-cops-arrest-one-for-massive-online-betting-fraud-city-resident-among-victims-who-lost-rs-55-lakh-762139",
+    "content": "The platform hosted casino games and cricket betting, including a game called Five Star Cricket Aviator Flight Game.",
+    "press": "Newsmeter2일",
+    "extracted_keywords": [
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.311940"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "Online sales scams on the rise in Kota Marudu, over RM35,000 lost",
+    "url": "/news/search?q=site%3awww.thestar.com.my&FORM=NWBCLM",
+    "content": "Online sales fraud cases are on the rise in Sabah's Kota Marudu district, with losses exceeding RM35,000 so far this year, according to the police.",
+    "press": "2일",
+    "extracted_keywords": [
+      "scam",
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.312184"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "Online banking fraud leaves Winnipeg woman on hook for $174K debt",
+    "url": "/news/search?q=site%3aici.radio-canada.ca&FORM=NWBCLM",
+    "content": "Linda Klassen, 78, warns of online banking risks after home computer was hacked by fraudster. A Winnipeg woman is warning others about what can go wrong in online banking after a credit union is ...",
+    "press": "Radio-Canada1개월",
+    "extracted_keywords": [
+      "bank",
+      "hack",
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.312419"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "MHA asks agencies to verify complaints before freezing bank accounts in online fraud cases",
+    "url": "/news/search?q=site%3awww.newindianexpress.com&FORM=NWBCLM",
+    "content": "Amid concerns over meagre recoveries in online financial fraud cases despite the freezing of bank accounts involving over Rs 7,500 crore, the governm ...",
+    "press": "3일",
+    "extracted_keywords": [
+      "bank",
+      "account",
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.312711"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "Online banking fraud leaves Winnipeg woman on hook for $174K debt",
+    "url": "/news/search?q=site%3aca.news.yahoo.com&FORM=NWBCLM",
+    "content": "Add Yahoo as a preferred source to see more of our stories on Google. Linda Klassen says her credit union accounts were defrauded in 2024 after someone hacked into the home computer she used for ...",
+    "press": "Yahoo News Canada1개월",
+    "extracted_keywords": [
+      "bank",
+      "hack",
+      "account",
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.312988"
+  },
+  {
+    "source": "bing_news",
+    "query": "online fraud",
+    "title": "Hyderabad cyber police arrest Pune man for online betting fraud",
+    "url": "https://telanganatoday.com/hyderabad-cyber-police-arrest-pune-man-for-online-betting-fraud",
+    "content": "Hyderabad Cybercrime Police arrested a Pune-based man for allegedly cheating multiple victims through illegal online gaming ...",
+    "press": "2일",
+    "extracted_keywords": [
+      "cyber",
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:17.313265"
+  },
+  {
+    "source": "bing_news",
+    "query": "smishing alert",
+    "title": "Unknown characters, clicking links can cause serious trouble... Holiday Smishing Alert",
+    "url": "/news/search?q=site%3awww.asiae.co.kr&FORM=NWBCLM",
+    "content": "On the 4th, the Gyeonggi Nambu Provincial Police Agency announced that there were a total of 29,178 internet fraud cases in the Gyeonggi Nambu region last year. This represents a 7.8% increase ...",
+    "press": "아시아경제1년",
+    "extracted_keywords": [
+      "smishing",
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:20.511397"
+  },
+  {
+    "source": "bing_news",
+    "query": "cyber scam warning",
+    "title": "Hyderabad CP Alerts Citizens About Fake ‘Free Rs 5,000’ Cyber Scam Links",
+    "url": "https://www.thehansindia.com/news/crime/hyderabad-cp-alerts-citizens-about-fake-free-rs-5000-cyber-scam-links-1040523",
+    "content": "Hyderabad The Hyderabad Police Commissioner VC Sajjanar has issued a clear warning about cyber scams offering \"Free Rs 5,000, ...",
+    "press": "11일",
+    "extracted_keywords": [
+      "cyber",
+      "scam"
+    ],
+    "crawled_at": "2026-01-31T14:50:23.820800"
+  },
+  {
+    "source": "bing_news",
+    "query": "cyber scam warning",
+    "title": "Fake RTO e-challan scam alert: One click can empty your bank account, cyber police issue warning",
+    "url": "https://www.msn.com/en-in/technology/cybersecurity/fake-rto-e-challan-scam-alert-one-click-can-empty-your-bank-account-cyber-police-issue-warning/ar-AA1SUc79?ocid=BingNewsVerp",
+    "content": "With the growing use of digital payments and online traffic challans, a dangerous cyber fraud has begun spreading rapidly across India. A fake RTO e-challan scam is targeting unsuspecting citizens ...",
+    "press": "MSN에서 호스팅됨1개월",
+    "extracted_keywords": [
+      "cyber",
+      "bank",
+      "scam",
+      "account",
+      "fraud"
+    ],
+    "crawled_at": "2026-01-31T14:50:23.821048"
+  }
+]

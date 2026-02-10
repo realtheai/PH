@@ -1,0 +1,300 @@
+{
+  "rules": [
+    {
+      "keyword": "국세청",
+      "category": "기관사칭",
+      "score": 40,
+      "description": "정부 기관 사칭"
+    },
+    {
+      "keyword": "경찰청",
+      "category": "기관사칭",
+      "score": 40,
+      "description": "정부 기관 사칭"
+    },
+    {
+      "keyword": "검찰청",
+      "category": "기관사칭",
+      "score": 40,
+      "description": "정부 기관 사칭"
+    },
+    {
+      "keyword": "금융감독원",
+      "category": "기관사칭",
+      "score": 40,
+      "description": "금융 기관 사칭"
+    },
+    {
+      "keyword": "국민은행",
+      "category": "기관사칭",
+      "score": 35,
+      "description": "금융 기관 사칭"
+    },
+    {
+      "keyword": "신한은행",
+      "category": "기관사칭",
+      "score": 35,
+      "description": "금융 기관 사칭"
+    },
+    {
+      "keyword": "카카오",
+      "category": "기관사칭",
+      "score": 35,
+      "description": "IT 기업 사칭"
+    },
+    {
+      "keyword": "네이버",
+      "category": "기관사칭",
+      "score": 35,
+      "description": "IT 기업 사칭"
+    },
+    {
+      "keyword": "택배",
+      "category": "기관사칭",
+      "score": 30,
+      "description": "택배 업체 사칭"
+    },
+    {
+      "keyword": "쿠팡",
+      "category": "기관사칭",
+      "score": 30,
+      "description": "배송 업체 사칭"
+    },
+    {
+      "keyword": "즉시",
+      "category": "긴급성",
+      "score": 20,
+      "description": "긴급 조치 요구"
+    },
+    {
+      "keyword": "긴급",
+      "category": "긴급성",
+      "score": 20,
+      "description": "긴급 조치 요구"
+    },
+    {
+      "keyword": "24시간",
+      "category": "긴급성",
+      "score": 15,
+      "description": "시간 제한 압박"
+    },
+    {
+      "keyword": "오늘 안",
+      "category": "긴급성",
+      "score": 15,
+      "description": "시간 제한 압박"
+    },
+    {
+      "keyword": "송금",
+      "category": "금전요구",
+      "score": 30,
+      "description": "금전 요구"
+    },
+    {
+      "keyword": "계좌이체",
+      "category": "금전요구",
+      "score": 30,
+      "description": "금전 요구"
+    },
+    {
+      "keyword": "입금",
+      "category": "금전요구",
+      "score": 25,
+      "description": "금전 요구"
+    },
+    {
+      "keyword": "상품권",
+      "category": "금전요구",
+      "score": 35,
+      "description": "상품권 요구 (전형적인 피싱)"
+    },
+    {
+      "keyword": "기프티콘",
+      "category": "금전요구",
+      "score": 35,
+      "description": "상품권 요구 (전형적인 피싱)"
+    },
+    {
+      "keyword": "환불",
+      "category": "금전요구",
+      "score": 20,
+      "description": "환불 명목의 금전 요구"
+    },
+    {
+      "keyword": "계좌번호",
+      "category": "개인정보",
+      "score": 30,
+      "description": "금융 정보 요구"
+    },
+    {
+      "keyword": "비밀번호",
+      "category": "개인정보",
+      "score": 35,
+      "description": "비밀번호 요구 (매우 위험)"
+    },
+    {
+      "keyword": "주민번호",
+      "category": "개인정보",
+      "score": 35,
+      "description": "주민번호 요구 (매우 위험)"
+    },
+    {
+      "keyword": "본인확인",
+      "category": "개인정보",
+      "score": 25,
+      "description": "개인정보 요구"
+    },
+    {
+      "keyword": "인증번호",
+      "category": "개인정보",
+      "score": 30,
+      "description": "인증번호 요구"
+    },
+    {
+      "keyword": "카드번호",
+      "category": "개인정보",
+      "score": 35,
+      "description": "카드 정보 요구"
+    },
+    {
+      "keyword": "CVC",
+      "category": "개인정보",
+      "score": 35,
+      "description": "카드 보안코드 요구"
+    },
+    {
+      "keyword": "CVV",
+      "category": "개인정보",
+      "score": 35,
+      "description": "카드 보안코드 요구"
+    },
+    {
+      "keyword": "정지",
+      "category": "협박",
+      "score": 25,
+      "description": "계좌/카드 정지 협박"
+    },
+    {
+      "keyword": "체포",
+      "category": "협박",
+      "score": 40,
+      "description": "법적 협박"
+    },
+    {
+      "keyword": "고소",
+      "category": "협박",
+      "score": 30,
+      "description": "법적 협박"
+    },
+    {
+      "keyword": "고발",
+      "category": "협박",
+      "score": 30,
+      "description": "법적 협박"
+    },
+    {
+      "keyword": "압수수색",
+      "category": "협박",
+      "score": 35,
+      "description": "법적 협박"
+    },
+    {
+      "keyword": "소환장",
+      "category": "협박",
+      "score": 35,
+      "description": "법적 문서 위조"
+    },
+    {
+      "keyword": "당첨",
+      "category": "유인",
+      "score": 20,
+      "description": "당첨 사기"
+    },
+    {
+      "keyword": "무료",
+      "category": "유인",
+      "score": 15,
+      "description": "무료 혜택 유인"
+    },
+    {
+      "keyword": "지원금",
+      "category": "유인",
+      "score": 25,
+      "description": "지원금 사기"
+    },
+    {
+      "keyword": "환급",
+      "category": "유인",
+      "score": 20,
+      "description": "환급 명목 사기"
+    },
+    {
+      "keyword": "클릭",
+      "category": "링크유도",
+      "score": 15,
+      "description": "링크 클릭 유도"
+    },
+    {
+      "keyword": "링크",
+      "category": "링크유도",
+      "score": 15,
+      "description": "링크 클릭 유도"
+    },
+    {
+      "keyword": "접속",
+      "category": "링크유도",
+      "score": 15,
+      "description": "사이트 접속 유도"
+    },
+    {
+      "keyword": "다운로드",
+      "category": "링크유도",
+      "score": 20,
+      "description": "파일 다운로드 유도 (악성코드 위험)"
+    },
+    {
+      "keyword": "apk",
+      "category": "링크유도",
+      "score": 30,
+      "description": "안드로이드 앱 설치 유도 (매우 위험)"
+    },
+    {
+      "keyword": "설치",
+      "category": "링크유도",
+      "score": 20,
+      "description": "앱 설치 유도"
+    }
+  ],
+  "url_patterns": [
+    {
+      "pattern": "bit.ly",
+      "score": 20,
+      "description": "단축 URL"
+    },
+    {
+      "pattern": "tinyurl.com",
+      "score": 20,
+      "description": "단축 URL"
+    },
+    {
+      "pattern": "goo.gl",
+      "score": 20,
+      "description": "단축 URL"
+    },
+    {
+      "pattern": "ow.ly",
+      "score": 20,
+      "description": "단축 URL"
+    },
+    {
+      "pattern": "han.gl",
+      "score": 20,
+      "description": "단축 URL (한글 단축)"
+    },
+    {
+      "pattern": "me2.do",
+      "score": 20,
+      "description": "단축 URL (네이버)"
+    }
+  ]
+}
