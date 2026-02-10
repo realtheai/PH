@@ -83,12 +83,11 @@ async def analyze_message(request: AnalyzeRequest):
             if not query_embedding:
                 raise Exception("임베딩 생성 실패")
             
-            # 새로운 벡터 검색 방식 (클라이언트 측 계산, RPC timeout 없음)
+            # pgvector RPC 방식 (전체 DB 검색, HNSW 인덱스)
             similar_cases = vector_searcher.search_similar_cases(
                 query_embedding=query_embedding,
-                threshold=0.5,  # 유사도 임계값 50% (0.3→0.5 오탐 방지)
-                limit=3,  # 상위 3개만
-                max_fetch=300  # DB에서 최대 300개 가져오기 (뉴스+이미지 각각)
+                threshold=0.3,  # 유사도 임계값 30% (0.3)
+                limit=5  # 상위 5개 (뉴스 3개 + 이미지 2개)
             )
             
             print(f"📊 결과: {len(similar_cases)}건 발견")
