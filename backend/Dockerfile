@@ -12,5 +12,5 @@ COPY ./app ./app
 # 포트 노출
 EXPOSE 8000
 
-# 실행 (Python에서 PORT 환경변수 읽음)
-CMD ["python", "-m", "app.main"]
+# 실행 (Shell form으로 PORT 환경변수 치환)
+CMD uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-8000}
