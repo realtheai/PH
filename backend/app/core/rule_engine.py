@@ -11,46 +11,69 @@ class RuleEngine:
         # /app/app/core/ 에서 ../../ = /app/ 로 가서 data/rules/ 접근
         rules_path = os.path.join(os.path.dirname(__file__), '../../data/rules/rules.json')
         entities_path = os.path.join(os.path.dirname(__file__), '../../data/rules/entities_ko.json')
-        
+
         with open(rules_path, 'r', encoding='utf-8') as f:
             rules_data = json.load(f)
             self.keyword_rules = rules_data['rules']
             self.url_patterns = rules_data['url_patterns']
-        
+            self.safe_patterns = rules_data.get('safe_patterns', [])
+
         with open(entities_path, 'r', encoding='utf-8') as f:
             self.entities = json.load(f)
-    
+
     def check_message(self, message: str) -> Tuple[int, List[Dict]]:
         """
-        메시지 검사
-        
+        메시지 검사 (문맥 기반 점수 + 감점 패턴)
+
         Returns:
             (총 점수, 매칭된 룰 리스트)
         """
         total_score = 0
         matched_rules = []
-        
+
         message_lower = message.lower()
-        
-        # 키워드 룰 검사
+
+        # 키워드 룰 검사 (boost_keywords 지원)
         for rule in self.keyword_rules:
             keyword = rule['keyword']
             if keyword in message or keyword.lower() in message_lower:
-                total_score += rule['score']
+                # boost_keywords가 있는 룰: 문맥에 따라 점수 결정
+                if 'boost_keywords' in rule:
+                    has_boost = any(
+                        bk in message or bk.lower() in message_lower
+                        for bk in rule['boost_keywords']
+                    )
+                    if has_boost:
+                        score = rule['score']
+                    else:
+                        score = rule.get('base_score', rule['score'])
+                else:
+                    score = rule['score']
+
+                total_score += score
                 matched_rules.append({
                     'category': rule['category'],
                     'matched_keyword': keyword,
-                    'score': rule['score'],
+                    'score': score,
                     'description': rule['description']
                 })
-        
+
+        # 감점 패턴 적용 (일상 대화 감지)
+        safe_deduct = 0
+        for sp in self.safe_patterns:
+            if sp['pattern'] in message:
+                safe_deduct += sp['deduct']
+
+        if safe_deduct < 0:
+            total_score = max(0, total_score + safe_deduct)
+
         return total_score, matched_rules
-    
+
     def check_urls(self, urls: List[str]) -> Tuple[int, List[Dict]]:
         """URL 패턴 검사 (단축 URL 등)"""
         total_score = 0
         matched_patterns = []
-        
+
         for url in urls:
             for pattern in self.url_patterns:
                 if pattern['pattern'] in url:
@@ -61,13 +84,13 @@ class RuleEngine:
                         'score': pattern['score'],
                         'description': pattern['description']
                     })
-        
+
         return total_score, matched_patterns
-    
+
     def detect_phishing_type(self, message: str, matched_rules: List[Dict]) -> str:
         """피싱 유형 감지"""
         categories = [rule['category'] for rule in matched_rules]
-        
+
         if '기관사칭' in categories:
             # 어떤 기관인지 확인
             for entity_type, entities in self.entities.items():
@@ -80,13 +103,13 @@ class RuleEngine:
                         elif entity_type == 'delivery':
                             return '택배사칭'
             return '기관사칭'
-        
+
         elif '금전요구' in categories:
             if '상품권' in message:
                 return '상품권사기'
             return '금전요구'
-        
+
         elif '협박' in categories:
             return '협박형피싱'
-        
+
         return '의심'

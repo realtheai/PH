@@ -21,6 +21,18 @@ export default function Home() {
         localStorage.setItem("currentMessage", sharedMessage);
         router.push("/analyze");
       }, 1000);
+      return;
+    }
+
+    // 결과 페이지에서 뒤로가기한 경우에만 메시지 복원
+    const shouldRestore = sessionStorage.getItem("restoreMessage");
+    if (shouldRestore === "true") {
+      const currentMessage = localStorage.getItem("currentMessage");
+      if (currentMessage) {
+        setMessage(currentMessage);
+      }
+      // 플래그 제거 (한 번만 복원)
+      sessionStorage.removeItem("restoreMessage");
     }
   }, [router]);
 
@@ -34,19 +46,16 @@ export default function Home() {
     router.push("/analyze");
   };
 
-  const handlePaste = async () => {
-    try {
-      const text = await navigator.clipboard.readText();
-      setMessage(text);
-    } catch (err) {
-      console.error("클립보드 읽기 실패:", err);
-      alert("클립보드 접근 권한이 필요합니다.");
-    }
+  const handleRefresh = () => {
+    // 메시지 초기화 및 페이지 새로고침
+    setMessage("");
+    localStorage.removeItem("currentMessage");
+    window.location.reload();
   };
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header showMenu={true} showHistory={true} />
+      <Header showMenu={true} showHistory={true} onMenuClick={handleRefresh} />
       
       <main className="flex-1 overflow-y-auto pb-24">
         <div className="flex flex-col items-center pt-8 pb-4">
@@ -73,27 +82,20 @@ export default function Home() {
             </p>
             <textarea
               className="form-input flex w-full resize-none overflow-hidden rounded-xl text-gray-900 dark:text-gray-100 focus:outline-0 focus:ring-2 focus:ring-primary border border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 min-h-[180px] placeholder:text-gray-400 p-4 text-base font-normal leading-normal shadow-sm"
-              placeholder="의심되는 메시지를 붙여넣으세요"
+              placeholder="의심되는 메시지를 입력하거나 붙여넣으세요"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             />
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 px-4 py-4">
+        <div className="px-4 py-4">
           <button
             onClick={handleAnalyze}
-            className="flex items-center justify-center gap-2 bg-primary text-white font-bold py-4 px-6 rounded-xl shadow-lg active:scale-95 transition-transform"
+            className="flex w-full items-center justify-center gap-2 bg-primary text-white font-bold py-4 px-6 rounded-xl shadow-lg active:scale-95 transition-transform"
           >
             <span className="material-symbols-outlined">search_check</span>
             검사하기
-          </button>
-          <button
-            onClick={handlePaste}
-            className="flex items-center justify-center gap-2 bg-primary/10 dark:bg-primary/20 text-primary dark:text-blue-300 font-bold py-3 px-6 rounded-xl active:scale-95 transition-transform border border-primary/20"
-          >
-            <span className="material-symbols-outlined">content_paste</span>
-            붙여넣기
           </button>
         </div>
 

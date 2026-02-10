@@ -9,6 +9,8 @@ interface HeaderProps {
   showMenu?: boolean;
   showHistory?: boolean;
   rightAction?: React.ReactNode;
+  onBack?: () => void; // 커스텀 뒤로가기 동작
+  onMenuClick?: () => void; // 메뉴 아이콘 클릭 동작
 }
 
 export default function Header({
@@ -17,18 +19,34 @@ export default function Header({
   showMenu = true,
   showHistory = false,
   rightAction,
+  onBack,
+  onMenuClick,
 }: HeaderProps) {
   const router = useRouter();
+
+  const handleBack = () => {
+    if (onBack) {
+      onBack(); // 커스텀 뒤로가기 동작
+    } else {
+      router.back(); // 기본 뒤로가기
+    }
+  };
 
   return (
     <header className="flex items-center bg-background-light dark:bg-background-dark p-4 pb-2 justify-between sticky top-0 z-10">
       <div className="text-primary dark:text-gray-100 flex size-12 shrink-0 items-center justify-start">
         {showBack ? (
-          <button onClick={() => router.back()} className="cursor-pointer">
+          <button onClick={handleBack} className="cursor-pointer">
             <span className="material-symbols-outlined">arrow_back_ios</span>
           </button>
         ) : showMenu ? (
-          <span className="material-symbols-outlined text-primary dark:text-blue-400">shield_locked</span>
+          onMenuClick ? (
+            <button onClick={onMenuClick} className="cursor-pointer">
+              <span className="material-symbols-outlined text-primary dark:text-blue-400">refresh</span>
+            </button>
+          ) : (
+            <span className="material-symbols-outlined text-primary dark:text-blue-400">shield_locked</span>
+          )
         ) : (
           <div className="w-6" />
         )}

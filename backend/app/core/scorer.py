@@ -69,8 +69,25 @@ class Scorer:
         if unsafe_urls:
             recommendations.append("🔗 위험한 URL이 포함되어 있습니다. 절대 클릭하지 마세요.")
         
-        # 피싱 유형별
+        # 피싱 유형별 특화 권장사항
         if phishing_type == '상품권사기':
             recommendations.append("🎁 상품권 요구는 100% 사기입니다.")
-        
+        elif phishing_type == '대출사기':
+            recommendations.append("🏦 저금리/무담보 대출을 미끼로 수수료를 요구하면 대출사기입니다.")
+            recommendations.append("📞 금융감독원(1332)에서 정식 등록 여부를 확인하세요.")
+        elif phishing_type == '로맨스스캠':
+            recommendations.append("💔 온라인에서 만난 상대가 금전을 요구하면 로맨스 스캠입니다.")
+            recommendations.append("🚫 어떤 이유로든 해외 송금을 하지 마세요.")
+        elif phishing_type == '채용사기':
+            recommendations.append("💼 채용 과정에서 선입금을 요구하는 곳은 사기입니다.")
+            recommendations.append("🔍 고용노동부 워크넷에서 해당 기업을 확인하세요.")
+        elif phishing_type == '쇼핑사기':
+            recommendations.append("🛒 비정상적으로 저렴한 가격은 사기 가능성이 높습니다.")
+            recommendations.append("🔍 사업자등록번호와 통신판매신고번호를 확인하세요.")
+        elif phishing_type == '계정탈취':
+            recommendations.append("🔐 비밀번호 변경은 반드시 공식 앱/사이트에서 직접 하세요.")
+            recommendations.append("🚫 문자/메일의 링크로 로그인하지 마세요.")
+        elif phishing_type == '가족사칭':
+            recommendations.append("👨‍👩‍👧 가족이 맞는지 반드시 기존 번호로 직접 전화해서 확인하세요.")
+
         return recommendations

@@ -14,6 +14,13 @@ interface AnalysisResult {
 export default function SafeResultPage() {
   const router = useRouter();
   const [result, setResult] = useState<AnalysisResult | null>(null);
+  
+  // 홈으로 돌아가기 (analyze 페이지 건너뛰기)
+  const handleBack = () => {
+    // 메시지 복원 플래그 설정
+    sessionStorage.setItem('restoreMessage', 'true');
+    router.push('/');
+  };
 
   useEffect(() => {
     const lastResult = localStorage.getItem("lastResult");
@@ -55,6 +62,7 @@ export default function SafeResultPage() {
           title="결과"
           showBack={true}
           showMenu={false}
+          onBack={handleBack}
           rightAction={
             <button 
               onClick={handleShare}

@@ -39,26 +39,34 @@
     {
       "keyword": "카카오",
       "category": "기관사칭",
+      "base_score": 5,
       "score": 35,
-      "description": "IT 기업 사칭"
+      "boost_keywords": ["인증", "비밀번호", "로그인", "보안", "차단", "정지", "계좌", "클릭", "링크"],
+      "description": "IT 기업 사칭 (맥락 의존)"
     },
     {
       "keyword": "네이버",
       "category": "기관사칭",
+      "base_score": 5,
       "score": 35,
-      "description": "IT 기업 사칭"
+      "boost_keywords": ["인증", "비밀번호", "로그인", "보안", "차단", "정지", "계좌", "클릭", "링크"],
+      "description": "IT 기업 사칭 (맥락 의존)"
     },
     {
       "keyword": "택배",
       "category": "기관사칭",
+      "base_score": 5,
       "score": 30,
-      "description": "택배 업체 사칭"
+      "boost_keywords": ["클릭", "링크", "미수령", "반송", "재배달", "접속", "설치", "본인확인"],
+      "description": "택배 업체 사칭 (맥락 의존)"
     },
     {
       "keyword": "쿠팡",
       "category": "기관사칭",
+      "base_score": 5,
       "score": 30,
-      "description": "배송 업체 사칭"
+      "boost_keywords": ["클릭", "링크", "접속", "인증", "비밀번호", "본인확인"],
+      "description": "배송 업체 사칭 (맥락 의존)"
     },
     {
       "keyword": "즉시",
@@ -117,8 +125,10 @@
     {
       "keyword": "환불",
       "category": "금전요구",
+      "base_score": 5,
       "score": 20,
-      "description": "환불 명목의 금전 요구"
+      "boost_keywords": ["계좌", "링크", "클릭", "확인", "입금"],
+      "description": "환불 명목의 금전 요구 (맥락 의존)"
     },
     {
       "keyword": "계좌번호",
@@ -171,8 +181,10 @@
     {
       "keyword": "정지",
       "category": "협박",
+      "base_score": 5,
       "score": 25,
-      "description": "계좌/카드 정지 협박"
+      "boost_keywords": ["계좌", "카드", "서비스", "이용", "해제"],
+      "description": "계좌/카드 정지 협박 (맥락 의존)"
     },
     {
       "keyword": "체포",
@@ -213,8 +225,10 @@
     {
       "keyword": "무료",
       "category": "유인",
+      "base_score": 3,
       "score": 15,
-      "description": "무료 혜택 유인"
+      "boost_keywords": ["클릭", "링크", "신청", "지급", "이벤트"],
+      "description": "무료 혜택 유인 (맥락 의존)"
     },
     {
       "keyword": "지원금",
@@ -237,14 +251,18 @@
     {
       "keyword": "링크",
       "category": "링크유도",
+      "base_score": 3,
       "score": 15,
-      "description": "링크 클릭 유도"
+      "boost_keywords": ["확인", "클릭", "접속", "로그인", "인증"],
+      "description": "링크 클릭 유도 (맥락 의존)"
     },
     {
       "keyword": "접속",
       "category": "링크유도",
+      "base_score": 3,
       "score": 15,
-      "description": "사이트 접속 유도"
+      "boost_keywords": ["확인", "클릭", "링크", "로그인", "인증"],
+      "description": "사이트 접속 유도 (맥락 의존)"
     },
     {
       "keyword": "다운로드",
@@ -261,8 +279,137 @@
     {
       "keyword": "설치",
       "category": "링크유도",
+      "base_score": 3,
       "score": 20,
-      "description": "앱 설치 유도"
+      "boost_keywords": ["앱", "apk", "다운", "보안", "인증"],
+      "description": "앱 설치 유도 (맥락 의존)"
+    }
+  ],
+  "safe_patterns": [
+    {
+      "pattern": "ㅋㅋ",
+      "deduct": -15,
+      "description": "일상 웃음 표현"
+    },
+    {
+      "pattern": "ㅎㅎ",
+      "deduct": -15,
+      "description": "일상 웃음 표현"
+    },
+    {
+      "pattern": "ㅠㅠ",
+      "deduct": -10,
+      "description": "일상 감정 표현"
+    },
+    {
+      "pattern": "ㅜㅜ",
+      "deduct": -10,
+      "description": "일상 감정 표현"
+    },
+    {
+      "pattern": "고마워",
+      "deduct": -10,
+      "description": "감사 표현"
+    },
+    {
+      "pattern": "감사합니다",
+      "deduct": -5,
+      "description": "감사 표현 (정중)"
+    },
+    {
+      "pattern": "잘 받았",
+      "deduct": -10,
+      "description": "수령 확인"
+    },
+    {
+      "pattern": "밥 먹었",
+      "deduct": -10,
+      "description": "일상 인사"
+    },
+    {
+      "pattern": "뭐 해",
+      "deduct": -10,
+      "description": "일상 안부"
+    },
+    {
+      "pattern": "잘 자",
+      "deduct": -10,
+      "description": "일상 인사"
+    },
+    {
+      "pattern": "수고",
+      "deduct": -5,
+      "description": "일상 인사"
+    },
+    {
+      "pattern": "ㅋ",
+      "deduct": -5,
+      "description": "웃음 표현"
+    },
+    {
+      "pattern": "광고)",
+      "deduct": -30,
+      "description": "합법 광고 표시 (법적 의무)"
+    },
+    {
+      "pattern": "(광고)",
+      "deduct": -30,
+      "description": "합법 광고 표시 (법적 의무)"
+    },
+    {
+      "pattern": "무료 거부 080",
+      "deduct": -25,
+      "description": "합법 수신거부 번호 (법적 의무)"
+    },
+    {
+      "pattern": "무료거부 080",
+      "deduct": -25,
+      "description": "합법 수신거부 번호 (법적 의무)"
+    },
+    {
+      "pattern": "수신거부",
+      "deduct": -20,
+      "description": "합법 수신거부 안내"
+    },
+    {
+      "pattern": "[Web발신]",
+      "deduct": -10,
+      "description": "통신사 Web발신 표시"
+    },
+    {
+      "pattern": "배송 완료",
+      "deduct": -20,
+      "description": "정상 배송완료 알림"
+    },
+    {
+      "pattern": "배송완료",
+      "deduct": -20,
+      "description": "정상 배송완료 알림"
+    },
+    {
+      "pattern": "운송장번호",
+      "deduct": -20,
+      "description": "정상 택배 알림 (운송장)"
+    },
+    {
+      "pattern": "고객센터",
+      "deduct": -10,
+      "description": "정상 기업 안내 (고객센터)"
+    },
+    {
+      "pattern": "1588-",
+      "deduct": -10,
+      "description": "정상 대표번호"
+    },
+    {
+      "pattern": "1577-",
+      "deduct": -10,
+      "description": "정상 대표번호"
+    },
+    {
+      "pattern": "1544-",
+      "deduct": -10,
+      "description": "정상 대표번호"
     }
   ],
   "url_patterns": [

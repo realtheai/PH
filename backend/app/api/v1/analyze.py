@@ -86,7 +86,7 @@ async def analyze_message(request: AnalyzeRequest):
             # 새로운 벡터 검색 방식 (클라이언트 측 계산, RPC timeout 없음)
             similar_cases = vector_searcher.search_similar_cases(
                 query_embedding=query_embedding,
-                threshold=0.3,  # 유사도 임계값 30%
+                threshold=0.5,  # 유사도 임계값 50% (0.3→0.5 오탐 방지)
                 limit=3,  # 상위 3개만
                 max_fetch=300  # DB에서 최대 300개 가져오기 (뉴스+이미지 각각)
             )
@@ -94,18 +94,9 @@ async def analyze_message(request: AnalyzeRequest):
             print(f"📊 결과: {len(similar_cases)}건 발견")
             
             if similar_cases:
-                # 가장 유사한 사례의 유사도를 점수에 반영
                 max_similarity = similar_cases[0].get('similarity', 0)
-                db_similarity_score = int(max_similarity * 50)  # 최대 50점 추가
-                
-                # 유사 사례가 있으면 총 점수에 반영
-                total_score = min(total_score + db_similarity_score, 100)
-                
-                # 위험도 재계산
-                risk_level = scorer.calculate_risk_level(total_score)
-                is_phishing = total_score > 50
-                
                 print(f"✅ 유사 사례 {len(similar_cases)}건 발견 (최대 유사도: {max_similarity:.2f})")
+                # DB 유사도 점수는 LLM이 판단하므로 여기서는 가산하지 않음
                 
         except Exception as e:
             print(f"⚠️  Vector Search 실패: {e}")
@@ -116,36 +107,53 @@ async def analyze_message(request: AnalyzeRequest):
         # 10. LLM 분석 (GPT-4o-mini로 메시지 직접 분석)
         llm_result = None
         try:
-            print(f"🤖 LLM 분석 시작...")
-            llm_result = llm_analyzer.analyze_message(message)
+            print(f"🤖 LLM 분석 시작... (유사 사례 {len(similar_cases)}건 포함)")
+            llm_result = llm_analyzer.analyze_message(message, similar_cases=similar_cases)
             
-            if llm_result and llm_result.get('is_phishing'):
+            if llm_result:
                 llm_score = llm_result.get('risk_score', 0)
                 llm_confidence = llm_result.get('confidence', 0)
-                
-                # LLM이 높은 확신도로 피싱을 판단한 경우 우선순위 높임
-                if llm_confidence >= 0.8:
-                    # 확신도 80% 이상이면 LLM 점수를 80% 반영
-                    total_score = int(total_score * 0.2 + llm_score * 0.8)
-                elif llm_confidence >= 0.6:
-                    # 확신도 60-80%면 LLM 점수를 60% 반영
-                    total_score = int(total_score * 0.4 + llm_score * 0.6)
+
+                if llm_result.get('is_phishing'):
+                    # LLM이 피싱으로 판단한 경우: 확신도 기반 가중 반영
+                    if llm_confidence >= 0.8:
+                        total_score = int(total_score * 0.2 + llm_score * 0.8)
+                    elif llm_confidence >= 0.6:
+                        total_score = int(total_score * 0.4 + llm_score * 0.6)
+                    else:
+                        llm_weighted_score = int(llm_score * llm_confidence)
+                        total_score = int(total_score * 0.6 + llm_weighted_score * 0.4)
+
+                    total_score = min(total_score, 100)
+
+                    # 피싱 유형 업데이트 (LLM이 더 정확)
+                    if llm_result.get('phishing_type') != '정상':
+                        phishing_type = llm_result.get('phishing_type')
+
+                    # LLM이 DB 유사 사례가 관련 있다고 판단한 경우 추가 가산
+                    if similar_cases and llm_result.get('db_relevance'):
+                        max_similarity = similar_cases[0].get('similarity', 0)
+                        db_similarity_score = int(max_similarity * 20)  # 최대 20점
+                        total_score = min(total_score + db_similarity_score, 100)
+                        print(f"📊 DB 유사 사례 관련성 확인 → +{db_similarity_score}점")
+
+                    print(f"✅ LLM 피싱 판정: {phishing_type} (확신도: {llm_confidence:.2f}, 점수: {llm_score})")
                 else:
-                    # 확신도 낮으면 기존대로 40% 반영
-                    llm_weighted_score = int(llm_score * llm_confidence)
-                    total_score = int(total_score * 0.6 + llm_weighted_score * 0.4)
-                
-                total_score = min(total_score, 100)
-                
+                    # LLM이 정상으로 판단한 경우: 룰 기반 오탐 보정
+                    # LLM은 문맥을 이해하므로, 정상 판정 시 적극적으로 점수 낮춤
+                    if llm_confidence >= 0.8:
+                        total_score = int(total_score * 0.15)
+                        print(f"✅ LLM 정상 판정 (확신도 높음): 점수 85% 감소 → {total_score}")
+                    elif llm_confidence >= 0.5:
+                        total_score = int(total_score * 0.3)
+                        print(f"✅ LLM 정상 판정 (확신도 중간): 점수 70% 감소 → {total_score}")
+                    else:
+                        total_score = int(total_score * 0.5)
+                        print(f"✅ LLM 정상 판정 (확신도 낮음): 점수 50% 감소 → {total_score}")
+
                 # 위험도 재계산
                 risk_level = scorer.calculate_risk_level(total_score)
                 is_phishing = total_score > 50
-                
-                # 피싱 유형 업데이트 (LLM이 더 정확)
-                if llm_result.get('phishing_type') != '정상':
-                    phishing_type = llm_result.get('phishing_type')
-                
-                print(f"✅ LLM 분석 완료: {phishing_type} (확신도: {llm_confidence:.2f}, 점수: {llm_score})")
         except Exception as e:
             print(f"⚠️  LLM 분석 실패: {e}")
             # LLM 실패해도 계속 진행
