@@ -85,42 +85,91 @@ npm start
 ## 🎯 현재 구현 상태
 
 ### ✅ 완료
-- [x] Next.js 프로젝트 설정
-- [x] Tailwind CSS 커스텀 테마 (Stitch 스타일 반영)
+- [x] Next.js 프로젝트 설정 (App Router)
+- [x] Tailwind CSS 커스텀 테마
 - [x] 공통 컴포넌트 (Header, BottomNav)
 - [x] 9개 주요 화면 완성
 - [x] 다크 모드 지원
 - [x] LocalStorage 기반 데이터 저장
-- [x] Mock 분석 로직 (간단한 키워드 기반 판정)
 - [x] 반응형 UI (모바일 최적화)
+- [x] **백엔드 API 연동** (`POST /api/v1/analyze`)
+- [x] **Capacitor 모바일 빌드** (Android APK)
+- [x] **Static HTML Export** (조건부 빌드)
+- [x] **Vercel 웹 배포** + **Railway 백엔드 배포**
 
-### ⏳ 대기 중 (백엔드 연동 필요)
-- [ ] 실제 API 연동 (`POST /api/v1/analyze`)
-- [ ] 실시간 피싱 뉴스 데이터 표시
-- [ ] 통계 데이터 조회
-- [ ] 사용자 인증 (Phase 2)
+### 🚀 배포 완료
+- **웹**: https://phishingchecker.vercel.app
+- **백엔드**: https://ph-production-4b6a.up.railway.app
+- **모바일**: APK 빌드 완료 (`app-debug.apk`)
 
-## 📱 모바일 빌드 (Phase 1 완성 목표)
+## 📱 모바일 빌드 (Capacitor + Android)
 
-프론트엔드 완성 후 다음 단계:
+### ✅ 현재 설정 완료
+- Capacitor 3.x 설치 및 설정
+- Android 프로젝트 생성 (`frontend/android/`)
+- Static HTML Export 설정 (모바일 빌드 전용)
 
-1. **Capacitor 설정**
-   ```bash
-   npm install @capacitor/core @capacitor/cli
-   npx cap init
-   npx cap add android
-   ```
+### 🚀 APK 빌드 방법
 
-2. **Android Share Intent 구현**
-   - 다른 앱에서 "공유" → 피싱체커로 메시지 전달
-   - ShareReceiverActivity.kt 작성
+```bash
+# 1. 프론트엔드 → 모바일 빌드 (Static Export)
+npm run build:mobile
 
-3. **APK 빌드**
-   ```bash
-   npx cap sync
-   cd android
-   ./gradlew assembleDebug
-   ```
+# 2. Capacitor 동기화 (out/ → android/app/src/main/assets/public/)
+npx cap sync android
+
+# 3. Android Studio 열기 (선택)
+npx cap open android
+
+# 4. APK 빌드
+cd android
+./gradlew clean assembleDebug
+
+# 빌드된 APK 위치
+# android/app/build/outputs/apk/debug/app-debug.apk
+```
+
+### 📌 주요 설정 파일
+
+**`package.json`** - 모바일 전용 빌드 스크립트
+```json
+{
+  "scripts": {
+    "build:mobile": "BUILD_TARGET=mobile next build",
+    "cap:sync": "npm run build:mobile && npx cap sync",
+    "cap:android": "npm run cap:sync && npx cap open android"
+  }
+}
+```
+
+**`next.config.ts`** - 조건부 Static Export
+```typescript
+const nextConfig: NextConfig = {
+  output: process.env.BUILD_TARGET === 'mobile' ? 'export' : undefined,
+  images: { unoptimized: true },
+  trailingSlash: true,
+};
+```
+
+**`capacitor.config.ts`** - Capacitor 설정
+```typescript
+{
+  appId: 'com.phishingchecker.app',
+  appName: 'PhishingChecker',
+  webDir: 'out',
+  server: {
+    androidScheme: 'https'
+  }
+}
+```
+
+### 🔄 Static Export vs 일반 빌드
+| 빌드 타입 | 용도 | 명령어 | 출력 |
+|----------|-----|--------|------|
+| **일반 빌드** | Vercel 웹 배포 | `npm run build` | `.next/` |
+| **모바일 빌드** | Capacitor APK | `npm run build:mobile` | `out/` (HTML) |
+
+
 
 ## 🔧 Mock 데이터 구조
 
@@ -163,47 +212,36 @@ autoScan: boolean
 ### 폰트
 - **Display**: Public Sans (400, 500, 600, 700)
 
-## 🔌 API 연동 가이드 (백엔드 준비 후)
+## 🔌 백엔드 API 연동 (완료)
 
-### 1. 환경 변수 설정
+### 환경 변수 설정
 ```bash
-# .env.local 파일 생성
+# .env.local 파일 (로컬 개발)
 NEXT_PUBLIC_API_URL=http://localhost:8000
+
+# Vercel 배포 (프로덕션)
+NEXT_PUBLIC_API_URL=https://ph-production-4b6a.up.railway.app
 ```
 
-### 2. API 클라이언트 작성
+### API 엔드포인트
+| 엔드포인트 | 메서드 | 용도 |
+|-----------|--------|------|
+| `/api/v1/analyze` | POST | 메시지 분석 |
+| `/api/v1/stats` | GET | 통계 조회 |
+| `/health` | GET | 헬스체크 |
+
+### 사용 예시
 ```typescript
-// app/lib/api.ts
-export async function analyzeMessage(message: string) {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/v1/analyze`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ message }),
-  });
-  return response.json();
-}
+// 메시지 분석 (app/analyze/page.tsx에서 사용)
+const response = await fetch(`${API_URL}/api/v1/analyze`, {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ message: userInput }),
+});
+const result = await response.json();
 ```
 
-### 3. 분석 페이지 수정
-```typescript
-// app/analyze/page.tsx
-const result = await analyzeMessage(message);
-```
 
-## 📝 TODO
-
-- [ ] API 연동 (백엔드 완성 후)
-- [ ] 에러 핸들링 개선
-- [ ] 로딩 상태 관리 개선 (Suspense)
-- [ ] SEO 최적화
-- [ ] PWA 설정 (오프라인 지원)
-- [ ] E2E 테스트 (Playwright)
-- [ ] 성능 최적화 (이미지 lazy loading 등)
-
-## 🐛 알려진 이슈
-
-- LocalStorage는 브라우저 종료 시 데이터가 유지되지 않을 수 있음 → Phase 2에서 서버 저장으로 전환
-- Mock 분석 로직은 간단한 키워드 기반이므로 정확도가 낮음 → 백엔드 룰 엔진 연동 필요
 
 ## 📄 라이선스
 

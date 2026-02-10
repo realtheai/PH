@@ -6,8 +6,9 @@ FastAPI 기반의 피싱 메시지 분석 백엔드 서버입니다.
 
 - **Framework**: FastAPI 0.109.0
 - **Server**: Uvicorn 0.27.0
-- **Database**: Supabase
-- **API**: Google Safe Browsing, Gemini
+- **Database**: Supabase (PostgreSQL + pgvector)
+- **AI/ML**: OpenAI API (GPT-4o-mini, text-embedding-3-small)
+- **API**: Google Safe Browsing API
 
 ## 📁 프로젝트 구조
 
@@ -59,12 +60,22 @@ backend/
 ### 1. 환경 설정
 
 ```bash
-# .env 파일 생성 (루트 디렉토리)
-GOOGLE_SAFE_BROWSING_API_KEY=your_key_here
-GEMINI_API_KEY=your_key_here
-SUPABASE_URL=your_supabase_url
-SUPABASE_ANON_KEY=your_supabase_key
+# .env 파일 생성 (루트 디렉토리에 생성)
+# OpenAI API
+OPENAI_API_KEY=sk-your-openai-key-here
+
+# Supabase
+SUPABASE_URL=https://your-project.supabase.co
+SUPABASE_SERVICE_ROLE_KEY=your-service-role-key-here
+
+# Google APIs
+GOOGLE_SAFE_BROWSING_API_KEY=your-safe-browsing-key
+
+# 선택사항 (포트 변경 시)
+PORT=8000
 ```
+
+> **참고**: 루트 디렉토리의 `.env.example` 파일을 복사하여 `.env` 파일을 만드세요.
 
 ### 2. 의존성 설치
 
@@ -77,16 +88,17 @@ pip install -r requirements.txt
 
 ```bash
 # 개발 모드 (자동 리로드)
-uvicorn app.main:app --reload --host 0.0.0.0 --port 8888
+uvicorn app.main:app --reload --host 0.0.0.0 --port 8000
 
 # 프로덕션 모드
-uvicorn app.main:app --host 0.0.0.0 --port 8888 --workers 4
+uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 4
 ```
 
 ### 4. API 문서 확인
 
-- **Swagger UI**: http://localhost:8888/docs
-- **ReDoc**: http://localhost:8888/redoc
+- **Swagger UI**: http://localhost:8000/docs
+- **ReDoc**: http://localhost:8000/redoc
+- **Health Check**: http://localhost:8000/health
 
 ## 🧪 테스트
 
@@ -101,14 +113,17 @@ chmod +x test_api.sh
 
 ```bash
 # 위험한 메시지 분석
-curl -X POST http://localhost:8888/api/v1/analyze \
+curl -X POST http://localhost:8000/api/v1/analyze \
   -H "Content-Type: application/json" \
   -d '{"message": "긴급! 국세청입니다. 계좌가 정지되었습니다. 비밀번호를 입력하세요."}'
 
 # 안전한 메시지 분석
-curl -X POST http://localhost:8888/api/v1/analyze \
+curl -X POST http://localhost:8000/api/v1/analyze \
   -H "Content-Type: application/json" \
   -d '{"message": "안녕하세요. 내일 점심 약속 잡으실래요?"}'
+
+# 통계 조회
+curl http://localhost:8000/api/v1/stats
 ```
 
 ## 📊 룰 엔진
