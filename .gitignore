@@ -103,3 +103,6 @@ data/raw/github/
 
 # act 로컬 테스트용 secrets
 .secrets
+
+!frontend/app/lib/
+!frontend/app/lib/**/*
